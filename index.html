@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>ロスト・クリスタル Ver.3.1</title>
+<title>ロスト・クリスタル Ver.3.4 忘却の塔</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 :root{
@@ -79,6 +79,20 @@ button{font-family:inherit;border:none;cursor:pointer;color:inherit;transition:t
 
 /* ================= Ver.3.3 final QA / diagnostics ================= */
 .v32Menu{border-radius:22px;background:linear-gradient(135deg,rgba(59,130,246,.13),rgba(78,205,196,.10));border:1px solid rgba(147,197,253,.28);padding:13px;margin:12px 0}.v32Menu h3{font-size:15px;margin-bottom:4px}.v32MenuGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.v32DiagRow{display:flex;align-items:flex-start;gap:9px;border-radius:15px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.10);padding:10px;margin-top:8px}.v32DiagIcon{font-size:20px;width:25px;text-align:center}.v32DiagMain{flex:1;min-width:0}.v32DiagName{font-size:12px;font-weight:1000}.v32DiagText{font-size:10px;color:#cbd5e1;line-height:1.55;margin-top:2px;overflow-wrap:anywhere}.v32Good{border-color:rgba(78,205,196,.40);background:rgba(78,205,196,.09)}.v32Warn{border-color:rgba(255,209,102,.42);background:rgba(255,209,102,.075)}.v32Bad{border-color:rgba(255,107,107,.42);background:rgba(255,107,107,.08)}.v32StorageWarn{border-radius:17px;background:rgba(255,209,102,.10);border:1px solid rgba(255,209,102,.38);padding:11px 12px;color:#fef3c7;font-size:11px;line-height:1.7;margin:10px 0}.v32Version{font-size:10px;color:#93c5fd;font-weight:1000;letter-spacing:.08em}.v32Overall{text-align:center;border-radius:24px;padding:18px;background:linear-gradient(145deg,rgba(78,205,196,.16),rgba(162,155,254,.12));border:1px solid rgba(147,197,253,.32)}.v32Overall .icon{font-size:48px}.v32Overall h2{font-size:18px;margin:5px 0}.v32Overall p{font-size:11px;color:#dbeafe;line-height:1.65}.v32HiddenLegacy{display:none!important}@media(max-width:380px){.v32MenuGrid{grid-template-columns:1fr}}
+
+
+/* ================= Ver.3.4 tower / quest board ================= */
+.v34Hero,.v34TowerHero,.v34HomeCard{border-radius:24px;background:linear-gradient(135deg,rgba(124,58,237,.18),rgba(14,165,233,.12));border:1px solid rgba(165,180,252,.30);padding:14px}.v34Hero h2,.v34TowerHero h2{font-size:19px;margin:5px 0}.v34Hero p,.v34TowerHero p{font-size:12px;line-height:1.7;color:#dbeafe}.v34TowerHero{text-align:center;background:radial-gradient(circle at 50% 0%,rgba(162,155,254,.26),rgba(15,23,42,.18)),linear-gradient(145deg,rgba(76,29,149,.25),rgba(15,23,42,.35))}.v34TowerIcon{font-size:58px;filter:drop-shadow(0 10px 18px rgba(0,0,0,.28));animation:bob 1.8s ease-in-out infinite}.v34Stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.v34Quest{border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);padding:12px;margin-bottom:9px}.v34Quest.done{background:rgba(78,205,196,.10);border-color:rgba(78,205,196,.34)}.v34QuestHead,.v34QuestFoot,.v34HomeHead{display:flex;align-items:center;justify-content:space-between;gap:9px}.v34Quest .bar{margin:9px 0}.v34HomeCard{background:linear-gradient(135deg,rgba(124,58,237,.16),rgba(255,209,102,.10))}@media(max-width:380px){.v34Stats{grid-template-columns:1fr}.v34QuestFoot{align-items:flex-end}}
+
+
+
+/* ================= Ver.3.5 companion growth ================= */
+.v35Hero{border-radius:26px;background:linear-gradient(145deg,rgba(162,155,254,.18),rgba(78,205,196,.12),rgba(15,23,42,.30));border:1px solid rgba(196,181,253,.32);padding:17px 15px;text-align:center}.v35HeroIcon{font-size:54px;margin-bottom:5px}.v35Hero h2{font-size:19px;margin-bottom:6px}.v35Hero p{font-size:11px;line-height:1.7;color:#dbeafe}.v35Summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:11px 0}.v35CompList{display:flex;flex-direction:column;gap:9px}.v35CompCard{display:flex;gap:11px;align-items:center;border-radius:19px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);padding:11px}.v35CompCard.party{border-color:rgba(255,209,102,.42);background:linear-gradient(135deg,rgba(255,209,102,.11),rgba(162,155,254,.08))}.v35CompIcon{font-size:37px;width:45px;text-align:center}.v35CompMain{flex:1;min-width:0}.v35CompHead{display:flex;justify-content:space-between;align-items:center;gap:8px}.v35CompName{font-weight:1000;font-size:13px}.v35Level{font-size:11px;font-weight:1000;color:#fde68a}.v35XpText{font-size:9px;color:#cbd5e1;margin-top:4px}.v35TrainBtns{display:flex;gap:6px;margin-top:7px}.v35TrainBtn{border-radius:999px;padding:7px 10px;background:rgba(162,155,254,.13);border:1px solid rgba(162,155,254,.38);font-size:10px;font-weight:1000}.v35Max{font-size:10px;color:#99f6e4;font-weight:1000;margin-top:6px}.v35HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(162,155,254,.15),rgba(78,205,196,.09));border:1px solid rgba(196,181,253,.30);padding:13px}.v35HomeHead{display:flex;align-items:center;justify-content:space-between;gap:8px}.v35Bonus{border-radius:16px;background:rgba(255,209,102,.09);border:1px solid rgba(255,209,102,.28);padding:10px 11px;font-size:11px;line-height:1.6;color:#fef3c7;margin-top:10px}@media(max-width:380px){.v35Summary{grid-template-columns:1fr}.v35CompCard{align-items:flex-start}.v35TrainBtns{flex-wrap:wrap}}
+
+
+
+/* ================= Ver.4.7 balance / compact home ================= */
+.v47Hub{border-radius:25px;background:linear-gradient(135deg,rgba(14,165,233,.15),rgba(124,58,237,.13));border:1px solid rgba(147,197,253,.32);padding:14px;margin:12px 0}.v47HubHead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.v47Priority{border-radius:17px;background:rgba(255,209,102,.10);border:1px solid rgba(255,209,102,.30);padding:10px 11px;margin-top:10px}.v47Priority b{display:block;font-size:13px;color:#fde68a}.v47Priority span{display:block;font-size:11px;color:#e5e7eb;line-height:1.6;margin-top:3px}.v47Quick{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.v47Quick button{min-height:54px}.v47ResourceStrip{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}.v47Resource{border-radius:13px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09);padding:7px 4px;text-align:center}.v47Resource b{display:block;font-size:15px;color:#fff}.v47Resource span{font-size:9px;color:#cbd5e1}.v47Diag{border-radius:18px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.10);padding:11px;margin-top:8px}.v47Diag.good{border-color:rgba(78,205,196,.35);background:rgba(78,205,196,.08)}.v47Diag.warn{border-color:rgba(255,209,102,.38);background:rgba(255,209,102,.075)}.v47Diag.bad{border-color:rgba(255,107,107,.38);background:rgba(255,107,107,.075)}.v47DiagHead{display:flex;align-items:center;justify-content:space-between;gap:8px}.v47DiagHead b{font-size:13px}.v47Diag p{font-size:11px;color:#dbeafe;line-height:1.65;margin-top:5px}.v47Toggle{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:17px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.10);padding:11px;margin-top:8px}.v47Toggle button{width:auto;padding:9px 13px}.v47CompactHidden{display:none!important}@media(max-width:380px){.v47Quick{grid-template-columns:1fr}.v47ResourceStrip{grid-template-columns:1fr 1fr}}
 
 </style>
 </head>
@@ -2406,13 +2420,1424 @@ render=function(){
   return result;
 };
 
+
+/* ================= Ver.3.4 忘却の塔 / クエストボード ================= */
+const V34_APP_VERSION='3.4';
+const V34_TOWER_QUESTIONS=5;
+function v34WeekKey(d=new Date()){
+  const x=new Date(d.getFullYear(),d.getMonth(),d.getDate());
+  const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);
+  return x.toLocaleDateString('sv-SE');
+}
+function ensureV34(){
+  ensureV31();
+  const week=v34WeekKey();
+  if(!state.v34||typeof state.v34!=='object')state.v34={};
+  const v=state.v34;
+  if(!Number.isFinite(v.towerBestFloor))v.towerBestFloor=0;
+  if(!Number.isFinite(v.towerKeys))v.towerKeys=2;
+  if(!Number.isFinite(v.towerMedals))v.towerMedals=0;
+  if(!Number.isFinite(v.towerClears))v.towerClears=0;
+  if(!v.daily||v.daily.date!==today())v.daily={date:today(),studyAnswered:Number((state.daily&&state.daily.answered)||0),keyClaimed:false};
+  if(!Number.isFinite(v.daily.studyAnswered))v.daily.studyAnswered=0;
+  if(typeof v.daily.keyClaimed!=='boolean')v.daily.keyClaimed=false;
+  if(!v.weekly||v.weekly.week!==week){const start=new Date(week+'T00:00:00').getTime();const n=((state.v31&&state.v31.questionHistory)||[]).filter(x=>x&&x.at>=start&&x.mode!=='tower').length;v.weekly={week,studyAnswered:n,keyClaimed:false};}
+  if(!Number.isFinite(v.weekly.studyAnswered))v.weekly.studyAnswered=0;
+  if(typeof v.weekly.keyClaimed!=='boolean')v.weekly.keyClaimed=false;
+  if(!Array.isArray(v.milestones))v.milestones=[];
+  return v;
+}
+function v34TowerFloor(){return ensureV34().towerBestFloor+1;}
+function v34TowerTier(floor){if(floor%10===0)return {name:'塔主戦',icon:'👁️',goal:4};if(floor%5===0)return {name:'守護者戦',icon:'🗿',goal:4};return {name:'探索階',icon:'🌀',goal:3};}
+function v34TowerTitle(best){if(best>=100)return '忘却を越えし賢者';if(best>=50)return '塔の大賢者';if(best>=30)return '蒼天の探索者';if(best>=10)return '塔の攻略者';if(best>=5)return '見習い探索者';return '塔への挑戦者';}
+function v34PickTowerQuestions(floor){
+  const minDiff=floor>=40?3:floor>=15?2:1;
+  let pool=QUESTIONS.filter(q=>(q.difficulty||1)>=minDiff);
+  if(pool.length<V34_TOWER_QUESTIONS)pool=QUESTIONS.slice();
+  return v30PickFromPool(pool,V34_TOWER_QUESTIONS,floor>=10);
+}
+function v34StartTower(){
+  const v=ensureV34();if(v.towerKeys<1){showToast('🔑 塔の鍵がありません');return;}
+  const floor=v34TowerFloor(),tier=v34TowerTier(floor);v.towerKeys--;
+  state.quiz={mode:'tower',subject:'すべて',questions:v34PickTowerQuestions(floor),index:0,answered:false,selected:null,results:[],rewards:{coins:0,mana:0,stone:0,book:0,crystal:0,map:0,relic:0},start:Date.now(),end:null,score:0,combo:0,bestCombo:0,hintUsed:false,towerFloor:floor,towerGoal:tier.goal,boss:{name:`忘却の塔 ${floor}階・${tier.name}`,icon:tier.icon}};
+  state.screen='quiz';save();render();
+}
+function v34ClaimDailyKey(){const v=ensureV34(),goal=v31DailyGoal();if(v.daily.keyClaimed||v.daily.studyAnswered<goal)return;v.daily.keyClaimed=true;v.towerKeys++;addEvent('🔑','デイリークエストで塔の鍵を獲得');showToast('🔑 塔の鍵を1本獲得！');render();}
+function v34ClaimWeeklyKeys(){const v=ensureV34();if(v.weekly.keyClaimed||v.weekly.studyAnswered<50)return;v.weekly.keyClaimed=true;v.towerKeys+=3;addEvent('🗝️','週間クエストで塔の鍵を3本獲得');showToast('🗝️ 塔の鍵を3本獲得！');render();}
+function v34ProgressCard(label,now,target,reward,claimed,claim){const pct=Math.min(100,Math.round(now/target*100));return el('div',{className:'v34Quest '+(claimed?'done':'')},[el('div',{className:'v34QuestHead'},[el('b',{},label),el('span',{className:'small'},`${Math.min(now,target)}/${target}`)]),el('div',{className:'bar'},el('div',{style:{width:pct+'%'}})),el('div',{className:'v34QuestFoot'},[el('span',{className:'small'},reward),el('button',{className:'claimBtn',disabled:claimed||now<target,onclick:claim},claimed?'受取済':now>=target?'受け取る':'進行中')])]);}
+function renderV34QuestBoard(){const v=ensureV34(),goal=v31DailyGoal();const wrap=el('div',{className:'screen fade'});wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},'クエストボード')]));wrap.appendChild(el('div',{className:'v34Hero'},[el('div',{className:'v32Version'},'VER.3.4 LONG-TERM QUEST'),el('h2',{},'📜 毎日の学習が塔への鍵になる'),el('p',{},'通常の学習を進めて鍵を受け取り、忘却の塔へ挑戦します。塔の問題はクエスト進行数に含まれません。')]));wrap.appendChild(el('div',{className:'sectionTitle section'},[el('span',{},'今日・今週のクエスト'),el('span',{className:'pill'},`🔑 ${v.towerKeys}`)]));wrap.appendChild(v34ProgressCard(`今日の学習を${goal}問進める`,v.daily.studyAnswered,goal,'塔の鍵 ×1',v.daily.keyClaimed,v34ClaimDailyKey));wrap.appendChild(v34ProgressCard('今週の通常学習を50問進める',v.weekly.studyAnswered,50,'塔の鍵 ×3',v.weekly.keyClaimed,v34ClaimWeeklyKeys));wrap.appendChild(el('div',{className:'card section'},[el('div',{style:{fontWeight:'1000'}},'鍵の設計'),el('div',{className:'small',style:{marginTop:'5px'}},'鍵は塔への挑戦時に1本消費します。塔だけを繰り返して鍵を増やすことはできないため、学習とゲームの時間配分を保ちます。')]));wrap.appendChild(el('button',{className:'primary',onclick:()=>{state.screen='v34tower';render()}},'🌀 忘却の塔へ'));return wrap;}
+function renderV34Tower(){const v=ensureV34(),floor=v34TowerFloor(),tier=v34TowerTier(floor),best=v.towerBestFloor;const wrap=el('div',{className:'screen fade'});wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`🔑 ${v.towerKeys}`)]));wrap.appendChild(el('div',{className:'v34TowerHero'},[el('div',{className:'v34TowerIcon'},tier.icon),el('div',{className:'v32Version'},'FORGOTTEN TOWER'),el('h2',{},`忘却の塔 ${floor}階`),el('p',{},`${V34_TOWER_QUESTIONS}問中${tier.goal}問正解で突破。5階ごとに守護者、10階ごとに塔主が現れます。`)]));wrap.appendChild(el('div',{className:'v34Stats'},[el('div',{className:'stat'},[el('div',{className:'num'},best),el('div',{className:'small'},'最高到達階')]),el('div',{className:'stat'},[el('div',{className:'num'},v.towerMedals),el('div',{className:'small'},'塔メダル')]),el('div',{className:'stat'},[el('div',{className:'num'},v.towerClears),el('div',{className:'small'},'突破回数')])]));wrap.appendChild(el('div',{className:'card section'},[el('div',{style:{fontWeight:'1000'}},`称号：${v34TowerTitle(best)}`),el('div',{className:'small',style:{marginTop:'5px'}},'塔の報酬は専用の「塔メダル」が中心です。既存のコイン・素材を増やしすぎず、今後の仲間育成や進化へ接続できます。')]));const milestones=[5,10,20,30,50,100];wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'到達記録'),el('span',{className:'small'},`${milestones.filter(x=>best>=x).length}/${milestones.length}`)]),el('div',{className:'chipRow'},milestones.map(x=>el('span',{className:best>=x?'qualityOk':'chip'},best>=x?`✓ ${x}階`:`🔒 ${x}階`)))]));wrap.appendChild(el('button',{className:'primary',disabled:v.towerKeys<1,onclick:v34StartTower},v.towerKeys>0?`🔑 鍵を1本使って ${floor}階へ`:'鍵がありません'));wrap.appendChild(el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v34quests';render()}},'📜 クエストボードを見る'));return wrap;}
+const v34OldChoose=choose;
+choose=function(choice){const qz=state.quiz,valid=!!(qz&&qz.questions&&qz.questions[qz.index]&&!(qz.answered&&qz.mode!=='rush'));if(valid&&qz.mode!=='tower'){const v=ensureV34();v.daily.studyAnswered++;v.weekly.studyAnswered++;}return v34OldChoose(choice);};
+const v34OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){v34OldFinalize(qz);if(!qz||qz.mode!=='tower'||qz.v34Finalized)return;const v=ensureV34(),ok=(qz.results||[]).filter(r=>r.correct).length,goal=qz.towerGoal||v34TowerTier(qz.towerFloor||1).goal,win=ok>=goal,floor=qz.towerFloor||1;if(win){v.towerBestFloor=Math.max(v.towerBestFloor,floor);v.towerClears++;const medals=1+Math.floor(floor/5)+(floor%10===0?2:0);v.towerMedals+=medals;qz.v34Medals=medals;qz.clearStory={title:`忘却の塔 ${floor}階を突破`,text:[`${ok}/${(qz.results||[]).length}問正解し、塔メダルを${medals}枚獲得した。`,floor%10===0?'塔主の影が消え、さらに上層への階段が現れた。':'霧の向こうに、次の階へ続く階段が現れた。']};if(floor%5===0){const bonus={coins:Math.min(30,10+floor),mana:5};grantFlatReward(bonus);v30MergeBonus(qz,bonus);}addEvent('🌀',`忘却の塔 ${floor}階を突破`);}else{qz.clearStory={title:`${floor}階で再挑戦`,text:[`今回は${ok}/${(qz.results||[]).length}問正解。到達記録は失われません。`,'通常学習で鍵を集め、復習してからもう一度挑戦しよう。']};}qz.v34Win=win;qz.v34Finalized=true;save();};
+const v34OldGoal=v18Goal;
+v18Goal=function(qz){if(qz&&qz.mode==='tower')return qz.towerGoal||v34TowerTier(qz.towerFloor||1).goal;return v34OldGoal(qz);};
+const v34OldRenderQuiz=renderQuiz;
+renderQuiz=function(){const wrap=v34OldRenderQuiz(),qz=state.quiz;if(qz&&qz.mode==='tower'){const old=wrap.querySelector('.bossBanner,.bossPanel');const tier=v34TowerTier(qz.towerFloor||1);if(old){const name=old.querySelector('.bossName');if(name)name.textContent=`${tier.icon} 忘却の塔 ${qz.towerFloor}階`;const meta=old.querySelector('.bossMeta,.small');if(meta)meta.textContent=`${V34_TOWER_QUESTIONS}問中${qz.towerGoal}問正解で突破`;}}return wrap;};
+const v34OldRenderResult=renderResult;
+renderResult=function(){const wrap=v34OldRenderResult(),qz=state.quiz;if(qz&&qz.mode==='tower'){const ok=(qz.results||[]).filter(r=>r.correct).length,win=!!qz.v34Win,score=wrap.querySelector('.resultScore'),icon=score&&score.querySelector('.icon'),note=score&&score.querySelector('.small');if(icon)icon.textContent=win?'🌀✨':'🌫️';if(note)note.textContent=win?`${qz.towerFloor}階突破！ 塔メダル+${qz.v34Medals||0}`:`${qz.towerFloor}階はあと${Math.max(0,(qz.towerGoal||3)-ok)}問で突破`;const back=[...wrap.querySelectorAll('button')].find(b=>b.textContent.includes('王国へ戻る'));if(back){back.textContent=win?'次の階を確認する':'塔へ戻る';back.onclick=()=>{state.screen='v34tower';render();};}}return wrap;};
+const v34OldRenderHome=renderHome;
+renderHome=function(){ensureV34();const wrap=v34OldRenderHome(),footer=wrap.querySelector('.footerNote');const v=state.v34,card=el('div',{className:'v34HomeCard section'},[el('div',{className:'v34HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.3.4'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},'🌀 忘却の塔')]),el('span',{className:'pill'},`最高 ${v.towerBestFloor}階`)]),el('div',{className:'small',style:{marginTop:'6px'}},`通常学習で鍵を集め、5問の短い塔に挑戦。現在 🔑${v.towerKeys}・塔メダル${v.towerMedals}枚。`),el('div',{className:'grid2',style:{marginTop:'10px'}},[el('button',{className:'primary',onclick:()=>{state.screen='v34tower';render()}},'塔に挑戦'),el('button',{className:'secondary',onclick:()=>{state.screen='v34quests';render()}},'クエスト')])]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v34OldRender=render;
+render=function(){ensureV34();if(state.screen==='v34tower'||state.screen==='v34quests'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(state.screen==='v34tower'?renderV34Tower():renderV34QuestBoard());return;}return v34OldRender();};
+
+
+
+// ================= Ver.3.5 companion growth =================
+const V35_MAX_LEVEL=10;
+function ensureV35(){
+  ensureV34();
+  if(!state.v35||typeof state.v35!=='object')state.v35={};
+  const v=state.v35;
+  if(!v.companionProgress||typeof v.companionProgress!=='object'||Array.isArray(v.companionProgress))v.companionProgress={};
+  for(const id of (state.companions||[])){
+    if(!v.companionProgress[id]||typeof v.companionProgress[id]!=='object')v.companionProgress[id]={level:1,xp:0};
+    const p=v.companionProgress[id];
+    if(!Number.isFinite(p.level))p.level=1;
+    if(!Number.isFinite(p.xp))p.xp=0;
+    p.level=Math.max(1,Math.min(V35_MAX_LEVEL,Math.floor(p.level)));
+    p.xp=Math.max(0,Math.floor(p.xp));
+    if(p.level>=V35_MAX_LEVEL)p.xp=0;
+  }
+  return v;
+}
+function v35Progress(id){const v=ensureV35();if(!v.companionProgress[id])v.companionProgress[id]={level:1,xp:0};return v.companionProgress[id];}
+function v35Need(level){return 8+level*4;}
+function v35AddXp(id,amount){
+  if(!(state.companions||[]).includes(id)||amount<=0)return 0;
+  const p=v35Progress(id);let gained=0;
+  while(amount>0&&p.level<V35_MAX_LEVEL){const need=v35Need(p.level),take=Math.min(amount,need-p.xp);p.xp+=take;amount-=take;gained+=take;if(p.xp>=need){p.level++;p.xp=0;addEvent('🌟',`${(COMPANIONS.find(c=>c.id===id)||{}).name||'仲間'} がLv.${p.level}になった`);}}
+  if(p.level>=V35_MAX_LEVEL)p.xp=0;
+  return gained;
+}
+function v35OwnedProgress(){return (state.companions||[]).map(id=>({id,...v35Progress(id)}));}
+function v35TotalLevels(){return v35OwnedProgress().reduce((a,p)=>a+p.level,0);}
+function v35PartyLevelSum(){let ids=[];try{ids=activePartyIds();}catch(e){ids=state.party&&state.party.length?state.party:(state.companions||[]);}return (ids||[]).slice(0,3).reduce((a,id)=>a+v35Progress(id).level,0);}
+function v35TowerMedalBonus(){const n=v35PartyLevelSum();return n>=25?2:n>=15?1:0;}
+function v35Train(id,medals){
+  const v34=ensureV34(),p=v35Progress(id);if(p.level>=V35_MAX_LEVEL){showToast('この仲間は最大レベルです');return;}const spend=Math.min(medals,v34.towerMedals);if(spend<1){showToast('塔メダルが足りません');return;}v34.towerMedals-=spend;const gained=v35AddXp(id,spend*5);showToast(`🌟 経験値 +${gained}`);save();render();
+}
+function v35CompCard(c){
+  const p=v35Progress(c.id),need=v35Need(p.level),pct=p.level>=V35_MAX_LEVEL?100:Math.round(p.xp/need*100),isParty=(state.party||[]).includes(c.id);
+  return el('div',{className:'v35CompCard '+(isParty?'party':'')},[
+    el('div',{className:'v35CompIcon'},c.icon),
+    el('div',{className:'v35CompMain'},[
+      el('div',{className:'v35CompHead'},[el('div',{className:'v35CompName'},`${c.name}${isParty?' ⭐':''}`),el('div',{className:'v35Level'},`Lv.${p.level}`)]),
+      el('div',{className:'small'},companionEffectText(c.id)),
+      el('div',{className:'bar',style:{marginTop:'6px'}},el('div',{style:{width:pct+'%'}})),
+      p.level>=V35_MAX_LEVEL?el('div',{className:'v35Max'},'MAX LEVEL'):el('div',{className:'v35XpText'},`経験値 ${p.xp}/${need}`),
+      p.level>=V35_MAX_LEVEL?null:el('div',{className:'v35TrainBtns'},[
+        el('button',{className:'v35TrainBtn',disabled:ensureV34().towerMedals<1,onclick:()=>v35Train(c.id,1)},'メダル1枚 → XP5'),
+        el('button',{className:'v35TrainBtn',disabled:ensureV34().towerMedals<5,onclick:()=>v35Train(c.id,5)},'5枚まとめて')
+      ])
+    ])
+  ]);
+}
+function renderV35CompanionGrowth(){
+  const v34=ensureV34(),owned=COMPANIONS.filter(c=>(state.companions||[]).includes(c.id)),total=v35TotalLevels(),party=v35PartyLevelSum(),bonus=v35TowerMedalBonus();
+  const wrap=el('div',{className:'screen fade'});wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`塔メダル ${v34.towerMedals}`)]));
+  wrap.appendChild(el('div',{className:'v35Hero'},[el('div',{className:'v35HeroIcon'},'🤝✨'),el('div',{className:'v32Version'},'VER.3.5 COMPANION GROWTH'),el('h2',{},'仲間育成の広場'),el('p',{},'塔を突破すると編成中の仲間が成長します。塔メダルを使えば、好きな仲間を短時間で訓練できます。') ]));
+  wrap.appendChild(el('div',{className:'v35Summary'},[el('div',{className:'stat'},[el('div',{className:'num'},owned.length),el('div',{className:'small'},'仲間')]),el('div',{className:'stat'},[el('div',{className:'num'},total),el('div',{className:'small'},'総レベル')]),el('div',{className:'stat'},[el('div',{className:'num'},party),el('div',{className:'small'},'編成育成力')])]));
+  wrap.appendChild(el('div',{className:'v35Bonus'},bonus?`現在の絆ボーナス：塔突破時の塔メダル +${bonus}。編成3体の合計Lv.15で+1、Lv.25で+2になります。`:'編成3体の合計Lv.15で、塔突破時の塔メダルが+1されます。'));
+  if(!owned.length)wrap.appendChild(el('div',{className:'card section'},[el('div',{style:{fontWeight:'1000'}},'まだ仲間がいません'),el('div',{className:'small',style:{marginTop:'5px'}},'今日の報酬や宝箱で仲間を迎えると、ここで育成できます。')]));
+  else{wrap.appendChild(el('div',{className:'sectionTitle section'},[el('span',{},'仲間一覧'),el('button',{className:'ghost',onclick:()=>{state.screen='party';render()}},'編成を変える')]));wrap.appendChild(el('div',{className:'v35CompList'},owned.map(v35CompCard)));}
+  return wrap;
+}
+const v35OldOpenChest=openChest;
+openChest=function(){const r=v35OldOpenChest();ensureV35();return r;};
+const v35OldClaimDailyReward=claimDailyReward;
+claimDailyReward=function(id){const before=(state.companions||[]).slice();const r=v35OldClaimDailyReward(id);if((state.companions||[]).length!==before.length)ensureV35();return r;};
+const v35OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){v35OldFinalize(qz);if(!qz||qz.mode!=='tower'||!qz.v34Win||qz.v35Finalized)return;let ids=[];try{ids=activePartyIds();}catch(e){ids=state.party&&state.party.length?state.party:(state.companions||[]);}ids=(ids||[]).slice(0,3);const xp=2+Math.floor((qz.towerFloor||1)/20);ids.forEach(id=>v35AddXp(id,xp));const bonus=v35TowerMedalBonus();if(bonus){ensureV34().towerMedals+=bonus;qz.v34Medals=(qz.v34Medals||0)+bonus;}qz.v35PartyXp=xp;qz.v35PartyCount=ids.length;qz.v35MedalBonus=bonus;qz.v35Finalized=true;save();};
+const v35OldRenderResult=renderResult;
+renderResult=function(){const wrap=v35OldRenderResult(),qz=state.quiz;if(qz&&qz.mode==='tower'&&qz.v34Win&&qz.v35Finalized){const target=wrap.querySelector('.resultScore')||wrap.firstChild;const card=el('div',{className:'v35Bonus'},`🤝 編成中の仲間 ${qz.v35PartyCount||0}体に経験値 +${qz.v35PartyXp||0}${qz.v35MedalBonus?`／絆ボーナスで塔メダル +${qz.v35MedalBonus}`:''}`);if(target&&target.parentNode)target.parentNode.insertBefore(card,target.nextSibling);}return wrap;};
+const v35OldRenderTower=renderV34Tower;
+renderV34Tower=function(){const wrap=v35OldRenderTower(),btn=el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v35companions';render()}},'🤝 仲間を育てる');wrap.appendChild(btn);return wrap;};
+const v35OldRenderHome=renderHome;
+renderHome=function(){ensureV35();const wrap=v35OldRenderHome(),footer=wrap.querySelector('.footerNote');const card=el('div',{className:'v35HomeCard section'},[el('div',{className:'v35HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.3.5'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},'🤝 仲間育成')]),el('span',{className:'pill'},`総Lv.${v35TotalLevels()}`)]),el('div',{className:'small',style:{marginTop:'6px'}},`塔メダルで仲間を訓練。編成育成力は${v35PartyLevelSum()}、塔の絆ボーナスは+${v35TowerMedalBonus()}です。`),el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v35companions';render()}},'仲間育成の広場へ')]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v35OldRender=render;
+render=function(){ensureV35();if(state.screen==='v35companions'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV35CompanionGrowth());return;}return v35OldRender();};
+
 try{v31MaybeRecoverCorruptMain();}catch(e){v32StorageStatus={ok:false,message:(e&&e.message)||'保存領域にアクセスできません。'};}
 ensureV31();state=v32SanitizeObject(state);v32EnsureCurrentDay();v32SafeStorageTest();
-document.title='ロスト・クリスタル Ver.3.3 問題拡充・完成版';
-try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.3.3初回起動',true);}catch(e){}
+document.title='ロスト・クリスタル Ver.3.5 仲間育成';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.3.5初回起動',true);}catch(e){}
 window.addEventListener('focus',()=>{if(v32EnsureCurrentDay())render();});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&v32EnsureCurrentDay())render();});
 render();
+
+
+
+/* ================= Ver.3.6 記憶の強敵 / 高難度ボス ================= */
+const V36_BOSS_TIERS={
+  hard:{id:'hard',name:'ハード',icon:'🔥',questions:7,goal:5,tower:10,levels:10,medals:5,minDifficulty:2},
+  expert:{id:'expert',name:'エキスパート',icon:'⚡',questions:9,goal:7,tower:30,levels:25,medals:10,minDifficulty:2},
+  legend:{id:'legend',name:'レジェンド',icon:'👑',questions:11,goal:9,tower:60,levels:45,medals:20,minDifficulty:3}
+};
+const V36_BOSSES=[
+  ...WORLD_AREAS.map(a=>({id:a.id,name:a.boss,icon:a.icon,subject:a.subject,baseCleared:()=>!!state.chapterCleared[a.id]})),
+  {id:'final',name:'忘却の魔王・残響',icon:'🌑',subject:'すべて',baseCleared:()=>!!state.finalCleared}
+];
+function ensureV36(){
+  ensureV35();
+  if(!state.v36||typeof state.v36!=='object'||Array.isArray(state.v36))state.v36={};
+  const v=state.v36;
+  if(!v.eliteClears||typeof v.eliteClears!=='object'||Array.isArray(v.eliteClears))v.eliteClears={};
+  V36_BOSSES.forEach(b=>{if(!v.eliteClears[b.id]||typeof v.eliteClears[b.id]!=='object')v.eliteClears[b.id]={};});
+  return v;
+}
+function v36ClearKey(bossId,tierId){return !!(ensureV36().eliteClears[bossId]||{})[tierId];}
+function v36Unlocked(boss,tier){return boss.baseCleared()&&ensureV34().towerBestFloor>=tier.tower&&v35TotalLevels()>=tier.levels;}
+function v36TotalClears(){const v=ensureV36();return V36_BOSSES.reduce((n,b)=>n+Object.values(v.eliteClears[b.id]||{}).filter(Boolean).length,0);}
+function v36Title(){const n=v36TotalClears();return n>=15?'記憶を超えし王':n>=10?'伝説の討伐者':n>=5?'強敵を追う者':n>=1?'再戦の挑戦者':'記憶の入口';}
+function v36PickQuestions(subject,tier){
+  let pool=QUESTIONS.filter(q=>(subject==='すべて'||q.subject===subject)&&Number(q.difficulty||1)>=tier.minDifficulty);
+  if(pool.length<tier.questions)pool=QUESTIONS.filter(q=>subject==='すべて'||q.subject===subject);
+  const recent=new Set((((state.v31||{}).questionHistory)||[]).slice(-50).map(x=>x.id));
+  const fresh=pool.filter(q=>!recent.has(q.id)),old=pool.filter(q=>recent.has(q.id));
+  return shuffle(fresh).concat(shuffle(old)).slice(0,tier.questions);
+}
+function v36StartBoss(bossId,tierId){
+  const boss=V36_BOSSES.find(b=>b.id===bossId),tier=V36_BOSS_TIERS[tierId];
+  if(!boss||!tier||!v36Unlocked(boss,tier)){showToast('まだ挑戦条件を満たしていません');return;}
+  const qs=v36PickQuestions(boss.subject,tier);
+  if(qs.length<tier.questions){showToast('出題できる問題が足りません');return;}
+  state.quiz={mode:'eliteBoss',subject:boss.subject,questions:qs,index:0,answered:false,selected:null,results:[],rewards:{coins:0,mana:0,stone:0,book:0,crystal:0,map:0,relic:0},start:Date.now(),end:null,score:0,combo:0,bestCombo:0,hintUsed:false,boss:{name:`${boss.name}【${tier.name}】`,icon:boss.icon},eliteBossId:boss.id,eliteTierId:tier.id,eliteGoal:tier.goal};
+  state.screen='quiz';save();render();
+}
+function v36TierButton(boss,tier){
+  const clear=v36ClearKey(boss.id,tier.id),unlocked=v36Unlocked(boss,tier),base=boss.baseCleared();
+  let sub=clear?'撃破済み・再戦可能':!base?'元のボスを先に倒そう':`塔${tier.tower}階・仲間総Lv.${tier.levels}`;
+  return el('button',{className:`v36Tier ${clear?'clear':''}`,disabled:!unlocked,onclick:()=>v36StartBoss(boss.id,tier.id)},[
+    el('div',{className:'v36TierHead'},[el('b',{},`${tier.icon} ${tier.name}`),el('span',{},clear?'✓':`${tier.questions}問`)]),
+    el('small',{},sub),el('div',{className:'v36TierGoal'},`${tier.goal}/${tier.questions}正解　初回 🌀${tier.medals}`)
+  ]);
+}
+function renderV36BossHub(){
+  ensureV36();const best=ensureV34().towerBestFloor,totalLv=v35TotalLevels(),clears=v36TotalClears();
+  const wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`${clears}/15 撃破`)]));
+  wrap.appendChild(el('div',{className:'v36Hero'},[el('div',{className:'v36HeroIcon'},'🐲'),el('div',{className:'v32Version'},'VER.3.6 MEMORY BOSS'),el('h2',{},'記憶の強敵'),el('p',{},'倒したボスが、より強い記憶の残像として再登場。初回撃破報酬だけを集め、仲間と塔の成長を試そう。')]));
+  wrap.appendChild(el('div',{className:'v36Summary'},[el('div',{className:'stat'},[el('div',{className:'num'},best),el('div',{className:'small'},'塔最高階')]),el('div',{className:'stat'},[el('div',{className:'num'},totalLv),el('div',{className:'small'},'仲間総Lv.')]),el('div',{className:'stat'},[el('div',{className:'num'},clears),el('div',{className:'small'},'強敵撃破')])]));
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{style:{fontWeight:'1000'}},`称号：${v36Title()}`),el('div',{className:'small',style:{marginTop:'5px'}},'再戦では初回の塔メダル報酬はありません。通常の正解報酬は得られます。元のストーリーやクリスタル取得状態は変化しません。')]));
+  V36_BOSSES.forEach(b=>wrap.appendChild(el('div',{className:'v36BossCard'},[
+    el('div',{className:'v36BossHead'},[el('div',{className:'v36BossIcon'},b.icon),el('div',{className:'grow'},[el('div',{className:'v36BossName'},b.name),el('div',{className:'small'},b.baseCleared()?`${b.subject}の記憶戦`:'元のボス未撃破')]),el('span',{className:b.baseCleared()?'qualityOk':'lockBadge'},b.baseCleared()?'開放':'未開放')]),
+    el('div',{className:'v36TierGrid'},Object.values(V36_BOSS_TIERS).map(t=>v36TierButton(b,t)))
+  ])));
+  return wrap;
+}
+const v36OldGoal=v18Goal;
+v18Goal=function(qz){if(qz&&qz.mode==='eliteBoss')return qz.eliteGoal||5;return v36OldGoal(qz);};
+const v36OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){
+  v36OldFinalize(qz);
+  if(!qz||qz.mode!=='eliteBoss'||qz.v36Finalized)return;
+  const boss=V36_BOSSES.find(b=>b.id===qz.eliteBossId),tier=V36_BOSS_TIERS[qz.eliteTierId],ok=(qz.results||[]).filter(r=>r.correct).length,win=!!tier&&ok>=tier.goal;
+  if(win&&boss&&tier){
+    const first=!v36ClearKey(boss.id,tier.id);
+    if(first){ensureV36().eliteClears[boss.id][tier.id]=true;ensureV34().towerMedals+=tier.medals;if(tier.id==='legend'){state.resources.relic=(state.resources.relic||0)+1;qz.finalBonus={...(qz.finalBonus||{}),relic:1};}qz.v36FirstReward=tier.medals;addEvent('🐲',`${boss.name} ${tier.name}を初撃破`);}
+    qz.clearStory={title:`${boss.name}【${tier.name}】撃破`,text:[`${ok}/${tier.questions}問正解。記憶の残像を打ち破った。`,first?`初回報酬として塔メダルを${tier.medals}枚獲得した。`:'再戦勝利。初回報酬はすでに獲得済み。']};
+  }else if(boss&&tier){qz.clearStory={title:`${boss.name}【${tier.name}】再挑戦`,text:[`今回は${ok}/${tier.questions}問正解。勝利には${tier.goal}問正解が必要。`,'塔と仲間を育て、苦手問題を復習して再挑戦しよう。']};}
+  qz.v36Win=win;qz.v36Finalized=true;save();
+};
+const v36OldRenderQuiz=renderQuiz;
+renderQuiz=function(){
+  const wrap=v36OldRenderQuiz(),qz=state.quiz;
+  if(qz&&qz.mode==='eliteBoss'){
+    const tier=V36_BOSS_TIERS[qz.eliteTierId],existing=wrap.querySelector('.bossBanner,.bossPanel');
+    if(!existing){const box=el('div',{className:'v36QuizBanner'},[el('div',{className:'v36QuizBoss'},`${qz.boss.icon} ${qz.boss.name}`),el('div',{className:'small'},`${tier.goal}/${tier.questions}問正解で撃破`)]);const quizBox=wrap.querySelector('.quizBox');if(quizBox)wrap.insertBefore(box,quizBox);else wrap.insertBefore(box,wrap.firstChild);}
+  }
+  return wrap;
+};
+const v36OldRenderResult=renderResult;
+renderResult=function(){
+  const wrap=v36OldRenderResult(),qz=state.quiz;
+  if(qz&&qz.mode==='eliteBoss'&&qz.v36Finalized){
+    const tier=V36_BOSS_TIERS[qz.eliteTierId],ok=(qz.results||[]).filter(r=>r.correct).length,score=wrap.querySelector('.resultScore');
+    if(score){const icon=score.querySelector('.icon'),note=score.querySelector('.small');if(icon)icon.textContent=qz.v36Win?'🐲✨':'🛡️';if(note)note.textContent=qz.v36Win?(qz.v36FirstReward?`初回撃破！ 塔メダル+${qz.v36FirstReward}`:'再戦勝利！'):`${ok}/${tier.questions}問正解`;}
+    const back=[...wrap.querySelectorAll('button')].find(b=>b.textContent.includes('王国へ戻る'));if(back){back.textContent='記憶の強敵へ戻る';back.onclick=()=>{state.screen='v36bosses';render();};}
+  }
+  return wrap;
+};
+const v36OldRenderHome=renderHome;
+renderHome=function(){
+  ensureV36();const wrap=v36OldRenderHome(),footer=wrap.querySelector('.footerNote'),clears=v36TotalClears();
+  const card=el('div',{className:'v36HomeCard section'},[el('div',{className:'v36BossHead'},[el('div',{className:'v36BossIcon'},'🐲'),el('div',{className:'grow'},[el('div',{className:'v32Version'},'VER.3.6'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},'記憶の強敵')]),el('span',{className:'pill'},`${clears}/15`)]),el('div',{className:'small',style:{marginTop:'6px'}},`塔到達階と仲間総レベルで高難度が開放。現在の称号は「${v36Title()}」。`),el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v36bosses';render()}},'高難度ボスに挑戦')]);
+  if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;
+};
+const v36OldRender=render;
+render=function(){ensureV36();if(state.screen==='v36bosses'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV36BossHub());return;}return v36OldRender();};
+
+const v36Style=document.createElement('style');v36Style.textContent=`
+.v36Hero{border-radius:28px;padding:18px 16px;text-align:center;background:linear-gradient(145deg,rgba(239,68,68,.18),rgba(124,58,237,.18),rgba(15,23,42,.40));border:1px solid rgba(252,165,165,.30);box-shadow:0 16px 42px rgba(0,0,0,.20)}.v36HeroIcon{font-size:58px}.v36Hero h2{font-size:21px;margin:5px 0}.v36Hero p{font-size:12px;line-height:1.75;color:#dbeafe}.v36Summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.v36BossCard,.v36HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(255,107,107,.11),rgba(162,155,254,.09));border:1px solid rgba(252,165,165,.25);padding:13px;margin-top:10px}.v36BossHead{display:flex;align-items:center;gap:10px}.v36BossIcon{font-size:34px;width:42px;text-align:center}.v36BossName{font-size:14px;font-weight:1000}.v36TierGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.v36Tier{min-height:102px;text-align:left;border-radius:15px;padding:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}.v36Tier.clear{background:rgba(78,205,196,.11);border-color:rgba(78,205,196,.38)}.v36TierHead{display:flex;justify-content:space-between;gap:4px;font-size:11px}.v36Tier small{display:block;color:#cbd5e1;font-size:9px;line-height:1.45;margin-top:5px}.v36TierGoal{font-size:9px;color:#fde68a;margin-top:5px;line-height:1.4}.v36QuizBanner{border-radius:18px;background:linear-gradient(135deg,rgba(239,68,68,.16),rgba(124,58,237,.13));border:1px solid rgba(252,165,165,.30);padding:11px 12px;margin:0 0 10px;text-align:center}.v36QuizBoss{font-size:14px;font-weight:1000;margin-bottom:3px}@media(max-width:390px){.v36TierGrid{grid-template-columns:1fr}.v36Tier{min-height:auto}.v36Summary{grid-template-columns:1fr 1fr 1fr}}
+`;document.head.appendChild(v36Style);
+document.title='ロスト・クリスタル Ver.3.6 記憶の強敵';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.3.6初回起動',true);}catch(e){}
+
+// ================= Ver.3.7 evolution / collection =================
+function ensureV37(){
+  ensureV36();
+  if(!state.v37||typeof state.v37!=='object')state.v37={};
+  const v=state.v37;
+  if(!v.evolved||typeof v.evolved!=='object'||Array.isArray(v.evolved))v.evolved={};
+  for(const c of COMPANIONS)if(typeof v.evolved[c.id]!=='boolean')v.evolved[c.id]=false;
+  if(!v.collectionClaims||typeof v.collectionClaims!=='object'||Array.isArray(v.collectionClaims))v.collectionClaims={};
+  return v;
+}
+function v37IsEvolved(id){return !!ensureV37().evolved[id];}
+function v37EvolutionCost(c){const medals=c.rarity==='SSR'?40:c.rarity==='SR'?30:20;return {medals,relic:1};}
+function v37CanEvolve(c){const p=v35Progress(c.id),cost=v37EvolutionCost(c);return (state.companions||[]).includes(c.id)&&p.level>=V35_MAX_LEVEL&&!v37IsEvolved(c.id)&&ensureV34().towerMedals>=cost.medals&&(state.resources.relic||0)>=cost.relic;}
+function v37Evolve(id){
+  const c=COMPANIONS.find(x=>x.id===id);if(!c||(state.companions||[]).includes(id)===false)return;
+  const p=v35Progress(id),cost=v37EvolutionCost(c);
+  if(v37IsEvolved(id)){showToast('すでに進化しています');return;}
+  if(p.level<V35_MAX_LEVEL){showToast('Lv.10で進化できます');return;}
+  if(ensureV34().towerMedals<cost.medals||(state.resources.relic||0)<cost.relic){showToast('進化素材が足りません');return;}
+  ensureV34().towerMedals-=cost.medals;state.resources.relic-=cost.relic;ensureV37().evolved[id]=true;
+  addEvent('🌠',`${c.name}が進化した`);showToast(`🌠 ${c.name}が進化！`);save();render();
+}
+function v37EvolvedCount(){return COMPANIONS.filter(c=>v37IsEvolved(c.id)).length;}
+function v37PartyEvolutionBonus(){let ids=[];try{ids=activePartyIds();}catch(e){ids=state.party||[];}return (ids||[]).slice(0,3).some(v37IsEvolved)?1:0;}
+function v37TowerMilestones(){return [5,10,20,30,50,100];}
+function v37CollectionRows(){
+  const owned=(state.companions||[]).filter(id=>COMPANIONS.some(c=>c.id===id)).length;
+  const evolved=v37EvolvedCount();
+  const elite=v36TotalClears();
+  const best=ensureV34().towerBestFloor;
+  const tower=v37TowerMilestones().filter(n=>best>=n).length;
+  const bKeys=Object.keys(BUILDINGS);let bNow=0,bMax=0;
+  for(const k of bKeys){const max=BUILDINGS[k].max||0;bMax+=max;bNow+=Math.min(max,state.buildings[k]||0);}
+  return [
+    {id:'companions',icon:'🤝',name:'仲間図鑑',now:owned,max:COMPANIONS.length,text:'仲間を迎える'},
+    {id:'evolution',icon:'🌠',name:'進化図鑑',now:evolved,max:COMPANIONS.length,text:'Lv.10の仲間を進化'},
+    {id:'buildings',icon:'🏰',name:'王国復興',now:bNow,max:bMax,text:'建物レベルを上げる'},
+    {id:'elite',icon:'🐲',name:'記憶の強敵',now:elite,max:15,text:'高難度ボスを撃破'},
+    {id:'tower',icon:'🗼',name:'塔の節目',now:tower,max:6,text:'100階までの節目を突破'}
+  ];
+}
+function v37CollectionPercent(){const rows=v37CollectionRows(),now=rows.reduce((a,r)=>a+r.now,0),max=rows.reduce((a,r)=>a+r.max,0);return max?Math.floor(now/max*100):0;}
+function v37CollectionTitle(){const p=v37CollectionPercent();return p>=100?'知恵の王国・大完成':p>=80?'伝説の収集王':p>=60?'王国の大記録者':p>=40?'輝く図鑑の守り手':p>=20?'冒険の収集家':'はじまりの記録者';}
+function v37EvolutionCard(c){
+  const owned=(state.companions||[]).includes(c.id),p=owned?v35Progress(c.id):{level:0,xp:0},evolved=v37IsEvolved(c.id),cost=v37EvolutionCost(c);
+  return el('div',{className:`v37EvolutionCard ${evolved?'evolved':''} ${owned?'':'locked'}`},[
+    el('div',{className:'v37EvolutionIcon'},owned?c.icon:'❔'),
+    el('div',{className:'grow'},[
+      el('div',{className:'v37EvolutionHead'},[el('b',{},owned?c.name:'未発見の仲間'),el('span',{className:'rarity',style:{color:RARITY_COLOR[c.rarity]}},c.rarity)]),
+      el('div',{className:'small'},evolved?'🌠 進化済み・新しい輝きをまとっている':owned?`Lv.${p.level}／Lv.10で進化可能`:'宝箱や報酬で仲間にしよう'),
+      owned&&!evolved?el('div',{className:'v37Cost'},`必要：塔メダル ${cost.medals} ＋ 古代の核 ${cost.relic}`):null
+    ]),
+    owned?el('button',{className:'claimBtn',disabled:evolved||!v37CanEvolve(c),onclick:()=>v37Evolve(c.id)},evolved?'進化済み':p.level<V35_MAX_LEVEL?'Lv.10必要':'進化'):null
+  ]);
+}
+function renderV37Evolution(){
+  ensureV37();const wrap=el('div',{className:'screen fade'}),bonus=v37PartyEvolutionBonus();
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`🌠 ${v37EvolvedCount()}/${COMPANIONS.length}`)]));
+  wrap.appendChild(el('div',{className:'v37Hero'},[el('div',{className:'v37HeroIcon'},'🌠'),el('div',{className:'v32Version'},'VER.3.7 EVOLUTION'),el('h2',{},'仲間進化の聖域'),el('p',{},'Lv.10になった仲間に塔メダルと古代の核を使うと、姿と記録が進化します。進化した仲間を編成すると、塔で得る仲間経験値が増えます。')]));
+  wrap.appendChild(el('div',{className:'v37ResourceRow'},[el('div',{className:'stat'},[el('div',{className:'num'},ensureV34().towerMedals),el('div',{className:'small'},'塔メダル')]),el('div',{className:'stat'},[el('div',{className:'num'},state.resources.relic||0),el('div',{className:'small'},'古代の核')]),el('div',{className:'stat'},[el('div',{className:'num'},bonus?'+1':'なし'),el('div',{className:'small'},'塔XP補正')])]));
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{style:{fontWeight:'1000'}},'進化ボーナス'),el('div',{className:'small',style:{marginTop:'5px'}},bonus?'編成中に進化済み仲間がいるため、塔突破時の仲間経験値が全員+1されます。':'進化済み仲間を1体以上編成すると、塔突破時の仲間経験値が全員+1されます。') ]));
+  wrap.appendChild(el('div',{className:'v37EvolutionList'},COMPANIONS.map(v37EvolutionCard)));
+  return wrap;
+}
+function renderV37Collection(){
+  const rows=v37CollectionRows(),pct=v37CollectionPercent(),wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`${pct}% 完成`)]));
+  wrap.appendChild(el('div',{className:'v37CollectionHero'},[el('div',{className:'v37HeroIcon'},'📚✨'),el('div',{className:'v32Version'},'VER.3.7 COLLECTION'),el('h2',{},'王国大図鑑'),el('div',{className:'v37BigPercent'},`${pct}%`),el('p',{},`称号「${v37CollectionTitle()}」。仲間、進化、建物、強敵、塔の記録を一つの長期目標として集めます。`)]));
+  for(const r of rows){const p=r.max?Math.round(r.now/r.max*100):0;wrap.appendChild(el('div',{className:'v37CollectionRow'},[el('div',{className:'v37CollectionIcon'},r.icon),el('div',{className:'grow'},[el('div',{className:'v37CollectionHead'},[el('b',{},r.name),el('span',{},`${r.now}/${r.max}`)]),el('div',{className:'bar',style:{marginTop:'6px'}},el('div',{style:{width:p+'%'}})),el('div',{className:'small',style:{marginTop:'4px'}},r.text)])]));}
+  wrap.appendChild(el('button',{className:'secondary section',onclick:()=>{state.screen='v37evolution';render()}},'🌠 仲間を進化させる'));
+  return wrap;
+}
+const v37OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){
+  const before=qz&&qz.mode==='tower'&&qz.v34Win&&!qz.v37Finalized?v37PartyEvolutionBonus():0;
+  v37OldFinalize(qz);
+  if(!qz||qz.mode!=='tower'||!qz.v34Win||qz.v37Finalized)return;
+  if(before){let ids=[];try{ids=activePartyIds();}catch(e){ids=state.party||[];}ids=(ids||[]).slice(0,3);ids.forEach(id=>v35AddXp(id,1));qz.v37EvolutionXp=1;}
+  qz.v37Finalized=true;save();
+};
+const v37OldRenderResult=renderResult;
+renderResult=function(){const wrap=v37OldRenderResult(),qz=state.quiz;if(qz&&qz.mode==='tower'&&qz.v37EvolutionXp){const target=wrap.querySelector('.v35Bonus')||wrap.querySelector('.resultScore');const card=el('div',{className:'v37ResultBonus'},'🌠 進化の輝きで、編成中の仲間経験値がさらに +1');if(target&&target.parentNode)target.parentNode.insertBefore(card,target.nextSibling);}return wrap;};
+const v37OldRenderGrowth=renderV35CompanionGrowth;
+renderV35CompanionGrowth=function(){const wrap=v37OldRenderGrowth();wrap.appendChild(el('button',{className:'secondary',style:{marginTop:'10px'},onclick:()=>{state.screen='v37evolution';render()}},'🌠 仲間を進化させる'));return wrap;};
+const v37OldRenderHome=renderHome;
+renderHome=function(){ensureV37();const wrap=v37OldRenderHome(),footer=wrap.querySelector('.footerNote'),pct=v37CollectionPercent();const card=el('div',{className:'v37HomeCard section'},[el('div',{className:'v37HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.3.7'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},'🌠 進化と王国大図鑑')]),el('span',{className:'pill'},`${pct}%`)]),el('div',{className:'small',style:{marginTop:'6px'}},`進化済み仲間 ${v37EvolvedCount()}/${COMPANIONS.length}。図鑑称号は「${v37CollectionTitle()}」。`),el('div',{className:'grid2',style:{marginTop:'9px'}},[el('button',{className:'secondary',onclick:()=>{state.screen='v37evolution';render()}},'仲間進化'),el('button',{className:'secondary',onclick:()=>{state.screen='v37collection';render()}},'王国大図鑑')])]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v37OldRender=render;
+render=function(){ensureV37();if(state.screen==='v37evolution'||state.screen==='v37collection'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(state.screen==='v37evolution'?renderV37Evolution():renderV37Collection());return;}return v37OldRender();};
+const v37Style=document.createElement('style');v37Style.textContent=`
+.v37Hero,.v37CollectionHero{border-radius:28px;padding:18px 16px;text-align:center;background:linear-gradient(145deg,rgba(255,209,102,.20),rgba(124,58,237,.18),rgba(15,23,42,.38));border:1px solid rgba(255,209,102,.34);box-shadow:0 16px 42px rgba(0,0,0,.20)}.v37HeroIcon{font-size:58px}.v37Hero h2,.v37CollectionHero h2{font-size:21px;margin:5px 0}.v37Hero p,.v37CollectionHero p{font-size:12px;line-height:1.75;color:#dbeafe}.v37ResourceRow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.v37EvolutionList{display:flex;flex-direction:column;gap:8px;margin-top:12px}.v37EvolutionCard{display:flex;align-items:center;gap:10px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);padding:11px}.v37EvolutionCard.evolved{background:linear-gradient(135deg,rgba(255,209,102,.16),rgba(162,155,254,.12));border-color:rgba(255,209,102,.42)}.v37EvolutionCard.locked{opacity:.48;filter:grayscale(.7)}.v37EvolutionIcon{font-size:34px;width:42px;text-align:center}.v37EvolutionHead{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}.v37Cost{font-size:10px;color:#fde68a;margin-top:4px}.v37BigPercent{font-size:48px;font-weight:1000;color:#ffd166;margin:4px 0}.v37CollectionRow{display:flex;align-items:center;gap:10px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);padding:11px;margin-top:9px}.v37CollectionIcon{font-size:30px;width:38px;text-align:center}.v37CollectionHead{display:flex;justify-content:space-between;gap:8px;font-size:12px}.v37ResultBonus{border-radius:16px;background:rgba(255,209,102,.12);border:1px solid rgba(255,209,102,.36);padding:10px 12px;margin:8px 0;color:#fde68a;font-size:12px;font-weight:900}.v37HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(255,209,102,.12),rgba(162,155,254,.10));border:1px solid rgba(255,209,102,.28);padding:13px;margin-top:10px}.v37HomeHead{display:flex;align-items:center;justify-content:space-between;gap:10px}@media(max-width:390px){.v37ResourceRow{grid-template-columns:1fr 1fr 1fr}.v37EvolutionCard{align-items:flex-start}.v37EvolutionCard .claimBtn{margin-top:2px}}
+`;document.head.appendChild(v37Style);
+document.title='ロスト・クリスタル Ver.3.7 進化と王国大図鑑';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.3.7初回起動',true);}catch(e){}
+
+
+/* ================= Ver.3.8 長期クエスト / 図鑑達成報酬 ================= */
+const V38_COLLECTION_REWARDS=[
+  {id:'c20',pct:20,label:'図鑑20%',reward:{keys:1,medals:5}},
+  {id:'c40',pct:40,label:'図鑑40%',reward:{keys:1,medals:10}},
+  {id:'c60',pct:60,label:'図鑑60%',reward:{medals:15,relic:1}},
+  {id:'c80',pct:80,label:'図鑑80%',reward:{medals:20,relic:1}},
+  {id:'c100',pct:100,label:'図鑑100%',reward:{keys:3,medals:30,relic:2}}
+];
+const V38_LONG_QUESTS=[
+  {id:'study500',group:'学習の軌跡',icon:'📖',name:'500問の旅',goal:500,progress:()=>totalAnswered(),reward:{keys:1,medals:5}},
+  {id:'study1000',group:'学習の軌跡',icon:'📚',name:'1000問の知恵',goal:1000,progress:()=>totalAnswered(),reward:{keys:1,medals:10}},
+  {id:'study2000',group:'学習の軌跡',icon:'🧠',name:'2000問の賢者',goal:2000,progress:()=>totalAnswered(),reward:{keys:2,medals:15,relic:1}},
+  {id:'study3500',group:'学習の軌跡',icon:'👑',name:'3500問の大記録',goal:3500,progress:()=>totalAnswered(),reward:{keys:3,medals:30,relic:2}},
+  {id:'tower25',group:'忘却の塔',icon:'🗼',name:'塔25階到達',goal:25,progress:()=>ensureV34().towerBestFloor,reward:{keys:1,medals:8}},
+  {id:'tower50',group:'忘却の塔',icon:'🌌',name:'塔50階到達',goal:50,progress:()=>ensureV34().towerBestFloor,reward:{medals:15,relic:1}},
+  {id:'tower100',group:'忘却の塔',icon:'✨',name:'塔100階到達',goal:100,progress:()=>ensureV34().towerBestFloor,reward:{keys:2,medals:25,relic:2}},
+  {id:'elite5',group:'記憶の強敵',icon:'🐲',name:'強敵5体撃破',goal:5,progress:()=>v36TotalClears(),reward:{medals:10}},
+  {id:'elite10',group:'記憶の強敵',icon:'⚡',name:'強敵10体撃破',goal:10,progress:()=>v36TotalClears(),reward:{medals:15,relic:1}},
+  {id:'elite15',group:'記憶の強敵',icon:'🏆',name:'強敵15体制覇',goal:15,progress:()=>v36TotalClears(),reward:{medals:25,relic:2}},
+  {id:'evo3',group:'仲間進化',icon:'🌠',name:'仲間3体を進化',goal:3,progress:()=>v37EvolvedCount(),reward:{medals:10}},
+  {id:'evo7',group:'仲間進化',icon:'💫',name:'仲間7体を進化',goal:7,progress:()=>v37EvolvedCount(),reward:{medals:20,relic:1}},
+  {id:'evo11',group:'仲間進化',icon:'🌟',name:'全仲間を進化',goal:COMPANIONS.length,progress:()=>v37EvolvedCount(),reward:{keys:2,medals:30,relic:2}}
+];
+function ensureV38(){
+  ensureV37();
+  if(!state.v38||typeof state.v38!=='object'||Array.isArray(state.v38))state.v38={};
+  if(!state.v38.longClaims||typeof state.v38.longClaims!=='object'||Array.isArray(state.v38.longClaims))state.v38.longClaims={};
+  if(!state.v38.collectionClaims||typeof state.v38.collectionClaims!=='object'||Array.isArray(state.v38.collectionClaims))state.v38.collectionClaims={};
+  return state.v38;
+}
+function v38RewardText(r){const a=[];if(r.keys)a.push(`塔の鍵×${r.keys}`);if(r.medals)a.push(`塔メダル×${r.medals}`);if(r.relic)a.push(`古代の核×${r.relic}`);return a.join('・');}
+function v38GrantReward(r){
+  ensureV38();
+  if(r.keys)ensureV34().towerKeys+=r.keys;
+  if(r.medals)ensureV34().towerMedals+=r.medals;
+  if(r.relic)state.resources.relic=(state.resources.relic||0)+r.relic;
+}
+function v38ClaimLong(id){
+  const q=V38_LONG_QUESTS.find(x=>x.id===id),v=ensureV38();
+  if(!q||v.longClaims[id]||Math.min(q.goal,Number(q.progress()||0))<q.goal)return;
+  v38GrantReward(q.reward);v.longClaims[id]=true;addEvent('🏅',`${q.name}を達成`);showToast(`🏅 ${v38RewardText(q.reward)}`);save();render();
+}
+function v38ClaimCollection(id){
+  const x=V38_COLLECTION_REWARDS.find(y=>y.id===id),v=ensureV38(),pct=v37CollectionPercent();
+  if(!x||v.collectionClaims[id]||pct<x.pct)return;
+  v38GrantReward(x.reward);v.collectionClaims[id]=true;addEvent('📚',`${x.label}達成報酬を獲得`);showToast(`📚 ${v38RewardText(x.reward)}`);save();render();
+}
+function v38CompletedLong(){return V38_LONG_QUESTS.filter(q=>Math.min(q.goal,Number(q.progress()||0))>=q.goal).length;}
+function v38ClaimedLong(){const v=ensureV38();return V38_LONG_QUESTS.filter(q=>v.longClaims[q.id]).length;}
+function v38QuestCard(q){
+  const v=ensureV38(),now=Math.min(q.goal,Math.max(0,Number(q.progress()||0))),done=now>=q.goal,claimed=!!v.longClaims[q.id],pct=Math.floor(now/q.goal*100);
+  return el('div',{className:`v38Quest ${done?'done':''} ${claimed?'claimed':''}`},[
+    el('div',{className:'v38QuestIcon'},q.icon),
+    el('div',{className:'grow'},[
+      el('div',{className:'v38QuestHead'},[el('b',{},q.name),el('span',{},`${now}/${q.goal}`)]),
+      el('div',{className:'bar',style:{marginTop:'6px'}},el('div',{style:{width:pct+'%'}})),
+      el('div',{className:'small',style:{marginTop:'4px'}},`報酬：${v38RewardText(q.reward)}`)
+    ]),
+    el('button',{className:'claimBtn',disabled:!done||claimed,onclick:()=>v38ClaimLong(q.id)},claimed?'受取済':done?'受取':'進行中')
+  ]);
+}
+function renderV38LongQuest(){
+  ensureV38();const wrap=el('div',{className:'screen fade'}),done=v38CompletedLong(),claimed=v38ClaimedLong();
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`${claimed}/${V38_LONG_QUESTS.length} 受取`)]));
+  wrap.appendChild(el('div',{className:'v38Hero'},[el('div',{className:'v38HeroIcon'},'🏅'),el('div',{className:'v32Version'},'VER.3.8 LONG QUEST'),el('h2',{},'王国の長期クエスト'),el('p',{},'数週間から数か月かけて達成する大きな目標です。進捗は現在の学習・塔・強敵・進化の記録から自動計算されます。') ]));
+  wrap.appendChild(el('div',{className:'v38Summary'},[el('div',{className:'stat'},[el('div',{className:'num'},done),el('div',{className:'small'},'達成済み')]),el('div',{className:'stat'},[el('div',{className:'num'},claimed),el('div',{className:'small'},'報酬受取')]),el('div',{className:'stat'},[el('div',{className:'num'},V38_LONG_QUESTS.length),el('div',{className:'small'},'全クエスト')])]));
+  const groups=[...new Set(V38_LONG_QUESTS.map(q=>q.group))];
+  groups.forEach(g=>{wrap.appendChild(el('div',{className:'sectionTitle',style:{marginTop:'14px'}},g));V38_LONG_QUESTS.filter(q=>q.group===g).forEach(q=>wrap.appendChild(v38QuestCard(q)));});
+  return wrap;
+}
+function v38CollectionRewardPanel(){
+  const pct=v37CollectionPercent(),v=ensureV38();
+  return el('div',{className:'v38CollectionRewards section'},[
+    el('div',{className:'v38CollectionTitle'},[el('b',{},'🎁 図鑑達成報酬'),el('span',{className:'pill'},`${pct}%`)]),
+    el('div',{className:'small',style:{margin:'5px 0 9px'}},'完成度20%ごとに一度だけ報酬を受け取れます。'),
+    ...V38_COLLECTION_REWARDS.map(x=>{const done=pct>=x.pct,claimed=!!v.collectionClaims[x.id];return el('div',{className:`v38Milestone ${done?'done':''}`},[
+      el('div',{className:'grow'},[el('b',{},x.label),el('div',{className:'small'},v38RewardText(x.reward))]),
+      el('button',{className:'claimBtn',disabled:!done||claimed,onclick:()=>v38ClaimCollection(x.id)},claimed?'受取済':done?'受取':`${x.pct}%必要`)
+    ]);})
+  ]);
+}
+const v38OldCollection=renderV37Collection;
+renderV37Collection=function(){const wrap=v38OldCollection();wrap.appendChild(v38CollectionRewardPanel());return wrap;};
+const v38OldHome=renderHome;
+renderHome=function(){ensureV38();const wrap=v38OldHome(),footer=wrap.querySelector('.footerNote'),done=v38CompletedLong(),claimable=V38_LONG_QUESTS.filter(q=>Number(q.progress()||0)>=q.goal&&!ensureV38().longClaims[q.id]).length;const card=el('div',{className:'v38HomeCard section'},[
+  el('div',{className:'v38HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.3.8'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},'🏅 王国の長期クエスト')]),el('span',{className:'pill'},`${done}/${V38_LONG_QUESTS.length}`)]),
+  el('div',{className:'small',style:{marginTop:'6px'}},claimable?`受け取れる達成報酬が${claimable}件あります。`:'学習・塔・強敵・進化を長い目標として積み上げます。'),
+  el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v38long';render()}},claimable?'🏅 達成報酬を受け取る':'長期クエストを見る')
+]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v38OldRender=render;
+render=function(){ensureV38();if(state.screen==='v38long'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV38LongQuest());return;}return v38OldRender();};
+const v38Style=document.createElement('style');v38Style.textContent=`
+.v38Hero{border-radius:28px;padding:18px 16px;text-align:center;background:linear-gradient(145deg,rgba(255,209,102,.20),rgba(14,165,233,.14),rgba(15,23,42,.38));border:1px solid rgba(255,209,102,.34);box-shadow:0 16px 42px rgba(0,0,0,.20)}.v38HeroIcon{font-size:58px}.v38Hero h2{font-size:21px;margin:5px 0}.v38Hero p{font-size:12px;line-height:1.75;color:#dbeafe}.v38Summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.v38Quest{display:flex;align-items:center;gap:10px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);padding:11px;margin-top:8px}.v38Quest.done{background:rgba(78,205,196,.09);border-color:rgba(78,205,196,.34)}.v38Quest.claimed{opacity:.68}.v38QuestIcon{font-size:30px;width:38px;text-align:center}.v38QuestHead{display:flex;justify-content:space-between;gap:8px;font-size:12px}.v38CollectionRewards{border-radius:22px;background:linear-gradient(135deg,rgba(255,209,102,.12),rgba(78,205,196,.08));border:1px solid rgba(255,209,102,.30);padding:13px}.v38CollectionTitle,.v38HomeHead{display:flex;align-items:center;justify-content:space-between;gap:10px}.v38Milestone{display:flex;align-items:center;gap:9px;border-top:1px solid rgba(255,255,255,.09);padding:9px 0}.v38Milestone:first-of-type{border-top:none}.v38Milestone.done b{color:#fde68a}.v38HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(14,165,233,.11),rgba(255,209,102,.10));border:1px solid rgba(147,197,253,.26);padding:13px;margin-top:10px}@media(max-width:390px){.v38Summary{grid-template-columns:repeat(3,1fr)}.v38Quest{align-items:flex-start}.v38Quest .claimBtn{margin-top:2px}}
+`;document.head.appendChild(v38Style);
+document.title='ロスト・クリスタル Ver.3.8 長期クエスト';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.3.8初回起動',true);}catch(e){}
+
+
+/* ================= Ver.3.9 週替わりシーズン ================= */
+const V39_THEMES=[
+  {id:'jp',subject:'国語',icon:'📖',name:'言葉の賢者週間',desc:'国語の正解でシーズンポイントが追加されます。'},
+  {id:'soc',subject:'社会',icon:'🗾',name:'世界探検週間',desc:'社会の正解でシーズンポイントが追加されます。'},
+  {id:'sci',subject:'理科',icon:'🔬',name:'発見の研究週間',desc:'理科の正解でシーズンポイントが追加されます。'},
+  {id:'math',subject:'算数',icon:'🧮',name:'数の魔法週間',desc:'算数の正解でシーズンポイントが追加されます。'}
+];
+const V39_MILESTONES=[
+  {id:'p25',goal:25,label:'第一の宝箱',reward:{keys:1,medals:3}},
+  {id:'p60',goal:60,label:'第二の宝箱',reward:{keys:1,medals:6}},
+  {id:'p100',goal:100,label:'王冠の宝箱',reward:{keys:2,medals:10}}
+];
+function v39ThemeForWeek(week=v34WeekKey()){
+  const d=new Date(week+'T00:00:00');
+  const epoch=new Date('2024-01-01T00:00:00');
+  const idx=Math.floor((d-epoch)/(7*86400000));
+  return V39_THEMES[((idx%V39_THEMES.length)+V39_THEMES.length)%V39_THEMES.length];
+}
+function ensureV39(){
+  ensureV38();
+  if(!state.v39||typeof state.v39!=='object'||Array.isArray(state.v39))state.v39={};
+  const v=state.v39,week=v34WeekKey();
+  if(!Number.isFinite(v.completedWeeks))v.completedWeeks=0;
+  if(!Number.isFinite(v.bestPoints))v.bestPoints=0;
+  if(!v.current||typeof v.current!=='object'||Array.isArray(v.current))v.current={week,points:0,claims:{}};
+  if(v.current.week!==week){
+    if(v.current.claims&&v.current.claims.p100)v.completedWeeks++;
+    v.current={week,points:0,claims:{}};
+  }
+  if(!Number.isFinite(v.current.points))v.current.points=0;
+  if(!v.current.claims||typeof v.current.claims!=='object'||Array.isArray(v.current.claims))v.current.claims={};
+  v.bestPoints=Math.max(v.bestPoints,v.current.points);
+  return v;
+}
+function v39AddPoints(n,reason){
+  n=Math.max(0,Math.floor(Number(n)||0));if(!n)return;
+  const v=ensureV39();v.current.points+=n;v.bestPoints=Math.max(v.bestPoints,v.current.points);
+  if(reason)addEvent('🎪',`${reason}・シーズンポイント+${n}`);
+}
+function v39RewardText(r){const a=[];if(r.keys)a.push(`塔の鍵×${r.keys}`);if(r.medals)a.push(`塔メダル×${r.medals}`);return a.join('・');}
+function v39Claim(id){
+  const v=ensureV39(),m=V39_MILESTONES.find(x=>x.id===id);if(!m||v.current.claims[id]||v.current.points<m.goal)return;
+  v.current.claims[id]=true;ensureV34().towerKeys+=m.reward.keys||0;ensureV34().towerMedals+=m.reward.medals||0;
+  addEvent('🎁',`${m.label}を開けた`);showToast(`🎁 ${v39RewardText(m.reward)}`);save();render();
+}
+function v39DaysLeft(){
+  const start=new Date(v34WeekKey()+'T00:00:00');const next=new Date(start);next.setDate(next.getDate()+7);
+  return Math.max(1,Math.ceil((next-new Date())/86400000));
+}
+function renderV39Season(){
+  const v=ensureV39(),theme=v39ThemeForWeek(v.current.week),pts=v.current.points;
+  const wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`あと${v39DaysLeft()}日`)]));
+  wrap.appendChild(el('div',{className:'v39Hero'},[el('div',{className:'v39HeroIcon'},theme.icon),el('div',{className:'v32Version'},'VER.3.9 WEEKLY SEASON'),el('h2',{},theme.name),el('p',{},theme.desc)]));
+  wrap.appendChild(el('div',{className:'v39Stats'},[
+    el('div',{className:'stat'},[el('div',{className:'num'},pts),el('div',{className:'small'},'今週ポイント')]),
+    el('div',{className:'stat'},[el('div',{className:'num'},v.bestPoints),el('div',{className:'small'},'最高記録')]),
+    el('div',{className:'stat'},[el('div',{className:'num'},v.completedWeeks),el('div',{className:'small'},'完全達成週')])
+  ]));
+  wrap.appendChild(el('div',{className:'card section'},[
+    el('div',{className:'sectionTitle'},[el('span',{},'ポイントの集め方'),el('span',{className:'pill'},`${theme.subject}ボーナス`)]),
+    el('div',{className:'small'},'問題に答えると+1。今週の教科を正解するとさらに+1。塔突破+5、記憶の強敵撃破+8、週末イベント成功+6です。')
+  ]));
+  wrap.appendChild(el('div',{className:'sectionTitle'},[el('span',{},'今週の宝箱'),el('span',{className:'small'},'各1回のみ') ]));
+  V39_MILESTONES.forEach(m=>{const done=pts>=m.goal,claimed=!!v.current.claims[m.id],pct=Math.min(100,Math.round(pts/m.goal*100));wrap.appendChild(el('div',{className:`v39Milestone ${done?'done':''} ${claimed?'claimed':''}`},[
+    el('div',{className:'v39Chest'},claimed?'✅':done?'🎁':'🔒'),
+    el('div',{className:'grow'},[el('div',{className:'v39MilestoneHead'},[el('b',{},m.label),el('span',{},`${Math.min(pts,m.goal)}/${m.goal}`)]),el('div',{className:'bar',style:{marginTop:'6px'}},el('div',{style:{width:pct+'%'}})),el('div',{className:'small',style:{marginTop:'4px'}},v39RewardText(m.reward))]),
+    el('button',{className:'claimBtn',disabled:!done||claimed,onclick:()=>v39Claim(m.id)},claimed?'受取済':done?'開ける':'進行中')
+  ]));});
+  wrap.appendChild(el('div',{className:'v39Note section'},'週が変わるとポイントと宝箱はリセットされます。仲間・塔・図鑑などの通常進捗は失われません。'));
+  return wrap;
+}
+const v39OldChoose=choose;
+choose=function(choice){
+  const qz=state.quiz,q=qz&&qz.questions&&qz.questions[qz.index],valid=!!(q&&!qz.answered),theme=v39ThemeForWeek();
+  const correct=valid&&choice===q.answer;
+  const result=v39OldChoose(choice);
+  if(valid){v39AddPoints(1);if(correct&&q.subject===theme.subject)v39AddPoints(1);save();}
+  return result;
+};
+const v39OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){
+  v39OldFinalize(qz);if(!qz||qz.v39Finalized)return;
+  const ok=(qz.results||[]).filter(r=>r.correct).length;let bonus=0,label='';
+  if(qz.mode==='tower'&&qz.v34Win){bonus=5;label='忘却の塔突破';}
+  else if(qz.mode==='eliteBoss'&&qz.v36Win){bonus=8;label='記憶の強敵撃破';}
+  else if(qz.mode==='weekend'&&ok>=8){bonus=6;label='週末イベント成功';}
+  if(bonus){v39AddPoints(bonus,label);qz.v39SeasonBonus=bonus;}
+  qz.v39Finalized=true;save();
+};
+const v39OldResult=renderResult;
+renderResult=function(){const wrap=v39OldResult(),qz=state.quiz;if(qz&&qz.v39SeasonBonus){const target=wrap.querySelector('.resultScore');const card=el('div',{className:'v39ResultBonus'},`🎪 週間シーズンポイント +${qz.v39SeasonBonus}`);if(target&&target.parentNode)target.parentNode.insertBefore(card,target.nextSibling);}return wrap;};
+const v39OldHome=renderHome;
+renderHome=function(){ensureV39();const wrap=v39OldHome(),footer=wrap.querySelector('.footerNote'),v=state.v39.current,theme=v39ThemeForWeek(v.week),claimable=V39_MILESTONES.filter(m=>v.points>=m.goal&&!v.claims[m.id]).length;const card=el('div',{className:'v39HomeCard section'},[
+  el('div',{className:'v39HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.3.9'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},`${theme.icon} ${theme.name}`)]),el('span',{className:'pill'},`${v.points} pt`)]),
+  el('div',{className:'small',style:{marginTop:'6px'}},claimable?`開けられる週間宝箱が${claimable}個あります。`:`${theme.subject}の正解はポイント2倍。今週だけの目標に挑戦しよう。`),
+  el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v39season';render()}},claimable?'🎁 週間宝箱を開ける':'週替わりイベントを見る')
+]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v39OldRender=render;
+render=function(){ensureV39();if(state.screen==='v39season'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV39Season());return;}return v39OldRender();};
+const v39Style=document.createElement('style');v39Style.textContent=`
+.v39Hero{border-radius:28px;padding:18px 16px;text-align:center;background:linear-gradient(145deg,rgba(236,72,153,.18),rgba(124,58,237,.16),rgba(15,23,42,.40));border:1px solid rgba(216,180,254,.32);box-shadow:0 16px 42px rgba(0,0,0,.20)}.v39HeroIcon{font-size:60px}.v39Hero h2{font-size:21px;margin:5px 0}.v39Hero p{font-size:12px;line-height:1.75;color:#f3e8ff}.v39Stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.v39Milestone{display:flex;align-items:center;gap:10px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);padding:11px;margin-top:8px}.v39Milestone.done{background:rgba(255,209,102,.09);border-color:rgba(255,209,102,.34)}.v39Milestone.claimed{opacity:.67}.v39Chest{font-size:28px;width:36px;text-align:center}.v39MilestoneHead,.v39HomeHead{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px}.v39Note{border-radius:16px;background:rgba(162,155,254,.09);border:1px solid rgba(162,155,254,.26);padding:11px;font-size:11px;line-height:1.7;color:#e9d5ff}.v39HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(236,72,153,.10),rgba(124,58,237,.10));border:1px solid rgba(216,180,254,.25);padding:13px;margin-top:10px}.v39ResultBonus{border-radius:16px;background:rgba(236,72,153,.11);border:1px solid rgba(244,114,182,.30);padding:10px 12px;margin:0 0 10px;text-align:center;font-size:12px;font-weight:1000;color:#fbcfe8}@media(max-width:390px){.v39Stats{grid-template-columns:repeat(3,1fr)}.v39Milestone{align-items:flex-start}}
+`;document.head.appendChild(v39Style);
+document.title='ロスト・クリスタル Ver.3.9 週替わりシーズン';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.3.9初回起動',true);}catch(e){}
+
+/* ================= Ver.4.0 装備鍛冶・セット効果 ================= */
+const V40_MAX_LEVEL=5;
+const V40_FORGE_DATA={
+  wisdomSword:{mat:'stone',matName:'石材',set:'adventure'},
+  focusShield:{mat:'stone',matName:'石材',set:'guardian'},
+  vocabRobe:{mat:'book',matName:'本',set:'sage'},
+  mapCompass:{mat:'map',matName:'地図',set:'adventure'},
+  starStaff:{mat:'crystal',matName:'クリスタル',set:'sage'}
+};
+const V40_SETS={
+  adventure:{name:'冒険者セット',icon:'🧭',ids:['wisdomSword','mapCompass'],effect:'塔突破時、塔メダル+1'},
+  guardian:{name:'不屈セット',icon:'🛡️',ids:['wisdomSword','focusShield'],effect:'記憶の強敵撃破時、塔メダル+1'},
+  sage:{name:'賢者セット',icon:'✨',ids:['vocabRobe','starStaff'],effect:'正解時、経験値+1'}
+};
+function ensureV40(){
+  ensureV39();
+  if(!state.v40||typeof state.v40!=='object'||Array.isArray(state.v40))state.v40={};
+  if(!state.v40.equipmentLevels||typeof state.v40.equipmentLevels!=='object'||Array.isArray(state.v40.equipmentLevels))state.v40.equipmentLevels={};
+  V22_EQUIPMENT.forEach(e=>{const n=Math.floor(Number(state.v40.equipmentLevels[e.id])||0);state.v40.equipmentLevels[e.id]=Math.max(0,Math.min(V40_MAX_LEVEL,n));});
+  return state.v40;
+}
+function v40Level(id){return ensureV40().equipmentLevels[id]||0;}
+function v40Cost(id){
+  const lv=v40Level(id),d=V40_FORGE_DATA[id];
+  if(!d||lv>=V40_MAX_LEVEL)return null;
+  const next=lv+1;
+  return {medals:4+next*3,mat:d.mat,matName:d.matName,amount:4+next*4};
+}
+function v40CanUpgrade(id){
+  const e=V22_EQUIPMENT.find(x=>x.id===id),c=v40Cost(id);
+  return !!(e&&equipUnlocked(e)&&c&&ensureV34().towerMedals>=c.medals&&(state.resources[c.mat]||0)>=c.amount);
+}
+function v40Upgrade(id){
+  const e=V22_EQUIPMENT.find(x=>x.id===id),c=v40Cost(id);if(!e||!equipUnlocked(e)||!c)return;
+  if(!v40CanUpgrade(id)){showToast('強化素材が足りません');return;}
+  ensureV34().towerMedals-=c.medals;state.resources[c.mat]-=c.amount;ensureV40().equipmentLevels[id]++;
+  addEvent('🔨',`${e.name}をLv.${v40Level(id)}に強化`);showToast(`🔨 ${e.name} Lv.${v40Level(id)}`);save();render();
+}
+function v40ActiveSet(){
+  ensureV40();const eq=state.equipment||[];
+  return Object.values(V40_SETS).find(s=>s.ids.every(id=>eq.includes(id)))||null;
+}
+function v40UpgradeEffect(e){
+  const lv=v40Level(e.id);if(!lv)return '未強化：既存効果のみ';
+  const texts={
+    wisdomSword:`ボス正解時、追加でコイン+${lv*2}・魔力+${lv}`,
+    focusShield:`不正解時、追加でコイン+${lv}・魔力+${Math.floor((lv+1)/2)}`,
+    vocabRobe:`国語正解時、追加で本+${lv}`,
+    mapCompass:`社会正解時、追加で地図+${lv}`,
+    starStaff:`理科・地学正解時、追加でクリスタル+${Math.ceil(lv/2)}`
+  };return texts[e.id]||'';
+}
+function renderV40Forge(){
+  const v=ensureV40(),active=v40ActiveSet(),wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='equipment';render()}},'← 装備'),el('div',{className:'pill'},`塔メダル ${ensureV34().towerMedals}`)]));
+  wrap.appendChild(el('div',{className:'v40Hero'},[el('div',{className:'v40HeroIcon'},'🔨'),el('div',{className:'v32Version'},'VER.4.0 EQUIPMENT FORGE'),el('h2',{},'王国の装備鍛冶'),el('p',{},'塔メダルと通常素材で装備をLv.5まで強化できます。装備の所持・装備枠はこれまでどおりです。')]));
+  wrap.appendChild(el('div',{className:`v40SetPanel section ${active?'active':''}`},active?[el('div',{className:'v40SetIcon'},active.icon),el('div',{className:'grow'},[el('b',{},`${active.name} 発動中`),el('div',{className:'small'},active.effect)])]:[el('div',{className:'v40SetIcon'},'🧩'),el('div',{className:'grow'},[el('b',{},'セット効果は未発動'),el('div',{className:'small'},'指定された2つの装備を同時に装備すると発動します。')])]));
+  V22_EQUIPMENT.forEach(e=>{
+    const open=equipUnlocked(e),lv=v40Level(e.id),cost=v40Cost(e.id),activeEquip=(state.equipment||[]).includes(e.id);
+    wrap.appendChild(el('div',{className:`v40ForgeCard ${open?'':'locked'} ${activeEquip?'equipped':''}`},[
+      el('div',{className:'v40EquipIcon'},open?e.icon:'🔒'),
+      el('div',{className:'grow'},[
+        el('div',{className:'v40EquipHead'},[el('b',{},e.name),el('span',{className:'pill'},open?`Lv.${lv}`:'未解放')]),
+        el('div',{className:'small'},e.effect),
+        el('div',{className:'v40Power'},v40UpgradeEffect(e)),
+        cost?el('div',{className:'small',style:{marginTop:'5px'}},`次の強化：塔メダル${cost.medals}枚・${cost.matName}${cost.amount}`):el('div',{className:'v40Max'},'MAX LEVEL')
+      ]),
+      el('button',{className:'claimBtn',disabled:!v40CanUpgrade(e.id),onclick:()=>v40Upgrade(e.id)},!open?'未解放':lv>=V40_MAX_LEVEL?'MAX':'強化')
+    ]));
+  });
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},'セット効果一覧'),...Object.values(V40_SETS).map(s=>el('div',{className:'v40SetRow'},[el('span',{},s.icon),el('div',{className:'grow'},[el('b',{},s.name),el('div',{className:'small'},`${s.ids.map(id=>V22_EQUIPMENT.find(e=>e.id===id)?.name).join('＋')}：${s.effect}`)])]))]));
+  return wrap;
+}
+const v40OldGrantReward=grantReward;
+grantReward=function(q,ok){
+  const r=v40OldGrantReward(q,ok);ensureV40();
+  if(ok){
+    if(hasEquip('wisdomSword')&&state.quiz&&['boss','chapterBoss','finalBoss','eliteBoss','tower','revivalBoss'].includes(state.quiz.mode)){const lv=v40Level('wisdomSword');if(lv){r.coins=(r.coins||0)+lv*2;r.mana=(r.mana||0)+lv;state.resources.coins+=lv*2;state.resources.mana+=lv;}}
+    if(hasEquip('vocabRobe')&&q.subject==='国語'){const lv=v40Level('vocabRobe');if(lv){r.book=(r.book||0)+lv;state.resources.book+=lv;}}
+    if(hasEquip('mapCompass')&&q.subject==='社会'){const lv=v40Level('mapCompass');if(lv){r.map=(r.map||0)+lv;state.resources.map+=lv;}}
+    if(hasEquip('starStaff')&&q.subject==='理科'&&v18ScienceTopic(q)==='地学'){const n=Math.ceil(v40Level('starStaff')/2);if(n){r.crystal=(r.crystal||0)+n;state.resources.crystal+=n;}}
+    const set=v40ActiveSet();if(set&&set.name==='賢者セット'){state.xp+=1;r.v40Xp=1;}
+  }else if(hasEquip('focusShield')){const lv=v40Level('focusShield');if(lv){const m=Math.floor((lv+1)/2);r.coins=(r.coins||0)+lv;r.mana=(r.mana||0)+m;state.resources.coins+=lv;state.resources.mana+=m;}}
+  return r;
+};
+const v40OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){
+  v40OldFinalize(qz);if(!qz||qz.v40Finalized)return;const set=v40ActiveSet();let bonus=0;
+  if(set&&set.name==='冒険者セット'&&qz.mode==='tower'&&qz.v34Win)bonus=1;
+  if(set&&set.name==='不屈セット'&&qz.mode==='eliteBoss'&&qz.v36Win)bonus=1;
+  if(bonus){ensureV34().towerMedals+=bonus;qz.v40SetBonus=bonus;addEvent(set.icon,`${set.name}で塔メダル+${bonus}`);}
+  qz.v40Finalized=true;save();
+};
+const v40OldResult=renderResult;
+renderResult=function(){const wrap=v40OldResult(),qz=state.quiz;if(qz&&qz.v40SetBonus){const target=wrap.querySelector('.resultScore')||wrap.firstChild,card=el('div',{className:'v40ResultBonus'},`🧩 セット効果：塔メダル +${qz.v40SetBonus}`);if(target&&target.parentNode)target.parentNode.insertBefore(card,target.nextSibling);}return wrap;};
+const v40OldEquipment=renderEquipmentScreen;
+renderEquipmentScreen=function(){const wrap=v40OldEquipment(),top=wrap.querySelector('.top');const btn=el('button',{className:'primary',style:{margin:'10px 0'},onclick:()=>{state.screen='v40forge';render()}},'🔨 装備を強化する');if(top&&top.nextSibling)wrap.insertBefore(btn,top.nextSibling);else wrap.appendChild(btn);return wrap;};
+const v40OldHome=renderHome;
+renderHome=function(){ensureV40();const wrap=v40OldHome(),footer=wrap.querySelector('.footerNote'),levels=Object.values(state.v40.equipmentLevels).reduce((a,b)=>a+b,0),set=v40ActiveSet();const card=el('div',{className:'v40HomeCard section'},[
+  el('div',{className:'v40HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.4.0'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},'🔨 王国の装備鍛冶')]),el('span',{className:'pill'},`強化合計 ${levels}`)]),
+  el('div',{className:'small',style:{marginTop:'6px'}},set?`${set.icon} ${set.name}が発動中です。`:'装備をLv.5まで育て、2装備のセット効果を組み合わせます。'),
+  el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v40forge';render()}},'装備鍛冶へ')
+]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v40OldRender=render;
+render=function(){ensureV40();if(state.screen==='v40forge'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV40Forge());return;}return v40OldRender();};
+const v40Style=document.createElement('style');v40Style.textContent=`
+.v40Hero{border-radius:28px;padding:18px 16px;text-align:center;background:linear-gradient(145deg,rgba(245,158,11,.20),rgba(239,68,68,.13),rgba(15,23,42,.40));border:1px solid rgba(253,230,138,.34);box-shadow:0 16px 42px rgba(0,0,0,.20)}.v40HeroIcon{font-size:60px}.v40Hero h2{font-size:21px;margin:5px 0}.v40Hero p{font-size:12px;line-height:1.75;color:#fef3c7}.v40SetPanel{display:flex;align-items:center;gap:10px;border-radius:19px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:12px}.v40SetPanel.active{background:rgba(255,209,102,.11);border-color:rgba(255,209,102,.36)}.v40SetIcon{font-size:32px;width:40px;text-align:center}.v40ForgeCard{display:flex;align-items:center;gap:10px;border-radius:19px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);padding:11px;margin-top:8px}.v40ForgeCard.equipped{border-color:rgba(78,205,196,.40);background:rgba(78,205,196,.08)}.v40ForgeCard.locked{opacity:.52}.v40EquipIcon{font-size:34px;width:42px;text-align:center}.v40EquipHead,.v40HomeHead{display:flex;align-items:center;justify-content:space-between;gap:9px}.v40Power{font-size:10px;line-height:1.55;color:#fde68a;margin-top:5px}.v40Max{font-size:10px;color:#99f6e4;font-weight:1000;margin-top:5px}.v40SetRow{display:flex;gap:9px;align-items:flex-start;border-top:1px solid rgba(255,255,255,.08);padding:9px 0}.v40SetRow:first-of-type{border-top:none}.v40HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(245,158,11,.11),rgba(239,68,68,.08));border:1px solid rgba(253,230,138,.25);padding:13px;margin-top:10px}.v40ResultBonus{border-radius:16px;background:rgba(245,158,11,.11);border:1px solid rgba(253,230,138,.30);padding:10px 12px;margin:0 0 10px;text-align:center;font-size:12px;font-weight:1000;color:#fef3c7}@media(max-width:390px){.v40ForgeCard{align-items:flex-start}.v40ForgeCard .claimBtn{margin-top:2px}}
+`;document.head.appendChild(v40Style);
+document.title='ロスト・クリスタル Ver.4.0 装備鍛冶';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.0初回起動',true);}catch(e){}
+
+
+/* ================= Ver.4.1 王国ランク・研究ツリー ================= */
+const V41_RANKS=[
+  {score:0,name:'芽吹きの王国',icon:'🌱'},
+  {score:500,name:'小さな城下町',icon:'🏘️'},
+  {score:1200,name:'学びの都市',icon:'📚'},
+  {score:2200,name:'知恵の領邦',icon:'🏰'},
+  {score:3600,name:'四晶の王国',icon:'💎'},
+  {score:5500,name:'塔を望む大国',icon:'🗼'},
+  {score:7800,name:'英雄の連合王国',icon:'⚔️'},
+  {score:10500,name:'星読みの帝国',icon:'🌠'},
+  {score:14000,name:'永遠の知恵王国',icon:'👑'},
+  {score:18000,name:'ロスト・クリスタル',icon:'✨'}
+];
+const V41_RESEARCH=[
+  {id:'insight',cost:1,icon:'📖',name:'学習の洞察',desc:'正解時のプレイヤー経験値+1。',req:[]},
+  {id:'towerLore',cost:1,icon:'🗼',name:'塔の古文書',desc:'忘却の塔突破時、塔メダル+1。',req:[]},
+  {id:'bondStudy',cost:1,icon:'🤝',name:'仲間の学び',desc:'忘却の塔突破時、編成仲間の経験値+1。',req:['towerLore']},
+  {id:'seasonFocus',cost:1,icon:'🎪',name:'季節の集中術',desc:'週間対象教科の正解時、シーズンポイントをさらに+1。',req:[]},
+  {id:'efficientForge',cost:1,icon:'🔨',name:'効率鍛冶',desc:'装備強化に必要な塔メダルを1枚軽減。',req:[]},
+  {id:'bossStudy',cost:1,icon:'🐲',name:'強敵研究',desc:'記憶の強敵の初回撃破報酬に塔メダル+2。',req:['towerLore']},
+  {id:'reviewWisdom',cost:1,icon:'🔁',name:'復習の知恵',desc:'復習モード正解時のプレイヤー経験値+1。',req:['insight']},
+  {id:'royalMethod',cost:2,icon:'👑',name:'王家の学習法',desc:'今日の学習完了時、塔の鍵+1（1日1回）。',req:['insight','seasonFocus']}
+];
+function ensureV41(){
+  ensureV40();
+  if(!state.v41||typeof state.v41!=='object'||Array.isArray(state.v41))state.v41={};
+  if(!state.v41.research||typeof state.v41.research!=='object'||Array.isArray(state.v41.research))state.v41.research={};
+  if(!state.v41.dailyRoyal||typeof state.v41.dailyRoyal!=='object'||Array.isArray(state.v41.dailyRoyal))state.v41.dailyRoyal={date:v34DateKey(),claimed:false};
+  if(state.v41.dailyRoyal.date!==v34DateKey())state.v41.dailyRoyal={date:v34DateKey(),claimed:false};
+  return state.v41;
+}
+function v41KingdomScore(){
+  const study=totalAnswered();
+  const tower=(ensureV34().towerBestFloor||0)*10;
+  const elite=v36TotalClears()*100;
+  const evolved=v37EvolvedCount()*150;
+  const forge=Object.values(ensureV40().equipmentLevels).reduce((a,b)=>a+(Number(b)||0),0)*20;
+  const seasons=(ensureV39().completedWeeks||0)*100;
+  return study+tower+elite+evolved+forge+seasons;
+}
+function v41RankIndex(){const score=v41KingdomScore();let i=0;V41_RANKS.forEach((r,n)=>{if(score>=r.score)i=n;});return i;}
+function v41Rank(){return V41_RANKS[v41RankIndex()];}
+function v41ResearchSpent(){const v=ensureV41();return V41_RESEARCH.reduce((sum,n)=>sum+(v.research[n.id]?n.cost:0),0);}
+function v41ResearchTotal(){return v41RankIndex();}
+function v41ResearchAvailable(){return Math.max(0,v41ResearchTotal()-v41ResearchSpent());}
+function v41Has(id){return !!ensureV41().research[id];}
+function v41CanLearn(node){return !v41Has(node.id)&&v41ResearchAvailable()>=node.cost&&node.req.every(v41Has);}
+function v41Learn(id){
+  const node=V41_RESEARCH.find(n=>n.id===id);if(!node||!v41CanLearn(node)){showToast('研究条件または研究ポイントが足りません');return;}
+  ensureV41().research[id]=true;addEvent(node.icon,`${node.name}を研究した`);showToast(`${node.icon} ${node.name}を解放`);save();render();
+}
+function v41NextRank(){const i=v41RankIndex();return i<V41_RANKS.length-1?V41_RANKS[i+1]:null;}
+function renderV41Research(){
+  const wrap=el('div',{className:'screen fade'}),score=v41KingdomScore(),rank=v41Rank(),next=v41NextRank(),available=v41ResearchAvailable(),spent=v41ResearchSpent();
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`研究ポイント ${available}`)]));
+  wrap.appendChild(el('div',{className:'v41Hero'},[el('div',{className:'v41HeroIcon'},rank.icon),el('div',{className:'v32Version'},'VER.4.1 KINGDOM RESEARCH'),el('h2',{},`王国ランク ${v41RankIndex()+1}`),el('h3',{},rank.name),el('p',{},'学習・塔・仲間・強敵・装備の累積成果で王国が成長します。進捗リセットはありません。') ]));
+  const pct=next?Math.min(100,Math.round((score-rank.score)/(next.score-rank.score)*100)):100;
+  wrap.appendChild(el('div',{className:'card section'},[
+    el('div',{className:'sectionTitle'},[el('span',{},'王国の成長'),el('span',{className:'pill'},`${score} pt`)]),
+    el('div',{className:'bar'},el('div',{style:{width:pct+'%'}})),
+    el('div',{className:'small',style:{marginTop:'6px'}},next?`次の「${next.name}」まで ${Math.max(0,next.score-score)} pt`:'最高王国ランクに到達しています。'),
+    el('div',{className:'v41ScoreGrid'},[
+      el('div',{className:'stat'},[el('div',{className:'num'},totalAnswered()),el('div',{className:'small'},'学習')]),
+      el('div',{className:'stat'},[el('div',{className:'num'},ensureV34().towerBestFloor),el('div',{className:'small'},'塔')]),
+      el('div',{className:'stat'},[el('div',{className:'num'},v36TotalClears()),el('div',{className:'small'},'強敵')]),
+      el('div',{className:'stat'},[el('div',{className:'num'},v37EvolvedCount()),el('div',{className:'small'},'進化')])
+    ])
+  ]));
+  wrap.appendChild(el('div',{className:'sectionTitle'},[el('span',{},'研究ツリー'),el('span',{className:'small'},`使用 ${spent}/${v41ResearchTotal()}`)]));
+  V41_RESEARCH.forEach(node=>{const learned=v41Has(node.id),can=v41CanLearn(node),missing=node.req.filter(x=>!v41Has(x)).map(x=>V41_RESEARCH.find(n=>n.id===x)?.name).filter(Boolean);wrap.appendChild(el('div',{className:`v41Node ${learned?'learned':''} ${can?'ready':''}`},[
+    el('div',{className:'v41NodeIcon'},learned?'✅':node.icon),
+    el('div',{className:'grow'},[el('div',{className:'v41NodeHead'},[el('b',{},node.name),el('span',{className:'pill'},`${node.cost} pt`)]),el('div',{className:'small'},node.desc),missing.length?el('div',{className:'v41Req'},`先に必要：${missing.join('・')}`):null]),
+    el('button',{className:'claimBtn',disabled:learned||!can,onclick:()=>v41Learn(node.id)},learned?'研究済':can?'研究':'未解放')
+  ]));});
+  wrap.appendChild(el('div',{className:'v41Note section'},'研究は取り消さず、王国ランク上昇で新しい研究ポイントを得ます。既存のセーブ・仲間・装備・学習履歴は変更しません。'));
+  return wrap;
+}
+const v41OldGrantReward=grantReward;
+grantReward=function(q,ok){const r=v41OldGrantReward(q,ok);ensureV41();if(ok&&v41Has('insight')){state.xp+=1;r.v41Xp=(r.v41Xp||0)+1;}if(ok&&v41Has('reviewWisdom')&&state.quiz&&state.quiz.mode==='review'){state.xp+=1;r.v41Xp=(r.v41Xp||0)+1;}return r;};
+const v41OldChoose=choose;
+choose=function(choice){const qz=state.quiz,q=qz&&qz.questions&&qz.questions[qz.index],valid=!!(q&&!qz.answered),correct=valid&&choice===q.answer,theme=v39ThemeForWeek();const out=v41OldChoose(choice);if(correct&&v41Has('seasonFocus')&&q.subject===theme.subject){v39AddPoints(1,'季節の集中術');save();}return out;};
+const v41OldCost=v40Cost;
+v40Cost=function(id){const c=v41OldCost(id);if(c&&v41Has('efficientForge'))c.medals=Math.max(1,c.medals-1);return c;};
+const v41OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){
+  v41OldFinalize(qz);if(!qz||qz.v41Finalized)return;
+  if(qz.mode==='tower'&&qz.v34Win){
+    if(v41Has('towerLore')){ensureV34().towerMedals+=1;qz.v41TowerMedal=1;}
+    if(v41Has('bondStudy')){let ids=[];try{ids=activePartyIds();}catch(e){ids=state.party||[];}(ids||[]).slice(0,3).forEach(id=>v35AddXp(id,1));qz.v41BondXp=1;}
+  }
+  if(qz.mode==='eliteBoss'&&qz.v36Win&&qz.v36FirstReward&&v41Has('bossStudy')){ensureV34().towerMedals+=2;qz.v41BossMedal=2;}
+  const daily=ensureV41().dailyRoyal;
+  if(v41Has('royalMethod')&&!daily.claimed&&qz.mode==='daily'){
+    const needed=(state.settings&&state.settings.dailyCount)||12;
+    const answered=(qz.results||[]).length;
+    if(answered>=needed){ensureV34().towerKeys+=1;daily.claimed=true;qz.v41RoyalKey=1;addEvent('👑','王家の学習法で塔の鍵+1');}
+  }
+  qz.v41Finalized=true;save();
+};
+const v41OldResult=renderResult;
+renderResult=function(){const wrap=v41OldResult(),qz=state.quiz;if(qz){const notes=[];if(qz.v41TowerMedal)notes.push(`塔メダル +${qz.v41TowerMedal}`);if(qz.v41BondXp)notes.push(`編成仲間XP +${qz.v41BondXp}`);if(qz.v41BossMedal)notes.push(`初回撃破メダル +${qz.v41BossMedal}`);if(qz.v41RoyalKey)notes.push('塔の鍵 +1');if(notes.length){const target=wrap.querySelector('.resultScore')||wrap.firstChild,card=el('div',{className:'v41ResultBonus'},`🔬 研究効果：${notes.join('／')}`);if(target&&target.parentNode)target.parentNode.insertBefore(card,target.nextSibling);}}return wrap;};
+const v41OldHome=renderHome;
+renderHome=function(){ensureV41();const wrap=v41OldHome(),footer=wrap.querySelector('.footerNote'),rank=v41Rank(),available=v41ResearchAvailable();const card=el('div',{className:'v41HomeCard section'},[
+  el('div',{className:'v41HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.4.1'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},`${rank.icon} 王国ランク ${v41RankIndex()+1}`)]),el('span',{className:'pill'},`${v41KingdomScore()} pt`)]),
+  el('div',{className:'small',style:{marginTop:'6px'}},available?`使える研究ポイントが${available}あります。研究ツリーで恒久効果を選べます。`:`現在の称号は「${rank.name}」。次の王国ランクを目指そう。`),
+  el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v41research';render()}},available?'🔬 新しい研究を選ぶ':'王国ランク・研究を見る')
+]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v41OldRender=render;
+render=function(){ensureV41();if(state.screen==='v41research'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV41Research());return;}return v41OldRender();};
+const v41Style=document.createElement('style');v41Style.textContent=`
+.v41Hero{border-radius:28px;padding:18px 16px;text-align:center;background:linear-gradient(145deg,rgba(14,165,233,.18),rgba(99,102,241,.17),rgba(15,23,42,.42));border:1px solid rgba(147,197,253,.34);box-shadow:0 16px 42px rgba(0,0,0,.20)}.v41HeroIcon{font-size:62px}.v41Hero h2{font-size:20px;margin:4px 0}.v41Hero h3{font-size:14px;color:#bae6fd;margin-bottom:6px}.v41Hero p{font-size:12px;line-height:1.75;color:#dbeafe}.v41ScoreGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:10px}.v41ScoreGrid .num{font-size:16px}.v41Node{display:flex;align-items:center;gap:10px;border-radius:19px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);padding:11px;margin-top:8px}.v41Node.ready{background:rgba(14,165,233,.09);border-color:rgba(56,189,248,.34)}.v41Node.learned{background:rgba(78,205,196,.09);border-color:rgba(78,205,196,.34)}.v41NodeIcon{font-size:29px;width:37px;text-align:center}.v41NodeHead,.v41HomeHead{display:flex;align-items:center;justify-content:space-between;gap:9px}.v41Req{font-size:9px;color:#fda4af;margin-top:5px}.v41Note{border-radius:16px;background:rgba(59,130,246,.09);border:1px solid rgba(147,197,253,.25);padding:11px;font-size:11px;line-height:1.7;color:#dbeafe}.v41HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(14,165,233,.11),rgba(99,102,241,.09));border:1px solid rgba(147,197,253,.27);padding:13px;margin-top:10px}.v41ResultBonus{border-radius:16px;background:rgba(14,165,233,.10);border:1px solid rgba(125,211,252,.30);padding:10px 12px;margin:0 0 10px;text-align:center;font-size:12px;font-weight:1000;color:#dbeafe}@media(max-width:390px){.v41ScoreGrid{grid-template-columns:1fr 1fr}.v41Node{align-items:flex-start}.v41Node .claimBtn{margin-top:2px}}
+`;document.head.appendChild(v41Style);
+document.title='ロスト・クリスタル Ver.4.1 王国ランク・研究ツリー';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.1初回起動',true);}catch(e){}
+
+/* ================= Ver.4.2 新地域・星霧の辺境 ================= */
+const V42_DISTRICTS={
+  beacon:{name:'星灯りの塔',icon:'🗼',desc:'霧の向こうへ道を示す灯台',mat:'crystal',matName:'クリスタル'},
+  archive:{name:'辺境の記録院',icon:'📜',desc:'各地の知恵を集める資料館',mat:'book',matName:'本'},
+  workshop:{name:'風渡り工房',icon:'⚙️',desc:'遠征道具を整える工房',mat:'stone',matName:'石材'},
+  plaza:{name:'旅人の広場',icon:'🌌',desc:'仲間と旅人が集まる広場',mat:'map',matName:'地図'}
+};
+const V42_MAX_LEVEL=3;
+function ensureV42(){
+  ensureV41();
+  if(!state.v42||typeof state.v42!=='object'||Array.isArray(state.v42))state.v42={};
+  if(!state.v42.districts||typeof state.v42.districts!=='object'||Array.isArray(state.v42.districts))state.v42.districts={};
+  Object.keys(V42_DISTRICTS).forEach(id=>{const n=Math.floor(Number(state.v42.districts[id])||0);state.v42.districts[id]=Math.max(0,Math.min(V42_MAX_LEVEL,n));});
+  if(!state.v42.expedition||typeof state.v42.expedition!=='object'||Array.isArray(state.v42.expedition))state.v42.expedition={date:'',done:false,totalWins:0,bestScore:0};
+  const ex=state.v42.expedition;ex.totalWins=Math.max(0,Math.floor(Number(ex.totalWins)||0));ex.bestScore=Math.max(0,Math.floor(Number(ex.bestScore)||0));
+  if(ex.date!==v34DateKey()){ex.date=v34DateKey();ex.done=false;}
+  if(!Array.isArray(state.v42.seenMilestones))state.v42.seenMilestones=[];
+  return state.v42;
+}
+function v42Unlocked(){return !!state.finalCleared&&(ensureV34().towerBestFloor||0)>=20;}
+function v42TownLevel(){return Object.values(ensureV42().districts).reduce((a,b)=>a+(Number(b)||0),0);}
+function v42TownRank(){const n=v42TownLevel();if(n>=12)return {name:'星空の新都',icon:'🌠',tier:4};if(n>=9)return {name:'輝きの町',icon:'✨',tier:3};if(n>=5)return {name:'風渡りの集落',icon:'🏘️',tier:2};if(n>=1)return {name:'辺境の野営地',icon:'⛺',tier:1};return {name:'霧に沈む廃都',icon:'🌫️',tier:0};}
+function v42DistrictCost(id){
+  const v=ensureV42(),lv=v.districts[id]||0,d=V42_DISTRICTS[id];if(!d||lv>=V42_MAX_LEVEL)return null;
+  const next=lv+1;return {medals:8+next*5,mat:d.mat,matName:d.matName,amount:15+next*10,coins:100+next*80};
+}
+function v42CanUpgrade(id){const c=v42DistrictCost(id);return !!(v42Unlocked()&&c&&ensureV34().towerMedals>=c.medals&&(state.resources[c.mat]||0)>=c.amount&&(state.resources.coins||0)>=c.coins);}
+function v42Upgrade(id){
+  const c=v42DistrictCost(id),d=V42_DISTRICTS[id];if(!c||!d)return;
+  if(!v42CanUpgrade(id)){showToast('復興に必要な資源が足りません');return;}
+  ensureV34().towerMedals-=c.medals;state.resources[c.mat]-=c.amount;state.resources.coins-=c.coins;ensureV42().districts[id]++;
+  const lv=ensureV42().districts[id],total=v42TownLevel();addEvent(d.icon,`${d.name}をLv.${lv}へ復興`);showToast(`${d.icon} ${d.name} Lv.${lv}`);
+  [1,5,9,12].forEach(m=>{if(total>=m&&!state.v42.seenMilestones.includes(m)){state.v42.seenMilestones.push(m);addEvent('🌌',`${v42TownRank().name}へ発展した`);}});
+  save();render();
+}
+function v42ExpeditionReward(){const tier=v42TownRank().tier;return {coins:30+tier*15,mana:8+tier*3,map:2+tier,crystal:1+Math.floor(tier/2)};}
+function startV42Expedition(){
+  const v=ensureV42();if(!v42Unlocked()){showToast('最終決戦と忘却の塔20階突破が必要です');return;}if(v.expedition.done){showToast('辺境調査は1日1回です');return;}
+  const qs=pickQuestions('すべて',6);state.quiz={mode:'frontierExpedition',subject:'すべて',questions:qs,index:0,answered:false,selected:null,results:[],rewards:{coins:0,mana:0,stone:0,book:0,crystal:0,map:0},boss:{name:'星霧の調査隊',icon:'🌌'},start:Date.now(),combo:0,bestCombo:0,hintUsed:false,v42Goal:4};state.screen='quiz';render();
+}
+function renderV42Frontier(){
+  const v=ensureV42(),rank=v42TownRank(),open=v42Unlocked(),wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`復興 ${v42TownLevel()}/12`)]));
+  wrap.appendChild(el('div',{className:'v42Hero'},[el('div',{className:'v42HeroIcon'},rank.icon),el('div',{className:'v32Version'},'VER.4.2 FRONTIER REGION'),el('h2',{},'星霧の辺境'),el('h3',{},rank.name),el('p',{},open?'忘却の魔王が消えたあと、霧の外から新しい土地が姿を現した。四つの施設を復興し、町に光を取り戻そう。':'最終ボス撃破と忘却の塔20階突破で、新しい地域への航路が開きます。') ]));
+  if(!open){wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},'解放条件'),el('div',{className:'v42Condition '+(state.finalCleared?'done':'')},`${state.finalCleared?'✅':'⬜'} 最終ボスを撃破`),el('div',{className:'v42Condition '+((ensureV34().towerBestFloor||0)>=20?'done':'')},`${(ensureV34().towerBestFloor||0)>=20?'✅':'⬜'} 忘却の塔20階へ到達`)]));return wrap;}
+  wrap.appendChild(el('div',{className:'v42Expedition section'},[
+    el('div',{className:'v42ExpeditionHead'},[el('div',{},[el('b',{},'🧭 今日の辺境調査'),el('div',{className:'small'},'6問中4問正解で調査成功。1日1回だけ挑戦できます。')]),el('span',{className:'pill'},v.expedition.done?'本日完了':'挑戦可能')]),
+    el('div',{className:'v42Stats'},[el('div',{className:'stat'},[el('div',{className:'num'},v.expedition.totalWins),el('div',{className:'small'},'調査成功')]),el('div',{className:'stat'},[el('div',{className:'num'},v.expedition.bestScore),el('div',{className:'small'},'最高正解')]),el('div',{className:'stat'},[el('div',{className:'num'},rank.tier),el('div',{className:'small'},'町ランク')])]),
+    el('button',{className:'primary',style:{marginTop:'10px'},disabled:v.expedition.done,onclick:startV42Expedition},v.expedition.done?'明日また調査できる':'辺境を調査する 🌌')
+  ]));
+  wrap.appendChild(el('div',{className:'sectionTitle'},[el('span',{},'町の復興'),el('span',{className:'small'},`塔メダル ${ensureV34().towerMedals}`)]));
+  Object.entries(V42_DISTRICTS).forEach(([id,d])=>{const lv=v.districts[id],c=v42DistrictCost(id);wrap.appendChild(el('div',{className:`v42District ${lv>=V42_MAX_LEVEL?'max':''}`},[
+    el('div',{className:'v42DistrictIcon'},d.icon),el('div',{className:'grow'},[el('div',{className:'v42DistrictHead'},[el('b',{},d.name),el('span',{className:'pill'},`Lv.${lv}/${V42_MAX_LEVEL}`)]),el('div',{className:'small'},d.desc),c?el('div',{className:'v42Cost'},`塔メダル${c.medals}・${c.matName}${c.amount}・コイン${c.coins}`):el('div',{className:'v42Max'},'復興完了')]),el('button',{className:'claimBtn',disabled:!v42CanUpgrade(id),onclick:()=>v42Upgrade(id)},lv>=V42_MAX_LEVEL?'MAX':'復興')
+  ]));});
+  wrap.appendChild(el('div',{className:'v42Milestones section'},[el('div',{className:'sectionTitle'},'町の変化'),...[{n:1,t:'野営地ができる'},{n:5,t:'住民が戻り始める'},{n:9,t:'夜空に町の灯が広がる'},{n:12,t:'星空の新都が完成する'}].map(m=>el('div',{className:`v42Milestone ${v42TownLevel()>=m.n?'done':''}`},`${v42TownLevel()>=m.n?'✅':'◇'} ${m.n}/12　${m.t}`))]));
+  return wrap;
+}
+const v42OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){
+  v42OldFinalize(qz);if(!qz||qz.mode!=='frontierExpedition'||qz.v42Finalized)return;
+  const v=ensureV42(),ok=(qz.results||[]).filter(r=>r.correct).length,win=ok>=(qz.v42Goal||4);v.expedition.done=true;v.expedition.bestScore=Math.max(v.expedition.bestScore,ok);
+  if(win){v.expedition.totalWins++;const bonus=v42ExpeditionReward();grantFlatReward(bonus);qz.finalBonus=Object.assign({},qz.finalBonus||{},bonus);qz.v42Win=true;qz.clearStory={title:'星霧の辺境を調査した',text:[`${ok}/6問正解。霧の向こうに新しい道標を発見した。`,'町を復興すると、調査報酬も少しずつ増えていく。']};addEvent('🌌','星霧の辺境の調査に成功');}else{qz.v42Win=false;qz.clearStory={title:'調査隊は町へ戻った',text:[`今回は${ok}/6問正解。今日の調査記録を持ち帰った。`,'明日は復習して、もう一度霧の向こうを目指そう。']};addEvent('🌫️','星霧の辺境を調査した');}
+  qz.v42Finalized=true;save();
+};
+const v42OldQuiz=renderQuiz;
+renderQuiz=function(){const wrap=v42OldQuiz(),qz=state.quiz;if(qz&&qz.mode==='frontierExpedition'){const box=wrap.querySelector('.quizBox');if(box&&box.parentNode)box.parentNode.insertBefore(el('div',{className:'v42QuizBanner'},[el('b',{},'🌌 星霧の辺境調査'),el('span',{},`正解 ${(qz.results||[]).filter(r=>r.correct).length}/${qz.v42Goal||4}　全6問`)]),box);}return wrap;};
+const v42OldResult=renderResult;
+renderResult=function(){const wrap=v42OldResult(),qz=state.quiz;if(qz&&qz.mode==='frontierExpedition'){const score=(qz.results||[]).filter(r=>r.correct).length,head=wrap.querySelector('.resultScore');if(head){const msg=head.querySelector('.score');if(msg)msg.textContent=`${score}/6`;const note=el('div',{className:`v42Result ${qz.v42Win?'win':''}`},qz.v42Win?'🌠 辺境調査成功！':'🌫️ 調査記録を持ち帰った');head.appendChild(note);}const buttons=wrap.querySelector('.nextButtons')||wrap;buttons.appendChild(el('button',{className:'secondary',onclick:()=>{state.screen='v42frontier';render()}},'星霧の辺境へ戻る'));}return wrap;};
+const v42OldKingdomScore=v41KingdomScore;
+v41KingdomScore=function(){return v42OldKingdomScore()+v42TownLevel()*50+ensureV42().expedition.totalWins*10;};
+const v42OldHome=renderHome;
+renderHome=function(){ensureV42();const wrap=v42OldHome(),footer=wrap.querySelector('.footerNote'),open=v42Unlocked(),rank=v42TownRank();const card=el('div',{className:`v42HomeCard section ${open?'open':''}`},[
+  el('div',{className:'v42HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.4.2'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},`${rank.icon} 星霧の辺境`)]),el('span',{className:'pill'},open?`${v42TownLevel()}/12`:'未解放')]),
+  el('div',{className:'small',style:{marginTop:'6px'}},open?(ensureV42().expedition.done?`${rank.name}を復興中。今日の調査は完了しました。`:`今日の辺境調査に挑戦できます。現在は「${rank.name}」。`):'最終ボス撃破＋忘却の塔20階で、クリア後の第五地域が開きます。'),
+  el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v42frontier';render()}},open?'🌌 星霧の辺境へ':'解放条件を見る')
+]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v42OldRender=render;
+render=function(){ensureV42();if(state.screen==='v42frontier'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV42Frontier());return;}return v42OldRender();};
+const v42Style=document.createElement('style');v42Style.textContent=`
+.v42Hero{border-radius:28px;padding:18px 16px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(125,211,252,.22),transparent 38%),linear-gradient(145deg,rgba(30,64,175,.22),rgba(88,28,135,.18),rgba(15,23,42,.48));border:1px solid rgba(196,181,253,.32);box-shadow:0 16px 42px rgba(0,0,0,.22)}.v42HeroIcon{font-size:64px}.v42Hero h2{font-size:21px;margin:4px 0}.v42Hero h3{font-size:14px;color:#c4b5fd;margin-bottom:6px}.v42Hero p{font-size:12px;line-height:1.75;color:#dbeafe}.v42Condition{border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.10);padding:10px;margin-top:7px;font-size:12px}.v42Condition.done{background:rgba(78,205,196,.09);border-color:rgba(78,205,196,.30)}.v42Expedition{border-radius:22px;background:linear-gradient(135deg,rgba(14,165,233,.12),rgba(124,58,237,.10));border:1px solid rgba(165,180,252,.27);padding:13px}.v42ExpeditionHead,.v42DistrictHead,.v42HomeHead{display:flex;align-items:center;justify-content:space-between;gap:9px}.v42Stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.v42Stats .num{font-size:16px}.v42District{display:flex;align-items:center;gap:10px;border-radius:19px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);padding:11px;margin-top:8px}.v42District.max{background:rgba(78,205,196,.08);border-color:rgba(78,205,196,.28)}.v42DistrictIcon{font-size:32px;width:41px;text-align:center}.v42Cost{font-size:9px;color:#fde68a;margin-top:5px;line-height:1.5}.v42Max{font-size:10px;color:#99f6e4;font-weight:1000;margin-top:5px}.v42Milestones{border-radius:20px;background:rgba(124,58,237,.08);border:1px solid rgba(196,181,253,.20);padding:12px}.v42Milestone{font-size:11px;color:#94a3b8;padding:7px 0;border-top:1px solid rgba(255,255,255,.07)}.v42Milestone:first-of-type{border-top:none}.v42Milestone.done{color:#e9d5ff;font-weight:900}.v42HomeCard{border-radius:22px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.10);padding:13px;margin-top:10px}.v42HomeCard.open{background:linear-gradient(135deg,rgba(14,165,233,.10),rgba(124,58,237,.10));border-color:rgba(196,181,253,.25)}.v42QuizBanner{border-radius:17px;background:linear-gradient(135deg,rgba(14,165,233,.13),rgba(124,58,237,.10));border:1px solid rgba(196,181,253,.30);padding:10px 12px;margin:0 0 10px}.v42QuizBanner b{display:block;font-size:13px}.v42QuizBanner span{display:block;font-size:10px;color:#dbeafe;margin-top:3px}.v42Result{margin-top:8px;font-size:12px;color:#cbd5e1}.v42Result.win{color:#fde68a}@media(max-width:390px){.v42District{align-items:flex-start}.v42District .claimBtn{margin-top:2px}.v42Stats{grid-template-columns:repeat(3,1fr)}}
+`;document.head.appendChild(v42Style);
+document.title='ロスト・クリスタル Ver.4.2 星霧の辺境';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.2初回起動',true);}catch(e){}
+
+
+/* ================= Ver.4.3 仲間の親密度・個別ストーリー ================= */
+const V43_AFFINITY_MAX=100;
+const V43_DAILY_GAIN_MAX=12;
+const V43_STORY_LEVELS=[25,60,100];
+const V43_STORIES={
+  owl:[['最初の約束','「分からない問題ほど、宝物に近いんだ。いっしょに考えよう」'],['夜の図書館','フクロウは閉館後の図書館で、間違えた問題だけを静かに整理してくれた。'],['知恵を継ぐ者','「もう教えるだけじゃないね。きみとぼくは、いっしょに答えを見つける仲間だ」']],
+  cat:[['気まぐれな応援','「今日はここまで……と言いたいけど、あと一問なら付き合うよ」'],['窓辺の作戦会議','ネコは苦手問題を前足で三つに分け、取り組む順番を決めてくれた。'],['となりの特等席','「どんな大冒険より、きみが学ぶとなりが一番落ち着くんだ」']],
+  dog:[['まっすぐな声','「正解でも間違いでも、次の一歩を一緒に走ろう！」'],['雨の日の訓練','イヌは失敗した問題を何度も運び、復習を遊びに変えてくれた。'],['最高の相棒','「きみがあきらめない限り、ぼくも絶対に離れない！」']],
+  fox:[['ひらめきの種','「答えを覚えるより、なぜそうなるかを探す方がおもしろいよ」'],['狐火の地図','キツネは弱点タグを狐火で照らし、次に進む道を示した。'],['知恵比べの果て','「きみにはもう小細工はいらない。正面から考える強さがある」']],
+  penguin:[['小さな発見','「冷たい海にも、知らないことがいっぱいあるんだ」'],['氷上の研究会','ペンギンは理科の記録を氷の板に並べ、共通点を見つけた。'],['世界を調べる翼','「飛べなくても、学べば世界のどこへでも行けるね」']],
+  dragon:[['力の使い方','「難しい計算は炎と同じだ。順番を守れば味方になる」'],['山頂の修行','ドラゴンは一問ずつ解法を確かめ、速さより確実さを教えた。'],['知恵ある竜騎士','「きみの強さは答えの数ではない。考え続けた時間そのものだ」']],
+  unicorn:[['星のしるし','「今日の一問が、未来の道を少しだけ明るくするよ」'],['願いの泉','ユニコーンは努力した日の記録を光に変え、泉へ映した。'],['希望の伴走者','「願いは待つものじゃない。きみは毎日、自分で近づいてきたんだ」']],
+  rabbit:[['一歩ずつ','「急がなくていいよ。昨日より一問進めば、それは大きな一歩」'],['時計草の丘','ウサギは短い学習時間を集め、長い道になることを見せてくれた。'],['続ける魔法','「きみが身につけた一番強い魔法は、また明日も始められることだよ」']],
+  turtle:[['ゆっくり確実に','「間違いは止まる理由じゃない。確認する合図なんだ」'],['古い石板','カメは昔の失敗記録を読み、同じ間違いを避ける知恵を教えた。'],['千里の学び','「速い日も遅い日もあった。でも、きみは確かにここまで来た」']],
+  phoenix:[['もう一度','「失敗した問題こそ、次に強く生まれ変われる」'],['灰からの答え','フェニックスは不正解の記録を燃やさず、新しい解法へ作り直した。'],['不滅の挑戦者','「何度でも始められるきみの心は、ぼくの炎より強い」']],
+  lion:[['王の心得','「強さとは、苦手な問題から逃げないことだ」'],['静かな玉座','ライオンは勝利を祝う前に、間違えた一問を一緒に見直した。'],['知恵の王の友','「王国を救ったのは力ではない。学び続けたきみ自身だ」']]
+};
+function ensureV43(){
+  ensureV42();
+  if(!state.v43||typeof state.v43!=='object'||Array.isArray(state.v43))state.v43={};
+  if(!state.v43.affinity||typeof state.v43.affinity!=='object'||Array.isArray(state.v43.affinity))state.v43.affinity={};
+  if(!state.v43.seenStories||typeof state.v43.seenStories!=='object'||Array.isArray(state.v43.seenStories))state.v43.seenStories={};
+  if(!state.v43.dailyGain||typeof state.v43.dailyGain!=='object'||Array.isArray(state.v43.dailyGain)||state.v43.dailyGain.date!==v34DateKey())state.v43.dailyGain={date:v34DateKey(),byCompanion:{}};
+  if(!state.v43.dailyGain.byCompanion||typeof state.v43.dailyGain.byCompanion!=='object')state.v43.dailyGain.byCompanion={};
+  if(!state.v43.dailyTalk||typeof state.v43.dailyTalk!=='object'||state.v43.dailyTalk.date!==v34DateKey())state.v43.dailyTalk={date:v34DateKey(),seen:false,companionId:null};
+  for(const id of (state.companions||[])){if(!Number.isFinite(state.v43.affinity[id]))state.v43.affinity[id]=0;if(!Array.isArray(state.v43.seenStories[id]))state.v43.seenStories[id]=[];}
+  return state.v43;
+}
+function v43Affinity(id){return Math.max(0,Math.min(V43_AFFINITY_MAX,Number(ensureV43().affinity[id])||0));}
+function v43AffinityRank(id){const a=v43Affinity(id);if(a>=100)return {n:4,name:'心を結んだ相棒',icon:'💖'};if(a>=60)return {n:3,name:'かけがえのない仲間',icon:'✨'};if(a>=25)return {n:2,name:'信頼する友だち',icon:'🤝'};return {n:1,name:'冒険の仲間',icon:'🌱'};}
+function v43StoryCount(id){return V43_STORY_LEVELS.filter(n=>v43Affinity(id)>=n).length;}
+function v43CanGain(q){const mode=state.quiz&&state.quiz.mode;return !['tower','eliteBoss','chapterBoss','finalBoss','revivalBoss','frontierExpedition'].includes(mode);}
+function v43AddAffinity(id,amount=1){
+  const v=ensureV43();if(!(state.companions||[]).includes(id)||amount<=0)return 0;
+  const today=Number(v.dailyGain.byCompanion[id])||0,room=Math.max(0,V43_DAILY_GAIN_MAX-today),cap=Math.max(0,V43_AFFINITY_MAX-v43Affinity(id)),gain=Math.min(amount,room,cap);if(!gain)return 0;
+  const before=v43Affinity(id);v.affinity[id]=before+gain;v.dailyGain.byCompanion[id]=today+gain;
+  for(const threshold of V43_STORY_LEVELS){if(before<threshold&&v.affinity[id]>=threshold){const c=COMPANIONS.find(x=>x.id===id);addEvent('💞',`${c?c.name:'仲間'}との親密度が${threshold}になった`);}}
+  return gain;
+}
+function v43Party(){let ids=[];try{ids=activePartyIds();}catch(e){ids=state.party||[];}return (ids||[]).slice(0,3);}
+function v43DailyCompanion(){const v=ensureV43();let ids=v43Party().filter(id=>(state.companions||[]).includes(id));if(!ids.length)ids=(state.companions||[]).slice();if(!ids.length)return null;if(!v.dailyTalk.companionId||!ids.includes(v.dailyTalk.companionId)){const seed=v34DateKey().split('-').join('');const n=parseInt(seed,10)||0;v.dailyTalk.companionId=ids[n%ids.length];}return COMPANIONS.find(c=>c.id===v.dailyTalk.companionId)||null;}
+function v43DailyLine(c){const rank=v43AffinityRank(c.id),a=v43Affinity(c.id);if(a>=100)return `「今日も一緒に進もう。きみと学ぶ時間が、ぼくの一番の宝物だ」`;if(a>=60)return `「苦手な問題も、二人ならきっと越えられるよ」`;if(a>=25)return `「昨日より少し進んだね。その積み重ねをぼくは知っているよ」`;return `「今日はどんな問題に出会えるかな。いっしょに始めよう！」`;}
+function v43ShowDailyTalk(){const v=ensureV43(),c=v43DailyCompanion();if(!c){showToast('まだ仲間がいません');return;}v.dailyTalk.seen=true;save();const panel=el('div',{className:'v31Modal',onclick:e=>{if(e.target===panel)panel.remove()}},[el('div',{className:'v31ModalPanel v43TalkModal'},[el('div',{className:'v43BigIcon'},c.icon),el('div',{className:'v32Version'},'TODAY’S COMPANION'),el('h2',{},c.name),el('div',{className:'v43Quote'},v43DailyLine(c)),el('div',{className:'small'},`${v43AffinityRank(c.id).icon} ${v43AffinityRank(c.id).name}　親密度 ${v43Affinity(c.id)}/100`),el('button',{className:'primary',style:{marginTop:'14px'},onclick:()=>panel.remove()},'今日も一緒に学ぶ')])]);document.body.appendChild(panel);}
+function v43OpenStory(id,index){const c=COMPANIONS.find(x=>x.id===id),stories=V43_STORIES[id]||[];if(!c||!stories[index]||v43Affinity(id)<V43_STORY_LEVELS[index])return;const v=ensureV43();if(!v.seenStories[id].includes(index))v.seenStories[id].push(index);save();const [title,text]=stories[index];const panel=el('div',{className:'cinemaModal'},[el('div',{className:'cinemaPanel'},[el('div',{className:'summonRing'},[el('div',{className:'chestIcon'},c.icon)]),el('div',{className:'cinemaKicker'},`${c.name}・親密度物語 ${index+1}`),el('div',{className:'cinemaTitle'},title),el('p',{className:'cinemaText'},text),el('button',{className:'cinemaNext',style:{width:'100%',marginTop:'12px'},onclick:()=>panel.remove()},'物語を閉じる')])]);document.body.appendChild(panel);}
+function renderV43Bonds(){
+  const v=ensureV43(),owned=COMPANIONS.filter(c=>(state.companions||[]).includes(c.id)),wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← 王国'),el('div',{className:'pill'},`仲間 ${owned.length}/${COMPANIONS.length}`)]));
+  wrap.appendChild(el('div',{className:'v43Hero'},[el('div',{className:'v43HeroIcon'},'💞'),el('div',{className:'v32Version'},'VER.4.3 COMPANION BONDS'),el('h2',{},'仲間との絆'),el('p',{},'通常の学習で正解すると、編成中の仲間との親密度が上がります。塔やボスだけでは上がりません。') ]));
+  if(!owned.length){wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'small'},'宝箱から仲間を迎えると、ここに親密度と物語が表示されます。')]));return wrap;}
+  const total=owned.reduce((a,c)=>a+v43Affinity(c.id),0),stories=owned.reduce((a,c)=>a+v43StoryCount(c.id),0);
+  wrap.appendChild(el('div',{className:'v43Summary section'},[el('div',{className:'stat'},[el('div',{className:'num'},total),el('div',{className:'small'},'親密度合計')]),el('div',{className:'stat'},[el('div',{className:'num'},stories),el('div',{className:'small'},'解放物語')]),el('div',{className:'stat'},[el('div',{className:'num'},owned.filter(c=>v43Affinity(c.id)>=100).length),el('div',{className:'small'},'最高の相棒')])]));
+  wrap.appendChild(el('button',{className:'secondary',onclick:v43ShowDailyTalk},'💬 今日の仲間のひとこと'));
+  owned.forEach(c=>{const a=v43Affinity(c.id),rank=v43AffinityRank(c.id),daily=Number(v.dailyGain.byCompanion[c.id])||0;wrap.appendChild(el('div',{className:`v43Companion ${(state.party||[]).includes(c.id)?'party':''}`},[
+    el('div',{className:'v43CompIcon'},c.icon),el('div',{className:'grow'},[el('div',{className:'v43CompHead'},[el('b',{},c.name),el('span',{className:'pill'},`${rank.icon} ${rank.name}`)]),el('div',{className:'bar',style:{marginTop:'7px'}},[el('div',{style:{width:`${a}%`}})]),el('div',{className:'small',style:{marginTop:'4px'}},`親密度 ${a}/100　今日 +${daily}/${V43_DAILY_GAIN_MAX}`),el('div',{className:'v43StoryButtons'},V43_STORY_LEVELS.map((need,i)=>{const open=a>=need,seen=v.seenStories[c.id].includes(i);return el('button',{className:`v43StoryBtn ${open?'open':''} ${seen?'seen':''}`,disabled:!open,onclick:()=>v43OpenStory(c.id,i)},open?`${seen?'📖':'✨'} 物語${i+1}`:`🔒 ${need}`)}))])
+  ]));});return wrap;
+}
+const v43OldGrantReward=grantReward;
+grantReward=function(q,ok){const r=v43OldGrantReward(q,ok);if(ok&&v43CanGain(q)){let gained=0;v43Party().forEach(id=>{gained+=v43AddAffinity(id,1);});if(gained)r.v43Affinity=gained;}return r;};
+const v43OldPartyScreen=renderPartyScreen;
+renderPartyScreen=function(){const wrap=v43OldPartyScreen();wrap.appendChild(el('button',{className:'secondary',style:{marginTop:'10px'},onclick:()=>{state.screen='v43bonds';render()}},'💞 仲間との絆・個別物語'));return wrap;};
+const v43OldHome=renderHome;
+renderHome=function(){ensureV43();const wrap=v43OldHome(),footer=wrap.querySelector('.footerNote'),c=v43DailyCompanion(),unread=(state.companions||[]).reduce((n,id)=>n+V43_STORY_LEVELS.filter((need,i)=>v43Affinity(id)>=need&&!ensureV43().seenStories[id].includes(i)).length,0);const card=el('div',{className:'v43HomeCard section'},[el('div',{className:'v43HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.4.3'),el('div',{style:{fontWeight:'1000',fontSize:'15px'}},'💞 仲間との絆')]),el('span',{className:'pill'},unread?`新しい物語 ${unread}`:(c?`${c.icon} ${v43Affinity(c.id)}/100`:'仲間待ち'))]),el('div',{className:'small',style:{marginTop:'6px'}},c?(ensureV43().dailyTalk.seen?`${c.name}と今日も一緒に学べます。`:`${c.name}から今日のひとことがあります。`):'仲間を迎えると、毎日の学習で親密度が育ちます。'),el('div',{className:'grid2',style:{marginTop:'9px'}},[el('button',{className:'secondary',onclick:()=>{state.screen='v43bonds';render()}},'絆を見る'),el('button',{className:'secondary',disabled:!c,onclick:v43ShowDailyTalk},'今日のひとこと')])]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v43OldRender=render;
+render=function(){ensureV43();if(state.screen==='v43bonds'){checkAchievements();save();const app=document.getElementById('app');app.innerHTML='';app.appendChild(renderV43Bonds());return;}return v43OldRender();};
+const v43Style=document.createElement('style');v43Style.textContent=`
+.v43Hero{border-radius:28px;padding:18px 16px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(251,113,133,.23),transparent 40%),linear-gradient(145deg,rgba(190,24,93,.17),rgba(124,58,237,.15),rgba(15,23,42,.46));border:1px solid rgba(251,207,232,.30);box-shadow:0 16px 42px rgba(0,0,0,.21)}.v43HeroIcon{font-size:62px}.v43Hero h2{font-size:21px;margin:5px 0}.v43Hero p{font-size:12px;line-height:1.75;color:#fce7f3}.v43Summary{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.v43Summary .num{font-size:17px}.v43Companion{display:flex;gap:10px;align-items:flex-start;border-radius:20px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);padding:11px;margin-top:9px}.v43Companion.party{background:rgba(251,113,133,.08);border-color:rgba(251,113,133,.30)}.v43CompIcon{font-size:38px;width:44px;text-align:center}.v43CompHead,.v43HomeHead{display:flex;align-items:center;justify-content:space-between;gap:8px}.v43StoryButtons{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}.v43StoryBtn{border-radius:11px;padding:7px 4px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);font-size:9px;font-weight:900;color:#94a3b8}.v43StoryBtn.open{background:rgba(251,113,133,.10);border-color:rgba(251,113,133,.28);color:#fbcfe8}.v43StoryBtn.seen{background:rgba(78,205,196,.08);border-color:rgba(78,205,196,.24);color:#99f6e4}.v43HomeCard{border-radius:22px;background:linear-gradient(135deg,rgba(190,24,93,.09),rgba(124,58,237,.09));border:1px solid rgba(251,207,232,.22);padding:13px;margin-top:10px}.v43TalkModal{text-align:center}.v43BigIcon{font-size:72px}.v43Quote{border-radius:18px;background:rgba(251,113,133,.09);border:1px solid rgba(251,113,133,.25);padding:13px;margin:12px 0;font-size:13px;line-height:1.8;color:#fdf2f8}@media(max-width:390px){.v43Summary{grid-template-columns:repeat(3,1fr)}.v43StoryButtons{grid-template-columns:1fr}.v43Companion{align-items:flex-start}}
+`;document.head.appendChild(v43Style);
+document.title='ロスト・クリスタル Ver.4.3 仲間との絆';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.3初回起動',true);}catch(e){}
+
+
+/* ================= Ver.4.5 忘却の塔・変化する試練 ================= */
+const V45_SUBJECTS=['国語','社会','理科','算数'];
+function ensureV45(){
+  ensureV43();
+  if(!state.v45||typeof state.v45!=='object'||Array.isArray(state.v45))state.v45={};
+  if(!Array.isArray(state.v45.history))state.v45.history=[];
+  state.v45.history=state.v45.history.filter(x=>x&&Number.isFinite(Number(x.floor))).slice(-40);
+  state.v45.bestTowerCombo=Math.max(0,Math.floor(Number(state.v45.bestTowerCombo)||0));
+  return state.v45;
+}
+function v45Rule(floor){
+  if(floor%10===0)return {id:'lord',icon:'👁️',name:'塔主の間',desc:'高難度問題を突破する通常の塔主戦。'};
+  const n=floor%10;
+  if(n===2){const subject=V45_SUBJECTS[Math.floor(floor/10)%V45_SUBJECTS.length];return {id:'subject',icon:subject==='国語'?'📖':subject==='社会'?'🗾':subject==='理科'?'🔬':'🧮',name:`${subject}の試練`,subject,desc:`${subject}だけから5問出題されます。`};}
+  if(n===4)return {id:'weak',icon:'🏷️',name:'弱点の鏡',desc:'現在の苦手タグ・復習問題を優先して出題します。'};
+  if(n===7)return {id:'combo',icon:'🔥',name:'連続正解の回廊',desc:'通常の正解数に加えて、3問連続正解が必要です。'};
+  if(floor%5===0)return {id:'guardian',icon:'🗿',name:'守護者の間',desc:'4問正解が必要な節目の階です。'};
+  return {id:'normal',icon:'🌀',name:'探索階',desc:'5問中3問正解で次の階へ進みます。'};
+}
+function v45RecentIds(){
+  const h=(state.v31&&state.v31.questionHistory)||[];
+  return new Set(h.slice(-50).map(x=>Number(x&&x.id)).filter(Number.isFinite));
+}
+function v45PickQuestions(floor){
+  const rule=v45Rule(floor),recent=v45RecentIds();
+  let pool=[];
+  if(rule.id==='subject')pool=QUESTIONS.filter(q=>q.subject===rule.subject);
+  else if(rule.id==='weak'){
+    let ids=[];try{const t=weakTagStats();if(t&&t[0])ids=t[0].ids||[];}catch(e){}
+    if(!ids.length)ids=getWeakIds();
+    pool=ids.map(id=>QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+    if(pool.length<5){let sub=null,tag=null;try{const t=weakTagStats();if(t&&t[0]){sub=t[0].subject;tag=t[0].tag;}}catch(e){}
+      if(sub&&tag)pool=pool.concat(QUESTIONS.filter(q=>q.subject===sub&&v24QuestionTag(q)===tag));
+    }
+  }else{
+    const minDiff=floor>=60?3:floor>=20?2:1;
+    pool=QUESTIONS.filter(q=>(q.difficulty||1)>=minDiff);
+  }
+  pool=[...new Map(pool.map(q=>[q.id,q])).values()];
+  let fresh=pool.filter(q=>!recent.has(Number(q.id)));
+  if(fresh.length<5)fresh=pool;
+  if(fresh.length<5)fresh=QUESTIONS.filter(q=>!recent.has(Number(q.id)));
+  if(fresh.length<5)fresh=QUESTIONS.slice();
+  return v30PickFromPool(fresh,5,floor>=10);
+}
+function v45StartTowerAt(floor,practice=false){
+  const v=ensureV34(),rule=v45Rule(floor);
+  if(!practice){if(v.towerKeys<1){showToast('🔑 塔の鍵がありません');return;}v.towerKeys--;}
+  const tier=v34TowerTier(floor),goal=rule.id==='guardian'||rule.id==='lord'?4:3;
+  state.quiz={mode:practice?'towerPractice':'tower',subject:rule.subject||'すべて',questions:v45PickQuestions(floor),index:0,answered:false,selected:null,results:[],rewards:{coins:0,mana:0,stone:0,book:0,crystal:0,map:0,relic:0},start:Date.now(),end:null,score:0,combo:0,bestCombo:0,hintUsed:false,towerFloor:floor,towerGoal:goal,towerRule:rule.id,v45RuleName:rule.name,v45Practice:practice,boss:{name:`忘却の塔 ${floor}階・${rule.name}`,icon:rule.icon}};
+  state.screen='quiz';save();render();
+}
+v34StartTower=function(){v45StartTowerAt(v34TowerFloor(),false);};
+function v45PracticeFloor(floor){const best=ensureV34().towerBestFloor||0;if(floor<1||floor>best)return;v45StartTowerAt(floor,true);}
+function v45PracticeFloors(best){const a=[];for(let n=10;n<=best;n+=10)a.push(n);if(best>=5&&!a.includes(5))a.unshift(5);return a.slice(-10);}
+const v45OldChoose=choose;
+choose=function(choice){
+  const qz=state.quiz;
+  if(qz&&qz.mode==='tower'&&qz.towerRule==='combo'&&!qz.answered&&qz.index===qz.questions.length-1){
+    const q=qz.questions[qz.index],correct=choice===q.answer;
+    const prospective=correct?(Number(qz.combo)||0)+1:0;
+    const best=Math.max(Number(qz.bestCombo)||0,prospective);
+    if(best<3)qz.towerGoal=99;
+  }
+  return v45OldChoose(choice);
+};
+const v45OldGoal=v18Goal;
+v18Goal=function(qz){if(qz&&qz.mode==='towerPractice')return qz.towerGoal||3;return v45OldGoal(qz);};
+const v45OldFinalize=finalizeQuizRewards;
+finalizeQuizRewards=function(qz){
+  v45OldFinalize(qz);if(!qz||qz.v45Finalized)return;
+  const v=ensureV45();
+  if(qz.mode==='tower'){
+    const combo=Math.max(Number(qz.bestCombo)||0,...(qz.results||[]).map((_,i)=>0));
+    v.bestTowerCombo=Math.max(v.bestTowerCombo,combo);
+    v.history.push({floor:qz.towerFloor||0,win:!!qz.v34Win,rule:qz.towerRule||'normal',correct:(qz.results||[]).filter(r=>r.correct).length,combo,at:Date.now()});
+    v.history=v.history.slice(-40);
+  }
+  if(qz.mode==='towerPractice'){
+    const correct=(qz.results||[]).filter(r=>r.correct).length,combo=Number(qz.bestCombo)||0;
+    const comboOk=qz.towerRule!=='combo'||combo>=3;
+    qz.v45PracticeWin=correct>=(qz.towerGoal||3)&&comboOk;
+    qz.clearStory={title:qz.v45PracticeWin?`${qz.towerFloor}階の練習成功`:`${qz.towerFloor}階を復習`,text:[`${correct}/${(qz.results||[]).length}問正解。練習では鍵を消費せず、塔メダル・到達記録も増えません。`,qz.towerRule==='combo'?`最高連続正解：${combo}`:'苦手を確認したら、最新階へ挑戦しよう。']};
+    v.bestTowerCombo=Math.max(v.bestTowerCombo,combo);
+  }
+  qz.v45Finalized=true;save();
+};
+const v45OldRenderQuiz=renderQuiz;
+renderQuiz=function(){
+  const wrap=v45OldRenderQuiz(),qz=state.quiz;
+  if(qz&&(qz.mode==='tower'||qz.mode==='towerPractice')){
+    const rule=v45Rule(qz.towerFloor||1),old=wrap.querySelector('.bossBanner,.bossPanel');
+    if(old){const name=old.querySelector('.bossName');if(name)name.textContent=`${rule.icon} 忘却の塔 ${qz.towerFloor}階・${rule.name}`;const meta=old.querySelector('.bossMeta,.small');if(meta)meta.textContent=qz.mode==='towerPractice'?`練習階／${rule.desc}`:`${rule.desc} ${qz.towerGoal<90?`目標${qz.towerGoal}問正解。`:''}`;}
+    const box=wrap.querySelector('.quizBox');if(box&&qz.towerRule==='combo'){const badge=el('div',{className:'v45ComboBadge'},`🔥 最高連続正解 ${qz.bestCombo||0}／必要 3`);box.parentNode.insertBefore(badge,box);}
+  }
+  return wrap;
+};
+const v45OldRenderResult=renderResult;
+renderResult=function(){
+  const wrap=v45OldRenderResult(),qz=state.quiz;
+  if(qz&&qz.mode==='towerPractice'){
+    const score=wrap.querySelector('.resultScore'),icon=score&&score.querySelector('.icon'),note=score&&score.querySelector('.small');
+    if(icon)icon.textContent=qz.v45PracticeWin?'🧭✨':'📚';
+    if(note)note.textContent=qz.v45PracticeWin?'練習成功。報酬・到達記録はありません。':'練習完了。苦手を確認して再挑戦しよう。';
+    const back=[...wrap.querySelectorAll('button')].find(b=>b.textContent.includes('王国へ戻る'));
+    if(back){back.textContent='忘却の塔へ戻る';back.onclick=()=>{state.screen='v34tower';render();};}
+  }
+  if(qz&&qz.mode==='tower'&&qz.towerRule==='combo'&&!qz.v34Win){const target=wrap.querySelector('.resultScore');if(target&&target.parentNode)target.parentNode.insertBefore(el('div',{className:'v45RuleResult'},`🔥 連続正解の試練：最高 ${qz.bestCombo||0}連続／必要 3連続`),target.nextSibling);}
+  return wrap;
+};
+const v45OldTowerTitle=v34TowerTitle;
+v34TowerTitle=function(best){if(best>=200)return '忘却の頂を歩む者';if(best>=150)return '星界の塔王';return v45OldTowerTitle(best);};
+const v45OldTowerScreen=renderV34Tower;
+renderV34Tower=function(){
+  ensureV45();const wrap=v45OldTowerScreen(),v=ensureV34(),floor=v34TowerFloor(),rule=v45Rule(floor),best=v.towerBestFloor||0;
+  const hero=wrap.querySelector('.v34TowerHero');if(hero){const icon=hero.querySelector('.v34TowerIcon');if(icon)icon.textContent=rule.icon;const h2=hero.querySelector('h2');if(h2)h2.textContent=`忘却の塔 ${floor}階・${rule.name}`;const p=hero.querySelector('p');if(p)p.textContent=rule.desc;}
+  const primary=[...wrap.querySelectorAll('button')].find(b=>b.classList.contains('primary'));if(primary)primary.textContent=v.towerKeys>0?`🔑 鍵を1本使って ${rule.name}へ`:'鍵がありません';
+  const firstButton=primary;
+  const ruleCard=el('div',{className:'v45RuleCard section'},[el('div',{className:'v45RuleHead'},[el('div',{className:'v45RuleIcon'},rule.icon),el('div',{className:'grow'},[el('b',{},`今回の特殊ルール：${rule.name}`),el('div',{className:'small'},rule.desc)])]),el('div',{className:'chipRow'},[el('span',{className:'chip'},`最高連続 ${ensureV45().bestTowerCombo}`),el('span',{className:'chip'},`記録 ${ensureV45().history.length}戦`)])]);
+  if(firstButton&&firstButton.parentNode)firstButton.parentNode.insertBefore(ruleCard,firstButton);
+  const floors=v45PracticeFloors(best);
+  if(floors.length){const practice=el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'🧭 到達済み階の練習'),el('span',{className:'small'},'鍵・報酬なし')]),el('div',{className:'small'},'節目の階へ戻って問題形式を練習できます。到達階・塔メダル・クエスト進捗は増えません。'),el('div',{className:'v45FloorGrid'},floors.map(n=>el('button',{className:'miniBtn',onclick:()=>v45PracticeFloor(n)},`${v45Rule(n).icon} ${n}階`))) ]);wrap.insertBefore(practice,wrap.lastChild);}
+  return wrap;
+};
+const v45OldHome=renderHome;
+renderHome=function(){ensureV45();const wrap=v45OldHome(),footer=wrap.querySelector('.footerNote'),floor=v34TowerFloor(),rule=v45Rule(floor);const card=el('div',{className:'v45HomeCard section'},[el('div',{className:'v45RuleHead'},[el('div',{className:'v45RuleIcon'},rule.icon),el('div',{className:'grow'},[el('div',{className:'v32Version'},'VER.4.5'),el('b',{},`次の塔：${floor}階・${rule.name}`),el('div',{className:'small'},rule.desc)])]),el('button',{className:'secondary',style:{marginTop:'9px'},onclick:()=>{state.screen='v34tower';render()}},'変化する忘却の塔を見る')]);if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v45Style=document.createElement('style');v45Style.textContent=`
+.v45RuleCard,.v45HomeCard{border-radius:21px;background:linear-gradient(135deg,rgba(245,158,11,.11),rgba(99,102,241,.10));border:1px solid rgba(253,230,138,.27);padding:13px}.v45RuleHead{display:flex;align-items:center;gap:10px}.v45RuleIcon{font-size:34px;width:42px;text-align:center}.v45FloorGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:9px}.v45ComboBadge,.v45RuleResult{border-radius:14px;background:rgba(245,158,11,.11);border:1px solid rgba(251,191,36,.32);padding:9px 11px;margin-bottom:9px;text-align:center;font-size:11px;font-weight:1000;color:#fde68a}@media(max-width:390px){.v45FloorGrid{grid-template-columns:repeat(3,1fr)}}
+`;document.head.appendChild(v45Style);
+document.title='ロスト・クリスタル Ver.4.5 変化する忘却の塔';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.5初回起動',true);}catch(e){}
+
+
+
+/* ================= Ver.4.7 全体バランス・UI整理 ================= */
+function ensureV47(){
+  if(!state.v47||typeof state.v47!=='object'||Array.isArray(state.v47))state.v47={};
+  if(typeof state.v47.compactHome!=='boolean')state.v47.compactHome=true;
+  if(!state.v47.balanceSeen||typeof state.v47.balanceSeen!=='object')state.v47.balanceSeen={};
+  return state.v47;
+}
+function v47TodayAnswered(){
+  const d=todayKey();
+  return (state.questionHistory||[]).filter(x=>x&&x.date===d).length;
+}
+function v47NormalAnsweredToday(){
+  const d=todayKey();
+  return (state.questionHistory||[]).filter(x=>x&&x.date===d&&!['tower','towerPractice','eliteBoss','frontier'].includes(x.mode)).length;
+}
+function v47ClaimableSeason(){
+  const v=ensureV39().current;
+  return V39_MILESTONES.filter(m=>v.points>=m.goal&&!v.claims[m.id]).length;
+}
+function v47UnreadStories(){
+  return (state.companions||[]).reduce((n,id)=>n+V43_STORY_LEVELS.filter((need,i)=>v43Affinity(id)>=need&&!ensureV43().seenStories[id].includes(i)).length,0);
+}
+function v47Priority(){
+  const v34=ensureV34(),daily=v34.daily||{};
+  const target=v31DailyGoal();
+  const normal=Math.max(0,Number((ensureV34().daily||{}).studyAnswered||0));
+  if(normal<target)return {icon:'📚',title:'まず今日の学習',text:`通常学習は ${normal}/${target}問。ここを終えると塔の鍵と長期進捗につながります。`,screen:'home',action:'今日の学習へ'};
+  if(!daily.keyClaimed&&Number(daily.studyAnswered||0)>=target)return {icon:'🗝️',title:'日次クエスト報酬',text:'今日の学習報酬を受け取れます。塔へ行く前に回収しましょう。',screen:'v34quests',action:'報酬を受け取る'};
+  if(v47ClaimableSeason())return {icon:'🎁',title:'週間宝箱を受取可能',text:`受け取れる週間宝箱が ${v47ClaimableSeason()}個あります。`,screen:'v39season',action:'週間イベントへ'};
+  if(v47UnreadStories())return {icon:'💞',title:'仲間の物語が解放',text:`未読の仲間ストーリーが ${v47UnreadStories()}話あります。`,screen:'v43bonds',action:'物語を見る'};
+  if(v42Unlocked()&&!ensureV42().expedition.done)return {icon:'🌌',title:'今日の辺境調査',text:'通常学習後の短い追加挑戦です。1日1回、6問で町の復興を進められます。',screen:'v42frontier',action:'辺境へ'};
+  if(v34.towerKeys>0)return {icon:'🗼',title:`忘却の塔 ${v34TowerFloor()}階`,text:`鍵は${v34.towerKeys}本。次の試練を1回だけ進めるのがおすすめです。`,screen:'v34tower',action:'塔へ挑戦'};
+  return {icon:'🔁',title:'復習で知識を定着',text:'塔の鍵がない日は、苦手問題や復習を進めると次の学習が楽になります。',screen:'review',action:'復習へ'};
+}
+function v47EconomyDiagnostics(){
+  const a=ensureV34(),relic=Number(state.resources&&state.resources.relic||0),keys=Number(a.towerKeys||0),medals=Number(a.towerMedals||0);
+  const rows=[];
+  rows.push(keys>25?{level:'warn',icon:'🗝️',name:'塔の鍵が多め',text:`${keys}本あります。塔を1日1〜2回遊ぶ運用なら十分です。今後の鍵報酬を増やす必要はありません。`}:keys<1?{level:'warn',icon:'🗝️',name:'塔の鍵が不足',text:'通常学習の日次・週次クエストを優先してください。'}:{level:'good',icon:'🗝️',name:'塔の鍵',text:`${keys}本。現在の範囲は適正です。`});
+  rows.push(medals>250?{level:'warn',icon:'🏅',name:'塔メダルが多め',text:`${medals}枚あります。仲間訓練、進化、装備強化、辺境復興のいずれかを進める時期です。`}:medals<10?{level:'warn',icon:'🏅',name:'塔メダルが少なめ',text:'塔・週間イベント・高難度ボスの初回報酬を中心に集めましょう。'}:{level:'good',icon:'🏅',name:'塔メダル',text:`${medals}枚。育成と消費のバランスは概ね良好です。`});
+  rows.push(relic>20?{level:'warn',icon:'🔮',name:'古代の核が余り気味',text:`${relic}個あります。Lv.10の仲間進化を優先すると長期目標へつながります。`}:relic<1&&v36EliteClearCount()>=3?{level:'warn',icon:'🔮',name:'古代の核が不足',text:'レジェンド強敵や長期クエストの一度限り報酬を確認してください。'}:{level:'good',icon:'🔮',name:'古代の核',text:`${relic}個。進化速度を急激に上げない量です。`});
+  const total=totalAnswered(),gameRuns=(ensureV34().towerClears||0)+v36EliteClearCount()+(ensureV42().expedition.totalWins||0);
+  rows.push(total>0&&gameRuns>total/5?{level:'warn',icon:'⚖️',name:'ゲーム比率が高め',text:'追加挑戦が多くなっています。通常学習12〜20問を先に終え、塔は1日1〜2回程度を目安にしてください。'}:{level:'good',icon:'⚖️',name:'学習とゲームの比率',text:'現時点で大きな偏りは検出されません。'});
+  return rows;
+}
+function renderV47Balance(){
+  ensureV47();const wrap=el('div',{className:'screen fade'}),rows=v47EconomyDiagnostics();
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← ホーム'),el('div',{className:'pill'},'Ver.4.7') ]));
+  wrap.appendChild(el('div',{className:'v32Overall'},[el('div',{className:'icon'},'⚖️'),el('h2',{},'全体バランス診断'),el('p',{},'セーブ内容を変更せず、現在の資源量と遊び方から過不足を確認します。') ]));
+  wrap.appendChild(el('div',{className:'v47Toggle'},[el('div',{},[el('b',{},'コンパクトホーム'),el('div',{className:'small'},'追加コンテンツを1枚の冒険ハブへまとめます。')]),el('button',{className:'secondary',onclick:()=>{ensureV47().compactHome=!ensureV47().compactHome;save();render()}},ensureV47().compactHome?'ON':'OFF') ]));
+  rows.forEach(r=>wrap.appendChild(el('div',{className:`v47Diag ${r.level}`},[el('div',{className:'v47DiagHead'},[el('b',{},`${r.icon} ${r.name}`),el('span',{className:'pill'},r.level==='good'?'適正':'確認')]),el('p',{},r.text)])));
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'運用の目安')]),el('div',{className:'small'},'通常学習を先に完了し、その後に塔または辺境を1〜2回。週間イベントと長期報酬は、通知が出たときだけ確認する運用が、学習時間を圧迫しにくい設計です。')]));
+  return wrap;
+}
+const v47OldRender=render;
+render=function(){ensureV47();if(state.screen==='v47balance'){app.replaceChildren(renderV47Balance());return;}return v47OldRender();};
+const v47OldHome=renderHome;
+renderHome=function(){
+  const v=ensureV47(),wrap=v47OldHome(),footer=wrap.querySelector('.footerNote'),p=v47Priority(),a=ensureV34();
+  if(v.compactHome){
+    ['.v34HomeCard','.v35HomeCard','.v36HomeCard','.v37HomeCard','.v38HomeCard','.v39HomeCard','.v40HomeCard','.v41HomeCard','.v42HomeCard','.v43HomeCard','.v45HomeCard'].forEach(sel=>wrap.querySelectorAll(sel).forEach(x=>x.remove()));
+  }
+  const hub=el('div',{className:'v47Hub section'},[
+    el('div',{className:'v47HubHead'},[el('div',{},[el('div',{className:'v32Version'},'VER.4.7'),el('div',{style:{fontWeight:'1000',fontSize:'16px'}},'🧭 冒険ハブ')]),el('button',{className:'ghost',onclick:()=>{state.screen='v47balance';render()}},'バランス診断')]),
+    el('div',{className:'v47Priority'},[el('b',{},`${p.icon} ${p.title}`),el('span',{},p.text),el('button',{className:'primary',style:{marginTop:'9px',padding:'12px'},onclick:()=>{if(p.screen==='home'){startQuiz('daily','すべて');}else{state.screen=p.screen;render();}}},p.action)]),
+    el('div',{className:'v47ResourceStrip'},[el('div',{className:'v47Resource'},[el('b',{},a.towerKeys),el('span',{},'塔の鍵')]),el('div',{className:'v47Resource'},[el('b',{},a.towerMedals),el('span',{},'塔メダル')]),el('div',{className:'v47Resource'},[el('b',{},state.resources.relic||0),el('span',{},'古代の核')]),el('div',{className:'v47Resource'},[el('b',{},`${v37CollectionPercent()}%`),el('span',{},'図鑑')])]),
+    el('div',{className:'v47Quick'},[
+      el('button',{className:'secondary',onclick:()=>{state.screen='v34tower';render()}},'🗼 塔・クエスト'),
+      el('button',{className:'secondary',onclick:()=>{state.screen='v35companions';render()}},'🤝 仲間育成'),
+      el('button',{className:'secondary',onclick:()=>{state.screen='v39season';render()}},'🎪 週間イベント'),
+      el('button',{className:'secondary',onclick:()=>{state.screen=v42Unlocked()?'v42frontier':'v41research';render()}},v42Unlocked()?'🌌 星霧の辺境':'🔬 王国研究')
+    ])
+  ]);
+  if(footer)wrap.insertBefore(hub,footer);else wrap.appendChild(hub);return wrap;
+};
+
+document.title='ロスト・クリスタル Ver.4.7 バランス・UI整理';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.7初回起動',true);}catch(e){}
+
+
+/* ================= Ver.4.8 保護者向けゲーム進捗レポート ================= */
+function ensureV48(){
+  if(!state.v48||typeof state.v48!=='object'||Array.isArray(state.v48))state.v48={};
+  if(!state.v48.parentPrefs||typeof state.v48.parentPrefs!=='object')state.v48.parentPrefs={};
+  if(typeof state.v48.parentPrefs.warnGameRatio!=='number')state.v48.parentPrefs.warnGameRatio=0.35;
+  return state.v48;
+}
+const V48_GAME_MODES=new Set(['tower','towerPractice','eliteBoss','frontierExpedition','weekend','boss','chapterBoss','finalBoss']);
+const V48_STUDY_MODES=new Set(['daily','subject','review','jpDungeon','entrance','tagTraining','rush']);
+function v48RecentRows(days=7){
+  ensureV31();const from=Date.now()-days*86400000;
+  return (state.v31.questionHistory||[]).filter(x=>x&&Number(x.at||0)>=from);
+}
+function v48ModeGroup(mode){
+  if(V48_GAME_MODES.has(mode))return 'game';
+  if(mode==='review'||mode==='tagTraining')return 'review';
+  return 'study';
+}
+function v48Stats(days=7){
+  const rows=v48RecentRows(days),s={total:rows.length,correct:0,study:0,review:0,game:0,byMode:{},bySubject:{},days:{}};
+  rows.forEach(x=>{
+    if(x.correct)s.correct++;
+    const g=v48ModeGroup(x.mode);s[g]++;
+    s.byMode[x.mode||'unknown']=(s.byMode[x.mode||'unknown']||0)+1;
+    s.bySubject[x.subject||'その他']=s.bySubject[x.subject||'その他']||{n:0,c:0};s.bySubject[x.subject||'その他'].n++;if(x.correct)s.bySubject[x.subject||'その他'].c++;
+    const d=new Date(Number(x.at||Date.now()));const key=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if(!s.days[key])s.days[key]={study:0,review:0,game:0,total:0};s.days[key][g]++;s.days[key].total++;
+  });
+  s.accuracy=s.total?Math.round(s.correct/s.total*100):0;
+  s.gameRatio=s.total?s.game/s.total:0;
+  s.learning=s.study+s.review;
+  return s;
+}
+function v48ModeLabel(mode){return ({daily:'今日の学習',subject:'教科別探索',review:'復習',jpDungeon:'国語特訓',entrance:'入試チャレンジ',tagTraining:'タグ特訓',rush:'タイムアタック',tower:'忘却の塔',towerPractice:'塔の練習',eliteBoss:'記憶の強敵',frontierExpedition:'辺境調査',weekend:'週末イベント',boss:'復活ボス',chapterBoss:'章ボス',finalBoss:'最終ボス'})[mode]||mode||'その他';}
+function v48EstimatedRuns(s){
+  const q=s.byMode;
+  return {
+    tower:Math.ceil(((q.tower||0)+(q.towerPractice||0))/5),
+    elite:Math.ceil((q.eliteBoss||0)/9),
+    frontier:Math.ceil((q.frontierExpedition||0)/6),
+    other:Math.ceil(((q.weekend||0)+(q.boss||0)+(q.chapterBoss||0)+(q.finalBoss||0))/7)
+  };
+}
+function v48Assessment(s){
+  const warn=ensureV48().parentPrefs.warnGameRatio;
+  if(!s.total)return {level:'neutral',icon:'📝',title:'まだ直近記録がありません',text:'通常学習を始めると、直近7日の学習とゲームの比率を表示します。'};
+  if(s.study===0&&s.game>0)return {level:'bad',icon:'⚠️',title:'通常学習を先に行う運用へ',text:'直近7日では追加ゲームの記録があり、通常学習の記録が確認できません。今日の学習を先に完了する運用がおすすめです。'};
+  if(s.gameRatio>warn)return {level:'warn',icon:'⚖️',title:'追加ゲームの比率がやや高め',text:`全回答の${Math.round(s.gameRatio*100)}%が追加ゲームです。通常学習12〜20問の後、塔または辺境を1〜2回までにすると学習中心を保ちやすくなります。`};
+  if(s.learning>=35)return {level:'good',icon:'✅',title:'学習中心の良いバランス',text:`直近7日で学習・復習${s.learning}問、追加ゲーム${s.game}問です。現在の使い方を維持して問題ありません。`};
+  return {level:'neutral',icon:'🌱',title:'無理のない継続ペース',text:`直近7日で学習・復習${s.learning}問です。短時間でも通常学習を先に行う習慣を優先してください。`};
+}
+function v48Bar(label,n,total,icon){const pct=total?Math.round(n/total*100):0;return el('div',{className:'v48BarRow'},[el('div',{className:'v48BarHead'},[el('span',{},`${icon} ${label}`),el('b',{},`${n}問・${pct}%`)]),el('div',{className:'reportBar'},el('div',{style:{width:pct+'%'}}))]);}
+function renderV48ParentGameReport(){
+  ensureV48();const s=v48Stats(7),a=v48Assessment(s),runs=v48EstimatedRuns(s),wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='report';render()}},'← 保護者レポート'),el('div',{className:'pill'},'直近7日') ]));
+  wrap.appendChild(el('div',{className:`v48Assessment ${a.level}`},[el('div',{className:'v48AssessIcon'},a.icon),el('div',{className:'grow'},[el('h2',{},a.title),el('p',{},a.text)])]));
+  wrap.appendChild(el('div',{className:'v48SummaryGrid section'},[
+    el('div',{className:'stat'},[el('div',{className:'small'},'全回答'),el('div',{className:'num'},`${s.total}問`)]),
+    el('div',{className:'stat'},[el('div',{className:'small'},'正答率'),el('div',{className:'num'},`${s.accuracy}%`)]),
+    el('div',{className:'stat'},[el('div',{className:'small'},'学習＋復習'),el('div',{className:'num'},`${s.learning}問`)]),
+    el('div',{className:'stat'},[el('div',{className:'small'},'追加ゲーム'),el('div',{className:'num'},`${s.game}問`)])
+  ]));
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'学習とゲームの内訳')]),v48Bar('通常学習',s.study,s.total,'📚'),v48Bar('復習・弱点特訓',s.review,s.total,'🔁'),v48Bar('追加ゲーム',s.game,s.total,'🎮'),el('div',{className:'small',style:{marginTop:'8px'}},'「追加ゲーム」は塔・強敵・辺境・ボス・週末イベントの問題を含みます。問題に答えている時間を集計し、メニュー操作時間は含みません。') ]));
+  const modeRows=Object.entries(s.byMode).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'利用したモード')]),...(modeRows.length?modeRows.map(([m,n])=>el('div',{className:'v48ModeRow'},[el('span',{},v48ModeLabel(m)),el('b',{},`${n}問`)])):[el('div',{className:'small'},'記録なし')]),el('div',{className:'v48Estimate'},`推定挑戦回数：塔 ${runs.tower}回／強敵 ${runs.elite}回／辺境 ${runs.frontier}回／その他ボス ${runs.other}回`),el('div',{className:'small'},'挑戦回数は保存された回答数から算出した目安です。中断や問題数の異なる戦闘では実際の回数とずれる場合があります。') ]));
+  const subjects=['国語','社会','理科','算数'];
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'教科別・直近7日')]),...subjects.map(sub=>{const x=s.bySubject[sub]||{n:0,c:0};return el('div',{className:'v48ModeRow'},[el('span',{},sub),el('b',{},x.n?`${x.n}問・${Math.round(x.c/x.n*100)}%`:'0問')]);})]));
+  const season=ensureV39().current,longDone=V38_LONG_QUESTS.filter(q=>v38LongProgress(q)>=q.goal).length;
+  wrap.appendChild(el('div',{className:'v48ProgressCard section'},[el('div',{className:'sectionTitle'},[el('span',{},'長期ゲーム進捗'),el('span',{className:'small'},'参考情報')]),el('div',{className:'v48ProgressGrid'},[
+    el('div',{},[el('b',{},`${ensureV34().towerBestFloor||0}階`),el('span',{},'塔最高')]),
+    el('div',{},[el('b',{},`${v36EliteClearCount()}/15`),el('span',{},'強敵')]),
+    el('div',{},[el('b',{},`${v37EvolvedCount()}/${COMPANIONS.length}`),el('span',{},'進化')]),
+    el('div',{},[el('b',{},`${season.points||0}pt`),el('span',{},'今週')]),
+    el('div',{},[el('b',{},`${longDone}/${V38_LONG_QUESTS.length}`),el('span',{},'長期クエスト')]),
+    el('div',{},[el('b',{},`${v37CollectionPercent()}%`),el('span',{},'図鑑')])
+  ]),el('div',{className:'small',style:{marginTop:'9px'}},'この欄は学習評価ではなく、ゲーム側の消化速度を確認するための参考値です。') ]));
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'保護者向け運用提案')]),el('div',{className:'v30PlanItem'},[el('span',{},'1'),el('div',{},'最初に「今日の学習」12〜20問を完了する。')]),el('div',{className:'v30PlanItem'},[el('span',{},'2'),el('div',{},'追加ゲームは、塔・辺境・強敵のうち1〜2種類に絞る。')]),el('div',{className:'v30PlanItem'},[el('span',{},'3'),el('div',{},'正答率が下がった週は、塔の階数より復習・苦手タグを優先する。')]) ]));
+  return wrap;
+}
+const v48OldRender=render;
+render=function(){ensureV48();if(state.screen==='v48parentGame'){app.replaceChildren(renderV48ParentGameReport());return;}return v48OldRender();};
+const v48OldParentReport=renderParentReport;
+renderParentReport=function(){
+  ensureV48();const wrap=v48OldParentReport(),s=v48Stats(7),a=v48Assessment(s);
+  const card=el('div',{className:`v48ParentCard section ${a.level}`},[el('div',{className:'v31Kicker'},'VER.4.8 PARENT GAME REPORT'),el('div',{className:'v48ParentHead'},[el('div',{className:'v48AssessIcon'},a.icon),el('div',{className:'grow'},[el('h3',{},'学習とゲームの利用バランス'),el('div',{className:'small'},`${a.title}。直近7日：学習・復習${s.learning}問／追加ゲーム${s.game}問。`)])]),el('button',{className:'primary',style:{marginTop:'10px'},onclick:()=>{state.screen='v48parentGame';render()}},'詳しいゲーム進捗レポートを見る')]);
+  const footer=wrap.querySelector('.footerNote');if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;
+};
+const v48Style=document.createElement('style');v48Style.textContent=`
+.v48Assessment,.v48ParentCard{border-radius:23px;padding:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06)}.v48Assessment{display:flex;gap:11px;align-items:flex-start}.v48Assessment.good,.v48ParentCard.good{background:rgba(78,205,196,.10);border-color:rgba(78,205,196,.36)}.v48Assessment.warn,.v48ParentCard.warn{background:rgba(255,209,102,.09);border-color:rgba(255,209,102,.38)}.v48Assessment.bad,.v48ParentCard.bad{background:rgba(255,107,107,.09);border-color:rgba(255,107,107,.38)}.v48AssessIcon{font-size:34px;width:42px;text-align:center}.v48Assessment h2{font-size:17px;margin-bottom:4px}.v48Assessment p{font-size:11px;line-height:1.7;color:#dbeafe}.v48SummaryGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.v48SummaryGrid .num{font-size:17px}.v48BarRow{margin:9px 0}.v48BarHead,.v48ModeRow{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}.v48ModeRow{padding:8px 1px;border-top:1px solid rgba(255,255,255,.08)}.v48Estimate{border-radius:13px;background:rgba(255,255,255,.055);padding:9px;margin:9px 0 5px;font-size:11px;font-weight:900;line-height:1.6}.v48ProgressCard{border-radius:21px;background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(162,155,254,.10));border:1px solid rgba(165,180,252,.26);padding:13px}.v48ProgressGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.v48ProgressGrid>div{text-align:center;border-radius:13px;background:rgba(255,255,255,.055);padding:8px}.v48ProgressGrid b{display:block;color:#fde68a;font-size:15px}.v48ProgressGrid span{font-size:9px;color:#cbd5e1}.v48ParentHead{display:flex;align-items:center;gap:9px}@media(max-width:390px){.v48SummaryGrid{grid-template-columns:1fr 1fr}.v48ProgressGrid{grid-template-columns:1fr 1fr}}
+`;document.head.appendChild(v48Style);
+document.title='ロスト・クリスタル Ver.4.8 保護者ゲーム進捗レポート';
+try{if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.8初回起動',true);}catch(e){}
+
+
+
+/* ================= Ver.4.9 integrated QA / save stability ================= */
+function ensureV49(){
+  if(!state.v49||typeof state.v49!=='object')state.v49={};
+  if(!Array.isArray(state.v49.repairLog))state.v49.repairLog=[];
+  if(typeof state.v49.lastCheckAt!=='number')state.v49.lastCheckAt=0;
+  return state.v49;
+}
+function v49CompanionIds(){return new Set((COMPANIONS||[]).map(x=>x.id));}
+function v49EquipmentIds(){return new Set((V22_EQUIPMENT||[]).map(x=>x.id));}
+function v49StorageBytes(){
+  let n=0;try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i)||'';const v=localStorage.getItem(k)||'';n+=(k.length+v.length)*2;}}catch(e){}
+  return n;
+}
+function v49Audit(){
+  ensureV49();
+  const rows=[];
+  const add=(level,name,text,repairable=false)=>rows.push({level,name,text,repairable});
+  const ids=(QUESTIONS||[]).map(q=>q.id), dup=[...new Set(ids.filter((x,i)=>ids.indexOf(x)!==i))];
+  add(dup.length?'bad':'good','問題IDの一意性',dup.length?`重複ID ${dup.slice(0,12).join(', ')}${dup.length>12?'…':''}`:`${ids.length}問すべて一意`);
+  const invalidQ=(QUESTIONS||[]).filter(q=>!q||!Number.isFinite(Number(q.id))||!q.subject||!Array.isArray(q.choices)||q.choices.length<2||!q.choices.includes(q.answer));
+  add(invalidQ.length?'bad':'good','問題データ形式',invalidQ.length?`${invalidQ.length}問に形式上の問題`:'選択肢・正答形式に重大な異常なし');
+  const owned=Array.isArray(state.companions)?state.companions:[];const cids=v49CompanionIds();const invalidOwned=owned.filter(id=>!cids.has(id));
+  add(!Array.isArray(state.companions)||invalidOwned.length?'warn':'good','仲間所持データ',!Array.isArray(state.companions)?'配列形式ではありません':invalidOwned.length?`不明な仲間ID ${invalidOwned.join(', ')}`:`${owned.length}体を確認`,true);
+  const party=Array.isArray(state.party)?state.party:(Array.isArray(state.activeCompanions)?state.activeCompanions:[]);const invalidParty=party.filter(id=>!cids.has(id)||!owned.includes(id));
+  add(invalidParty.length?'warn':'good','仲間編成',invalidParty.length?`所持していない／不明なID ${invalidParty.join(', ')}`:`${party.length}体の編成データを確認`,true);
+  const v34=ensureV34();const bad34=['towerBestFloor','towerKeys','towerMedals','towerClears'].filter(k=>!Number.isFinite(Number(v34[k]))||Number(v34[k])<0);
+  add(bad34.length?'warn':'good','忘却の塔セーブ',bad34.length?`異常値: ${bad34.join(', ')}`:`最高${v34.towerBestFloor||0}階・鍵${v34.towerKeys||0}本`,true);
+  const v35=ensureV35(), bad35=[];for(const [id,p] of Object.entries(v35.companionProgress||{})){if(!cids.has(id)||!p||!Number.isFinite(Number(p.level))||p.level<1||p.level>10||!Number.isFinite(Number(p.xp))||p.xp<0)bad35.push(id);}
+  add(bad35.length?'warn':'good','仲間育成データ',bad35.length?`${bad35.length}件に範囲外または不明ID`:'レベル・経験値の範囲正常',true);
+  const v37=ensureV37(), bad37=Object.keys(v37.evolved||{}).filter(id=>!cids.has(id));
+  add(bad37.length?'warn':'good','仲間進化データ',bad37.length?`不明ID ${bad37.join(', ')}`:`進化済み${v37EvolvedCount()}体`,true);
+  const v40=ensureV40(), eids=v49EquipmentIds(), bad40=[];for(const [id,lv] of Object.entries(v40.equipmentLevels||{})){if(!eids.has(id)||!Number.isFinite(Number(lv))||lv<0||lv>5)bad40.push(id);}
+  add(bad40.length?'warn':'good','装備強化データ',bad40.length?`${bad40.length}件に範囲外または不明ID`:'装備Lv.0〜5の範囲正常',true);
+  const v43=ensureV43(), bad43=[];for(const [id,a] of Object.entries(v43.affinity||{})){if(!cids.has(id)||!Number.isFinite(Number(a))||a<0||a>100)bad43.push(id);}
+  add(bad43.length?'warn':'good','親密度データ',bad43.length?`${bad43.length}件に範囲外または不明ID`:'親密度0〜100の範囲正常',true);
+  const hist=(state.v31&&Array.isArray(state.v31.questionHistory))?state.v31.questionHistory:[];
+  add(hist.length>300?'warn':'good','回答履歴上限',hist.length>300?`${hist.length}件（上限300件超過）`:`${hist.length}/300件`,true);
+  let backups=0,broken=0;for(const key of V31_BACKUP_KEYS){const raw=localStorage.getItem(key);if(!raw)continue;backups++;try{JSON.parse(raw);}catch(e){broken++;}}
+  add(broken?'warn':backups?'good':'warn','自動バックアップ',broken?`${broken}世代が破損`:`${backups}/3世代を確認`,false);
+  const bytes=v49StorageBytes(),mb=bytes/1024/1024;
+  add(mb>4?'warn':'good','端末保存容量',`推定 ${mb.toFixed(2)} MB${mb>4?'（Safari上限接近に注意）':''}`);
+  const dates=[['日次クエスト',v34.daily&&v34.daily.date],['週間クエスト',v34.weekly&&v34.weekly.week],['週間シーズン',ensureV39().current&&ensureV39().current.week],['辺境調査',ensureV42().expedition&&ensureV42().expedition.date]];
+  const badDate=dates.filter(x=>x[1]&&typeof x[1]!=='string');add(badDate.length?'warn':'good','日付管理',badDate.length?`${badDate.map(x=>x[0]).join('・')}の形式異常`:'日次・週次キーの形式正常',true);
+  ensureV49().lastCheckAt=Date.now();
+  return rows;
+}
+function v49SafeRepair(){
+  const ok=confirm('修復前に自動バックアップを作成し、範囲外の数値・不明ID・履歴上限だけを安全に補正します。進捗はリセットしません。実行しますか？');if(!ok)return;
+  try{v31CreateAutoBackup('Ver.4.9安全修復前',true);}catch(e){}
+  const log=[],cids=v49CompanionIds(),eids=v49EquipmentIds();
+  if(!Array.isArray(state.companions)){state.companions=[];log.push('仲間所持配列を初期化');}
+  state.companions=[...new Set(state.companions.filter(id=>cids.has(id)))];
+  for(const key of ['party','activeCompanions'])if(Array.isArray(state[key]))state[key]=[...new Set(state[key].filter(id=>cids.has(id)&&state.companions.includes(id)))].slice(0,3);
+  const v34=ensureV34();for(const k of ['towerBestFloor','towerKeys','towerMedals','towerClears']){const n=Math.floor(Number(v34[k]));if(!Number.isFinite(n)||n<0){v34[k]=0;log.push(`${k}を0へ補正`);}}
+  const v35=ensureV35();for(const id of Object.keys(v35.companionProgress||{})){if(!cids.has(id)){delete v35.companionProgress[id];continue;}const p=v35.companionProgress[id]||{};p.level=Math.max(1,Math.min(10,Math.floor(Number(p.level)||1)));p.xp=Math.max(0,Math.floor(Number(p.xp)||0));v35.companionProgress[id]=p;}
+  const v37=ensureV37();for(const id of Object.keys(v37.evolved||{}))if(!cids.has(id))delete v37.evolved[id];
+  const v40=ensureV40();for(const id of Object.keys(v40.equipmentLevels||{})){if(!eids.has(id)){delete v40.equipmentLevels[id];continue;}v40.equipmentLevels[id]=Math.max(0,Math.min(5,Math.floor(Number(v40.equipmentLevels[id])||0)));}
+  const v43=ensureV43();for(const id of Object.keys(v43.affinity||{})){if(!cids.has(id)){delete v43.affinity[id];continue;}v43.affinity[id]=Math.max(0,Math.min(100,Math.floor(Number(v43.affinity[id])||0)));}
+  if(state.v31&&Array.isArray(state.v31.questionHistory))state.v31.questionHistory=state.v31.questionHistory.filter(x=>x&&Number.isFinite(Number(x.id))).slice(0,300);
+  ensureV49().repairLog.unshift({at:Date.now(),items:log.length?log:['形式確認のみ・変更なし']});ensureV49().repairLog=ensureV49().repairLog.slice(0,10);
+  save();toast(log.length?`安全修復を完了（${log.length}項目）`:'異常は見つかりませんでした');render();
+}
+function renderV49QA(){
+  const rows=v49Audit(),bad=rows.filter(x=>x.level==='bad').length,warn=rows.filter(x=>x.level==='warn').length,wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='settings';render()}},'← 設定'),el('div',{className:'pill'},'Ver.4.9 統合QA')]));
+  wrap.appendChild(el('div',{className:`v49Overall ${bad?'bad':warn?'warn':'good'}`},[el('div',{className:'icon'},bad?'🚨':warn?'🛠️':'✅'),el('h2',{},bad?'要確認項目があります':warn?'軽微な注意があります':'セーブと主要機能は正常です'),el('p',{},`重大 ${bad}件／注意 ${warn}件／確認 ${rows.length}項目。診断は現在の端末内データを変更しません。`)]));
+  const box=el('div',{className:'section'});for(const r of rows)box.appendChild(el('div',{className:`v49Row ${r.level}`},[el('div',{className:'v49Icon'},r.level==='good'?'✓':r.level==='warn'?'!':'×'),el('div',{className:'grow'},[el('div',{className:'v49Name'},r.name),el('div',{className:'v49Text'},r.text)])]));wrap.appendChild(box);
+  wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'安全な修復')]),el('div',{className:'small'},'不明IDの除外、数値の範囲補正、回答履歴300件への整理だけを行います。学習数、所持資源、塔到達階など正常な進捗は削除しません。'),el('button',{className:'secondary danger',style:{marginTop:'10px'},onclick:v49SafeRepair},'バックアップを作って安全修復') ]));
+  const logs=ensureV49().repairLog||[];if(logs.length)wrap.appendChild(el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'修復履歴')]),...logs.slice(0,5).map(x=>el('div',{className:'small',style:{margin:'5px 0'}},`${new Date(x.at).toLocaleString('ja-JP')}：${(x.items||[]).join('、')}`))]));
+  wrap.appendChild(el('div',{className:'footerNote'},'診断後も、実際のiPad Safariで通常学習・塔・バックアップ読込を各1回確認してください。'));
+  return wrap;
+}
+const v49OldRender=render;render=function(){ensureV49();if(state.screen==='v49qa'){app.replaceChildren(renderV49QA());return;}return v49OldRender();};
+const v49OldSettings=renderSettings;renderSettings=function(){ensureV49();const wrap=v49OldSettings();const card=el('div',{className:'v49Menu section'},[el('div',{className:'v31Kicker'},'VER.4.9 STABILITY CHECK'),el('h3',{},'統合QA・セーブ診断'),el('p',{},'問題ID、仲間・塔・装備・親密度、回答履歴、バックアップ、保存容量をまとめて確認します。'),el('button',{className:'primary',style:{marginTop:'9px'},onclick:()=>{state.screen='v49qa';render()}},'統合QAを実行')]);const footer=wrap.querySelector('.footerNote');if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;};
+const v49Style=document.createElement('style');v49Style.textContent=`
+.v49Overall{border-radius:24px;padding:18px;text-align:center;border:1px solid rgba(255,255,255,.15)}.v49Overall.good{background:rgba(78,205,196,.11);border-color:rgba(78,205,196,.38)}.v49Overall.warn{background:rgba(255,209,102,.09);border-color:rgba(255,209,102,.4)}.v49Overall.bad{background:rgba(255,107,107,.09);border-color:rgba(255,107,107,.42)}.v49Overall .icon{font-size:44px}.v49Overall h2{font-size:18px;margin:5px 0}.v49Overall p{font-size:11px;line-height:1.65;color:#dbeafe}.v49Row{display:flex;gap:9px;align-items:flex-start;border-radius:15px;padding:10px;margin-top:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05)}.v49Row.good{border-color:rgba(78,205,196,.3)}.v49Row.warn{border-color:rgba(255,209,102,.38);background:rgba(255,209,102,.07)}.v49Row.bad{border-color:rgba(255,107,107,.42);background:rgba(255,107,107,.08)}.v49Icon{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);font-weight:1000}.v49Name{font-size:12px;font-weight:1000}.v49Text{font-size:10px;color:#cbd5e1;line-height:1.55;margin-top:2px}.v49Menu{border-radius:22px;padding:13px;background:linear-gradient(135deg,rgba(59,130,246,.13),rgba(78,205,196,.09));border:1px solid rgba(147,197,253,.28)}.v49Menu h3{font-size:15px;margin-bottom:4px}.v49Menu p{font-size:11px;line-height:1.65;color:#dbeafe}
+`;document.head.appendChild(v49Style);
+document.title='ロスト・クリスタル Ver.4.9 統合QA・安定化版';
+try{ensureV49();if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.4.9初回起動',true);}catch(e){}
+
+
+
+/* ================= Ver.5.0 家庭運用・正式リリース版 ================= */
+function ensureV50(){
+  if(!state.v50||typeof state.v50!=='object'||Array.isArray(state.v50))state.v50={};
+  if(typeof state.v50.releaseNotesSeen!=='boolean')state.v50.releaseNotesSeen=false;
+  if(!Array.isArray(state.v50.releaseChecks))state.v50.releaseChecks=[];
+  if(typeof state.v50.firstOpenedAt!=='number')state.v50.firstOpenedAt=Date.now();
+  return state.v50;
+}
+function v50ReleaseStatus(){
+  const audit=v49Audit(),bad=audit.filter(x=>x.level==='bad').length,warn=audit.filter(x=>x.level==='warn').length;
+  let backups=0;for(const k of V31_BACKUP_KEYS){if(localStorage.getItem(k))backups++;}
+  return {
+    questions:(QUESTIONS||[]).length,
+    bad,warn,backups,
+    storage:v49StorageBytes(),
+    answered:totalAnswered(),
+    tower:ensureV34().towerBestFloor||0,
+    collection:v37CollectionPercent()
+  };
+}
+const V50_CHANGELOG=[
+  ['Ver.3.4','忘却の塔・日次／週次クエスト'],
+  ['Ver.3.5','仲間レベル・塔メダル訓練'],
+  ['Ver.3.6','記憶の強敵・3段階難易度'],
+  ['Ver.3.7–3.8','仲間進化・王国大図鑑・長期クエスト'],
+  ['Ver.3.9','週替わりシーズンイベント'],
+  ['Ver.4.0–4.1','装備鍛冶・セット効果・王国研究'],
+  ['Ver.4.2–4.3','星霧の辺境・仲間との絆'],
+  ['Ver.4.5','変化する忘却の塔'],
+  ['Ver.4.7–4.9','UI整理・保護者レポート・統合QA'],
+  ['Ver.5.0','家庭運用向け正式リリース仕上げ']
+];
+function v50CheckRow(icon,title,text,ok=true){return el('div',{className:`v50Check ${ok?'ok':'warn'}`},[el('div',{className:'v50CheckIcon'},icon),el('div',{className:'grow'},[el('b',{},title),el('div',{className:'small'},text)])]);}
+function renderV50Release(){
+  const v=ensureV50(),s=v50ReleaseStatus(),wrap=el('div',{className:'screen fade'});
+  wrap.appendChild(el('div',{className:'top'},[el('button',{className:'ghost',onclick:()=>{state.screen='home';render()}},'← ホーム'),el('div',{className:'pill'},'正式版 Ver.5.0')]));
+  wrap.appendChild(el('div',{className:'v50Hero'},[el('div',{className:'v50Logo'},'💎'),el('div',{className:'v32Version'},'LOST CRYSTAL — HOME RELEASE'),el('h2',{},'ロスト・クリスタル Ver.5.0'),el('p',{},'学習・長期育成・保護者確認・バックアップを1ファイルに統合した家庭運用版です。これまでのセーブデータをそのまま引き継げます。')]));
+  wrap.appendChild(el('div',{className:'v50Stats section'},[
+    el('div',{className:'stat'},[el('div',{className:'small'},'問題数'),el('div',{className:'num'},String(s.questions))]),
+    el('div',{className:'stat'},[el('div',{className:'small'},'総回答'),el('div',{className:'num'},String(s.answered))]),
+    el('div',{className:'stat'},[el('div',{className:'small'},'塔最高'),el('div',{className:'num'},`${s.tower}階`)]),
+    el('div',{className:'stat'},[el('div',{className:'small'},'図鑑'),el('div',{className:'num'},`${s.collection}%`)])
+  ]));
+  const checks=el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'正式運用チェック')])]);
+  checks.appendChild(v50CheckRow(s.questions===3500?'✅':'⚠️','問題データ',`${s.questions}問を読み込み`,s.questions===3500));
+  checks.appendChild(v50CheckRow(s.bad===0?'✅':'🚨','統合QA',`重大${s.bad}件・注意${s.warn}件`,s.bad===0));
+  checks.appendChild(v50CheckRow(s.backups>0?'✅':'⚠️','自動バックアップ',`${s.backups}/3世代を確認`,s.backups>0));
+  checks.appendChild(v50CheckRow(s.storage<4*1024*1024?'✅':'⚠️','端末保存容量',`${(s.storage/1024/1024).toFixed(2)} MB`,s.storage<4*1024*1024));
+  checks.appendChild(el('div',{className:'v50Actions'},[
+    el('button',{className:'secondary',onclick:()=>{state.screen='v49qa';render()}},'🛠️ 統合QA'),
+    el('button',{className:'secondary',onclick:()=>{state.screen='settings';render()}},'💾 保存・設定')
+  ]));
+  wrap.appendChild(checks);
+  const guide=el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'家庭での推奨運用')])]);
+  [
+    ['1','最初に「今日の学習」12問を行う'],
+    ['2','終わったら塔・辺境などを1〜2回遊ぶ'],
+    ['3','週末に保護者レポートと週間報酬を確認'],
+    ['4','月1回、JSONバックアップを書き出して保管']
+  ].forEach(x=>guide.appendChild(el('div',{className:'v50Guide'},[el('span',{},x[0]),el('div',{},x[1])])));
+  wrap.appendChild(guide);
+  const changes=el('div',{className:'card section'},[el('div',{className:'sectionTitle'},[el('span',{},'主な更新履歴')])]);
+  V50_CHANGELOG.forEach(x=>changes.appendChild(el('div',{className:'v50Change'},[el('b',{},x[0]),el('span',{},x[1])])));
+  wrap.appendChild(changes);
+  wrap.appendChild(el('button',{className:'primary',onclick:()=>{v.releaseNotesSeen=true;save();state.screen='home';render()}},'確認してホームへ'));
+  wrap.appendChild(el('div',{className:'footerNote'},'Ver.3.3以前を含む旧セーブは、各ensureVxx()で不足項目のみ補完します。正式運用前にJSONバックアップを1件保存してください。'));
+  return wrap;
+}
+const v50OldRender=render;
+render=function(){ensureV50();if(state.screen==='v50release'){app.replaceChildren(renderV50Release());return;}return v50OldRender();};
+const v50OldHome=renderHome;
+renderHome=function(){
+  const v=ensureV50(),wrap=v50OldHome(),footer=wrap.querySelector('.footerNote');
+  const card=el('div',{className:`v50Home section ${v.releaseNotesSeen?'seen':''}`},[
+    el('div',{className:'v50HomeHead'},[el('div',{},[el('div',{className:'v32Version'},'FORMAL RELEASE'),el('b',{},'💎 Ver.5.0 家庭運用版')]),el('span',{className:'pill'},v.releaseNotesSeen?'確認済み':'NEW')]),
+    el('div',{className:'small'},'更新内容、推奨運用、正式運用チェックを確認できます。'),
+    el('button',{className:'secondary',style:{marginTop:'8px'},onclick:()=>{state.screen='v50release';render()}},'Ver.5.0案内を開く')
+  ]);
+  if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;
+};
+const v50OldSettings=renderSettings;
+renderSettings=function(){
+  const wrap=v50OldSettings(),footer=wrap.querySelector('.footerNote');
+  const card=el('div',{className:'v50Settings section'},[el('div',{className:'v31Kicker'},'VER.5.0 RELEASE CENTER'),el('h3',{},'正式版情報・運用チェック'),el('p',{},'更新履歴、家庭での推奨運用、問題数・QA・バックアップの状態をまとめて確認します。'),el('button',{className:'secondary',style:{marginTop:'8px'},onclick:()=>{state.screen='v50release';render()}},'正式版センターを開く')]);
+  if(footer)wrap.insertBefore(card,footer);else wrap.appendChild(card);return wrap;
+};
+const v50Style=document.createElement('style');v50Style.textContent=`
+.v50Hero{border-radius:28px;padding:20px 16px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(255,209,102,.24),rgba(59,130,246,.16),rgba(15,23,42,.62));border:1.5px solid rgba(255,209,102,.38);box-shadow:0 18px 48px rgba(0,0,0,.22)}.v50Logo{font-size:58px;filter:drop-shadow(0 8px 18px rgba(255,209,102,.35))}.v50Hero h2{font-size:21px;margin:5px 0 7px}.v50Hero p{font-size:12px;line-height:1.75;color:#dbeafe}.v50Stats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.v50Stats .num{font-size:16px}.v50Check{display:flex;align-items:flex-start;gap:9px;padding:9px 0;border-top:1px solid rgba(255,255,255,.08)}.v50Check:first-of-type{border-top:none}.v50CheckIcon{font-size:20px;width:25px;text-align:center}.v50Check.warn b{color:#fde68a}.v50Actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.v50Guide{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid rgba(255,255,255,.08);font-size:12px}.v50Guide:first-of-type{border-top:none}.v50Guide>span{width:25px;height:25px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(78,205,196,.15);color:#99f6e4;font-weight:1000}.v50Change{display:grid;grid-template-columns:88px 1fr;gap:8px;padding:7px 0;border-top:1px solid rgba(255,255,255,.07);font-size:11px}.v50Change:first-of-type{border-top:none}.v50Change b{color:#fde68a}.v50Change span{color:#dbeafe}.v50Home,.v50Settings{border-radius:22px;padding:13px;background:linear-gradient(135deg,rgba(255,209,102,.14),rgba(59,130,246,.11));border:1px solid rgba(255,209,102,.30)}.v50Home.seen{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.11)}.v50HomeHead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:5px}.v50Settings h3{font-size:15px;margin-bottom:4px}.v50Settings p{font-size:11px;line-height:1.65;color:#dbeafe}@media(max-width:390px){.v50Stats{grid-template-columns:1fr 1fr}.v50Actions{grid-template-columns:1fr}.v50Change{grid-template-columns:72px 1fr}}
+`;document.head.appendChild(v50Style);
+document.title='ロスト・クリスタル Ver.5.0 家庭運用・正式リリース版';
+try{ensureV50();if(!localStorage.getItem(V31_BACKUP_KEYS[0])&&totalAnswered()>0)v31CreateAutoBackup('Ver.5.0初回起動',true);}catch(e){}
 
 </script>
 </body>
