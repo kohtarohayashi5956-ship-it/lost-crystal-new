@@ -150,7 +150,7 @@ const STORY=[
  {id:6,title:"第6章　忘却の塔",need:s=>getWeakIds(s).length>=5,text:["間違えた問題は、忘却モンスターの力になる。","でも大丈夫。復習で倒すたびに、君の魔法は強くなる。"]},
  {id:7,title:"第7章　知恵のクリスタル",need:s=>totalCorrect(s)>=100,text:["王国中に散らばったクリスタルが、少しずつ輝きを取り戻す。","算数、国語、理科、社会。4つの力を合わせる時が来た。"]}
 ];
-function el(tag,props={},children=[]){const n=document.createElement(tag);Object.assign(n,props);if(props.style)Object.assign(n.style,props.style);if(!Array.isArray(children))children=[children];children.forEach(c=>{if(c==null)return;n.appendChild(typeof c==="string"?document.createTextNode(c):c)});return n}
+function el(tag,props={},children=[]){const n=document.createElement(tag);Object.assign(n,props);if(props.style)Object.assign(n.style,props.style);if(!Array.isArray(children))children=[children];children.forEach(c=>{if(c==null)return;n.appendChild((typeof c==="string"||typeof c==="number"||typeof c==="boolean")?document.createTextNode(String(c)):c)});return n}
 
 const WORLD_AREAS=[
  {id:"mine",chapter:2,subject:"算数",icon:"⛏️",name:"けいさん鉱山",boss:"石守ゴーレム",need:s=>totalCorrect(s)>=0,clearText:"計算の封印を解き、王城を直す石材を手に入れる。",reward:{coins:35,stone:8,crystal:1}},
@@ -3119,8 +3119,8 @@ function ensureV41(){
   ensureV40();
   if(!state.v41||typeof state.v41!=='object'||Array.isArray(state.v41))state.v41={};
   if(!state.v41.research||typeof state.v41.research!=='object'||Array.isArray(state.v41.research))state.v41.research={};
-  if(!state.v41.dailyRoyal||typeof state.v41.dailyRoyal!=='object'||Array.isArray(state.v41.dailyRoyal))state.v41.dailyRoyal={date:v34DateKey(),claimed:false};
-  if(state.v41.dailyRoyal.date!==v34DateKey())state.v41.dailyRoyal={date:v34DateKey(),claimed:false};
+  if(!state.v41.dailyRoyal||typeof state.v41.dailyRoyal!=='object'||Array.isArray(state.v41.dailyRoyal))state.v41.dailyRoyal={date:today(),claimed:false};
+  if(state.v41.dailyRoyal.date!==today())state.v41.dailyRoyal={date:today(),claimed:false};
   return state.v41;
 }
 function v41KingdomScore(){
@@ -3222,7 +3222,7 @@ function ensureV42(){
   Object.keys(V42_DISTRICTS).forEach(id=>{const n=Math.floor(Number(state.v42.districts[id])||0);state.v42.districts[id]=Math.max(0,Math.min(V42_MAX_LEVEL,n));});
   if(!state.v42.expedition||typeof state.v42.expedition!=='object'||Array.isArray(state.v42.expedition))state.v42.expedition={date:'',done:false,totalWins:0,bestScore:0};
   const ex=state.v42.expedition;ex.totalWins=Math.max(0,Math.floor(Number(ex.totalWins)||0));ex.bestScore=Math.max(0,Math.floor(Number(ex.bestScore)||0));
-  if(ex.date!==v34DateKey()){ex.date=v34DateKey();ex.done=false;}
+  if(ex.date!==today()){ex.date=today();ex.done=false;}
   if(!Array.isArray(state.v42.seenMilestones))state.v42.seenMilestones=[];
   return state.v42;
 }
@@ -3314,9 +3314,9 @@ function ensureV43(){
   if(!state.v43||typeof state.v43!=='object'||Array.isArray(state.v43))state.v43={};
   if(!state.v43.affinity||typeof state.v43.affinity!=='object'||Array.isArray(state.v43.affinity))state.v43.affinity={};
   if(!state.v43.seenStories||typeof state.v43.seenStories!=='object'||Array.isArray(state.v43.seenStories))state.v43.seenStories={};
-  if(!state.v43.dailyGain||typeof state.v43.dailyGain!=='object'||Array.isArray(state.v43.dailyGain)||state.v43.dailyGain.date!==v34DateKey())state.v43.dailyGain={date:v34DateKey(),byCompanion:{}};
+  if(!state.v43.dailyGain||typeof state.v43.dailyGain!=='object'||Array.isArray(state.v43.dailyGain)||state.v43.dailyGain.date!==today())state.v43.dailyGain={date:today(),byCompanion:{}};
   if(!state.v43.dailyGain.byCompanion||typeof state.v43.dailyGain.byCompanion!=='object')state.v43.dailyGain.byCompanion={};
-  if(!state.v43.dailyTalk||typeof state.v43.dailyTalk!=='object'||state.v43.dailyTalk.date!==v34DateKey())state.v43.dailyTalk={date:v34DateKey(),seen:false,companionId:null};
+  if(!state.v43.dailyTalk||typeof state.v43.dailyTalk!=='object'||state.v43.dailyTalk.date!==today())state.v43.dailyTalk={date:today(),seen:false,companionId:null};
   for(const id of (state.companions||[])){if(!Number.isFinite(state.v43.affinity[id]))state.v43.affinity[id]=0;if(!Array.isArray(state.v43.seenStories[id]))state.v43.seenStories[id]=[];}
   return state.v43;
 }
@@ -3332,7 +3332,7 @@ function v43AddAffinity(id,amount=1){
   return gain;
 }
 function v43Party(){let ids=[];try{ids=activePartyIds();}catch(e){ids=state.party||[];}return (ids||[]).slice(0,3);}
-function v43DailyCompanion(){const v=ensureV43();let ids=v43Party().filter(id=>(state.companions||[]).includes(id));if(!ids.length)ids=(state.companions||[]).slice();if(!ids.length)return null;if(!v.dailyTalk.companionId||!ids.includes(v.dailyTalk.companionId)){const seed=v34DateKey().split('-').join('');const n=parseInt(seed,10)||0;v.dailyTalk.companionId=ids[n%ids.length];}return COMPANIONS.find(c=>c.id===v.dailyTalk.companionId)||null;}
+function v43DailyCompanion(){const v=ensureV43();let ids=v43Party().filter(id=>(state.companions||[]).includes(id));if(!ids.length)ids=(state.companions||[]).slice();if(!ids.length)return null;if(!v.dailyTalk.companionId||!ids.includes(v.dailyTalk.companionId)){const seed=today().split('-').join('');const n=parseInt(seed,10)||0;v.dailyTalk.companionId=ids[n%ids.length];}return COMPANIONS.find(c=>c.id===v.dailyTalk.companionId)||null;}
 function v43DailyLine(c){const rank=v43AffinityRank(c.id),a=v43Affinity(c.id);if(a>=100)return `「今日も一緒に進もう。きみと学ぶ時間が、ぼくの一番の宝物だ」`;if(a>=60)return `「苦手な問題も、二人ならきっと越えられるよ」`;if(a>=25)return `「昨日より少し進んだね。その積み重ねをぼくは知っているよ」`;return `「今日はどんな問題に出会えるかな。いっしょに始めよう！」`;}
 function v43ShowDailyTalk(){const v=ensureV43(),c=v43DailyCompanion();if(!c){showToast('まだ仲間がいません');return;}v.dailyTalk.seen=true;save();const panel=el('div',{className:'v31Modal',onclick:e=>{if(e.target===panel)panel.remove()}},[el('div',{className:'v31ModalPanel v43TalkModal'},[el('div',{className:'v43BigIcon'},c.icon),el('div',{className:'v32Version'},'TODAY’S COMPANION'),el('h2',{},c.name),el('div',{className:'v43Quote'},v43DailyLine(c)),el('div',{className:'small'},`${v43AffinityRank(c.id).icon} ${v43AffinityRank(c.id).name}　親密度 ${v43Affinity(c.id)}/100`),el('button',{className:'primary',style:{marginTop:'14px'},onclick:()=>panel.remove()},'今日も一緒に学ぶ')])]);document.body.appendChild(panel);}
 function v43OpenStory(id,index){const c=COMPANIONS.find(x=>x.id===id),stories=V43_STORIES[id]||[];if(!c||!stories[index]||v43Affinity(id)<V43_STORY_LEVELS[index])return;const v=ensureV43();if(!v.seenStories[id].includes(index))v.seenStories[id].push(index);save();const [title,text]=stories[index];const panel=el('div',{className:'cinemaModal'},[el('div',{className:'cinemaPanel'},[el('div',{className:'summonRing'},[el('div',{className:'chestIcon'},c.icon)]),el('div',{className:'cinemaKicker'},`${c.name}・親密度物語 ${index+1}`),el('div',{className:'cinemaTitle'},title),el('p',{className:'cinemaText'},text),el('button',{className:'cinemaNext',style:{width:'100%',marginTop:'12px'},onclick:()=>panel.remove()},'物語を閉じる')])]);document.body.appendChild(panel);}
