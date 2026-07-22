@@ -1,27 +1,22 @@
 {
   "name": "ロスト・クリスタル",
   "short_name": "ロスト・クリスタル",
-  "description": "小学校5年生向け中学受験準備用学習ゲーム（オフライン・ストーリー再開対応）",
-  "lang": "ja",
-  "id": "./index.html",
-  "start_url": "./index.html?source=pwa",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#10172a",
   "theme_color": "#10172a",
+  "lang": "ja",
   "icons": [
     {
       "src": "./icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
       "src": "./icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
