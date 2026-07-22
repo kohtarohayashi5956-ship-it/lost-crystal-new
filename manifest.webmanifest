@@ -1,15 +1,15 @@
 {
-  "name": "ロスト・クリスタル",
-  "short_name": "ロスト・クリスタル",
-  "description": "小学校5年生向け中学受験準備用学習ゲーム（オフライン・ストーリー再開対応）",
+  "id": "./",
+  "name": "はじまりのクリスタル ― ことばと かずと にじの王国 ―",
+  "short_name": "はじまりのクリスタル",
+  "description": "小学1年生向けの、ことば・かず・英語・ものしりを学べるオフライン対応学習ゲームです。",
   "lang": "ja",
-  "id": "./index.html",
-  "start_url": "./index.html?source=pwa",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#10172a",
-  "theme_color": "#10172a",
+  "orientation": "any",
+  "background_color": "#fff8fd",
+  "theme_color": "#8b5cf6",
   "icons": [
     {
       "src": "./icon-192.png",
